@@ -1,0 +1,19 @@
+# Learner records belong outside the skill repository.
+LEARNER.md
+.learning/
+
+# Authoring notes and local credentials are not release files.
+.planning/
+task_plan.md
+findings.md
+progress.md
+.env
+.env.*
+
+# Python and local development artifacts.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
