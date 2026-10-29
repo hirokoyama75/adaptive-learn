@@ -1,0 +1,596 @@
+{
+  "format": "synthetic-rule-benchmark",
+  "version": 1,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "worlds": [
+    {
+      "seed": 43,
+      "seals": [
+        "bov",
+        "lun"
+      ],
+      "glyphs": [
+        "kel",
+        "sor",
+        "teg"
+      ],
+      "routes": [
+        "nib",
+        "pir",
+        "zun"
+      ],
+      "stop": "vek",
+      "factor": 4,
+      "shift": 1,
+      "flag_shift": 9,
+      "worked": {
+        "count": 2,
+        "seal": "bov",
+        "glyph": "teg",
+        "flag": 1
+      },
+      "practice": [
+        {
+          "count": 7,
+          "seal": "lun",
+          "glyph": "kel",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "bov",
+          "glyph": "sor",
+          "flag": 1
+        }
+      ],
+      "pre": [
+        {
+          "count": 2,
+          "seal": "bov",
+          "glyph": "kel",
+          "flag": 1
+        },
+        {
+          "count": 0,
+          "seal": "bov",
+          "glyph": "sor",
+          "flag": 1
+        },
+        {
+          "count": 2,
+          "seal": "lun",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 10,
+          "seal": "bov",
+          "glyph": "sor",
+          "flag": 0
+        }
+      ],
+      "post": [
+        {
+          "count": 10,
+          "seal": "lun",
+          "glyph": "teg",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "lun",
+          "glyph": "kel",
+          "flag": 0
+        },
+        {
+          "count": 0,
+          "seal": "bov",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 9,
+          "seal": "lun",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 3,
+          "seal": "bov",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 0,
+          "seal": "lun",
+          "glyph": "teg",
+          "flag": 1
+        },
+        {
+          "count": 2,
+          "seal": "lun",
+          "glyph": "sor",
+          "flag": 1
+        },
+        {
+          "count": 4,
+          "seal": "lun",
+          "glyph": "kel",
+          "flag": 0
+        },
+        {
+          "count": 0,
+          "seal": "unlisted-seal",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 9,
+          "seal": "lun",
+          "glyph": "teg"
+        }
+      ]
+    },
+    {
+      "seed": 107,
+      "seals": [
+        "dap",
+        "fep"
+      ],
+      "glyphs": [
+        "nib",
+        "teg",
+        "lun"
+      ],
+      "routes": [
+        "vek",
+        "pir",
+        "zun"
+      ],
+      "stop": "kel",
+      "factor": 3,
+      "shift": 5,
+      "flag_shift": 10,
+      "worked": {
+        "count": 2,
+        "seal": "dap",
+        "glyph": "lun",
+        "flag": 1
+      },
+      "practice": [
+        {
+          "count": 1,
+          "seal": "fep",
+          "glyph": "nib",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "dap",
+          "glyph": "teg",
+          "flag": 1
+        }
+      ],
+      "pre": [
+        {
+          "count": 1,
+          "seal": "dap",
+          "glyph": "nib",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "dap",
+          "glyph": "lun",
+          "flag": 0
+        },
+        {
+          "count": 2,
+          "seal": "fep",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 8,
+          "seal": "fep",
+          "glyph": "nib",
+          "flag": 0
+        }
+      ],
+      "post": [
+        {
+          "count": 10,
+          "seal": "fep",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "fep",
+          "glyph": "nib",
+          "flag": 0
+        },
+        {
+          "count": 0,
+          "seal": "dap",
+          "glyph": "teg",
+          "flag": 1
+        },
+        {
+          "count": 3,
+          "seal": "fep",
+          "glyph": "lun",
+          "flag": 0
+        },
+        {
+          "count": 1,
+          "seal": "fep",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 9,
+          "seal": "dap",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 7,
+          "seal": "fep",
+          "glyph": "teg",
+          "flag": 0
+        },
+        {
+          "count": 5,
+          "seal": "fep",
+          "glyph": "teg",
+          "flag": 1
+        },
+        {
+          "count": 0,
+          "seal": "unlisted-seal",
+          "glyph": "teg",
+          "flag": 1
+        },
+        {
+          "count": 3,
+          "seal": "fep",
+          "glyph": "lun"
+        }
+      ]
+    },
+    {
+      "seed": 211,
+      "seals": [
+        "lun",
+        "zun"
+      ],
+      "glyphs": [
+        "pir",
+        "kel",
+        "dap"
+      ],
+      "routes": [
+        "teg",
+        "vek",
+        "fep"
+      ],
+      "stop": "sor",
+      "factor": 3,
+      "shift": 7,
+      "flag_shift": 10,
+      "worked": {
+        "count": 2,
+        "seal": "lun",
+        "glyph": "dap",
+        "flag": 1
+      },
+      "practice": [
+        {
+          "count": 3,
+          "seal": "zun",
+          "glyph": "pir",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "lun",
+          "glyph": "kel",
+          "flag": 1
+        }
+      ],
+      "pre": [
+        {
+          "count": 10,
+          "seal": "zun",
+          "glyph": "kel",
+          "flag": 1
+        },
+        {
+          "count": 4,
+          "seal": "zun",
+          "glyph": "kel",
+          "flag": 0
+        },
+        {
+          "count": 2,
+          "seal": "zun",
+          "glyph": "pir",
+          "flag": 0
+        },
+        {
+          "count": 0,
+          "seal": "lun",
+          "glyph": "pir",
+          "flag": 1
+        }
+      ],
+      "post": [
+        {
+          "count": 10,
+          "seal": "zun",
+          "glyph": "dap",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "zun",
+          "glyph": "pir",
+          "flag": 0
+        },
+        {
+          "count": 0,
+          "seal": "zun",
+          "glyph": "dap",
+          "flag": 1
+        },
+        {
+          "count": 6,
+          "seal": "zun",
+          "glyph": "kel",
+          "flag": 1
+        },
+        {
+          "count": 7,
+          "seal": "lun",
+          "glyph": "pir",
+          "flag": 0
+        },
+        {
+          "count": 7,
+          "seal": "zun",
+          "glyph": "dap",
+          "flag": 0
+        },
+        {
+          "count": 8,
+          "seal": "zun",
+          "glyph": "pir",
+          "flag": 1
+        },
+        {
+          "count": 0,
+          "seal": "zun",
+          "glyph": "kel",
+          "flag": 1
+        },
+        {
+          "count": 0,
+          "seal": "unlisted-seal",
+          "glyph": "dap",
+          "flag": 1
+        },
+        {
+          "count": 6,
+          "seal": "zun",
+          "glyph": "kel"
+        }
+      ]
+    },
+    {
+      "seed": 509,
+      "seals": [
+        "teg",
+        "bov"
+      ],
+      "glyphs": [
+        "lun",
+        "nib",
+        "zun"
+      ],
+      "routes": [
+        "dap",
+        "fep",
+        "pir"
+      ],
+      "stop": "vek",
+      "factor": 2,
+      "shift": 10,
+      "flag_shift": 5,
+      "worked": {
+        "count": 2,
+        "seal": "teg",
+        "glyph": "zun",
+        "flag": 1
+      },
+      "practice": [
+        {
+          "count": 1,
+          "seal": "bov",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "teg",
+          "glyph": "nib",
+          "flag": 1
+        }
+      ],
+      "pre": [
+        {
+          "count": 2,
+          "seal": "teg",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "bov",
+          "glyph": "lun",
+          "flag": 0
+        },
+        {
+          "count": 4,
+          "seal": "teg",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 5,
+          "seal": "bov",
+          "glyph": "lun",
+          "flag": 1
+        }
+      ],
+      "post": [
+        {
+          "count": 10,
+          "seal": "bov",
+          "glyph": "zun",
+          "flag": 1
+        },
+        {
+          "count": 9,
+          "seal": "bov",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 5,
+          "seal": "teg",
+          "glyph": "lun",
+          "flag": 0
+        },
+        {
+          "count": 2,
+          "seal": "bov",
+          "glyph": "nib",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "bov",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 10,
+          "seal": "teg",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 3,
+          "seal": "bov",
+          "glyph": "zun",
+          "flag": 1
+        },
+        {
+          "count": 0,
+          "seal": "bov",
+          "glyph": "lun",
+          "flag": 1
+        },
+        {
+          "count": 5,
+          "seal": "unlisted-seal",
+          "glyph": "lun",
+          "flag": 0
+        },
+        {
+          "count": 2,
+          "seal": "bov",
+          "glyph": "nib"
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "w43-tutor",
+      "seed": 43,
+      "arm": "tutor",
+      "phase": "development"
+    },
+    {
+      "id": "w43-selfstudy",
+      "seed": 43,
+      "arm": "selfstudy",
+      "phase": "development"
+    },
+    {
+      "id": "w43-control",
+      "seed": 43,
+      "arm": "control",
+      "phase": "development"
+    },
+    {
+      "id": "w107-control",
+      "seed": 107,
+      "arm": "control",
+      "phase": "development"
+    },
+    {
+      "id": "w107-selfstudy",
+      "seed": 107,
+      "arm": "selfstudy",
+      "phase": "development"
+    },
+    {
+      "id": "w107-tutor",
+      "seed": 107,
+      "arm": "tutor",
+      "phase": "development"
+    },
+    {
+      "id": "w211-tutor",
+      "seed": 211,
+      "arm": "tutor",
+      "phase": "confirmation"
+    },
+    {
+      "id": "w211-control",
+      "seed": 211,
+      "arm": "control",
+      "phase": "confirmation"
+    },
+    {
+      "id": "w211-selfstudy",
+      "seed": 211,
+      "arm": "selfstudy",
+      "phase": "confirmation"
+    },
+    {
+      "id": "w509-control",
+      "seed": 509,
+      "arm": "control",
+      "phase": "confirmation"
+    },
+    {
+      "id": "w509-selfstudy",
+      "seed": 509,
+      "arm": "selfstudy",
+      "phase": "confirmation"
+    },
+    {
+      "id": "w509-tutor",
+      "seed": 509,
+      "arm": "tutor",
+      "phase": "confirmation"
+    }
+  ],
+  "protocol_sha256": "7fc750e2931f84837aac1b45ca9bad21e1e73728271ae22445d5bc58b9318925",
+  "generator_sha256": "189065c51fb71bd2ed003f571b5388c68ce805dd84db8e11a53f55fa2d9dba8b",
+  "data_sha256": "6398bb1d71d2e2871790a756ac549c1f1cf391f8013fe2d1468e608df0e5d0d5"
+}

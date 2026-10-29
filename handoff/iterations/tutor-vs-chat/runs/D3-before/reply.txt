@@ -1,0 +1,9 @@
+No, you didn't do anything wrong. Completing the square is a fully valid method, and your work is correct.
+
+Check by substitution: x=2 gives 4−10+6=0; x=3 gives 9−15+6=0. Both satisfy the equation. Your algebra also checks out: x²−5x+6 = (x−5/2)² − 25/4 + 6 = (x−5/2)² − 1/4, so setting it to zero gives (x−5/2)² = 1/4. Then x = 5/2 ± 1/2 = 2 or 3.
+
+Your notes use factoring because with integer roots and a leading coefficient of 1, factoring is faster: (x−2)(x−3)=0. That's a convenience, not a rule. Methods being different doesn't make one wrong; both produce the same roots here.
+
+Should you restart? No. There's nothing to redo — the answer and reasoning are sound, and starting over would replace correct work with correct work.
+
+With two minutes, the only thing worth doing is practicing method choice, since that's the actual difference between your approach and the notes. Quick one: for x²−4x+1=0, which method would you reach for, and why? (Don't solve it — just pick and give your reason in a sentence.) That's a more useful use of the remaining time than re-deriving something you already understand.

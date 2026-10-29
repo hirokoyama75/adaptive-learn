@@ -2,7 +2,7 @@
 
 A tutoring skill for OpenCode that adjusts explanations, hints, and practice to the work you show. Study for class, cram, or learn in depth, with optional progress across chats.
 
-**Experimental:** file handling has automated tests; teaching still needs live checks. Correct feedback, faster learning, and lasting mastery are not guaranteed.
+**Experimental:** file handling has automated tests, and limited synthetic tutoring checks are recorded below. Better or faster human learning has not been demonstrated. Correct feedback and lasting mastery are not guaranteed.
 
 ## Quick start
 
@@ -104,12 +104,15 @@ my-learning/
   algebra/
     .learning/
       state.json             current task, learner evidence, and reviews
+      state.v1.json          original v1 state, only when upgrading an old workspace
       graph.json             reusable ideas and optional relationships
       plan.md                current path, not a competence score
       sessions/              short dated summaries, not full transcripts
 ```
 
 `state.json` holds the active task, prepared answer or assessment criteria, your attempt, hints, remaining difficulty, and next action. Plans and summaries provide context; detailed graphs are optional.
+
+State format 2 adds durable pause decisions only; graph and profile formats remain version 1. Old state is read without rewriting it. Its first successful save preserves `state.v1.json` before upgrading; older helpers refuse the new state. See the [migration and recovery contract](references/persistence.md#safe-writes-and-recovery) before upgrading an existing folder. A state backup is not a rollback of subsequent graph changes.
 
 For manual setup, run these from the folder containing `SKILL.md`. Learner files go in a separate sibling folder:
 
@@ -136,7 +139,7 @@ The [persistence reference](references/persistence.md) covers saving, file forma
 | [Study goals](references/study-goals.md) | Explains the three goals and in-depth activities. |
 | [Teaching decisions](references/teaching-decisions.md) | Gives examples of choosing support and correcting tutor mistakes. |
 | [Python helper](scripts/learn_state.py) | File validation, checkpoints, review records, and selected context for resumption. |
-| [Worked acceptance cases](tests/acceptance-cases.md) | Expected behavior in 25 situations, including alternative answers and new-chat recovery. |
+| [Worked acceptance cases](tests/acceptance-cases.md) | Expected behavior in 26 situations, including time budgets, alternative answers, and new-chat recovery. |
 
 Subject guides advise the same assistant; they are not separate teachers. The diagrams describe model instructions. Python handles records and cannot establish understanding or execute the teaching decision tree.
 
@@ -156,9 +159,9 @@ From the folder containing `SKILL.md`, run:
 python -B -m unittest discover -s tests -v
 ```
 
-All 30 tests passed on Windows with Python 3.10 and 3.13, with no skips. They cover file handling, validation, reviews, corrections, resumption, size limits, and commands. Git checks use temporary repositories. Documentation links and package isolation were also checked.
+All 74 tests passed on Windows with Python 3.10 and 3.13, with no skips: 51 state/CLI regressions and 23 evaluation-checker tests. They cover file handling, version migration/recovery, pause durability, review scheduling and selection, corrections, bounded reads/resumption, privacy warnings, commands, and judgment validation. Git checks use temporary repositories. Checker tests use explicitly authored synthetic fixtures, not learner outcomes.
 
-The 25 acceptance cases are worked examples, not results from live tutoring sessions. Passing file tests does not establish teaching quality or learning effectiveness.
+The 26 acceptance cases are worked examples, not results from live tutoring sessions. Passing file tests does not establish teaching quality or learning effectiveness.
 
 Before a stable release, exercise the [acceptance cases](tests/acceptance-cases.md) in real chats, especially these:
 
@@ -170,6 +173,50 @@ Before a stable release, exercise the [acceptance cases](tests/acceptance-cases.
 - A fresh-chat resume that preserves the exact task and earlier hints.
 
 Record the model, available tools, input, actual response, and deviations. These checks assess workflow, not improved learning outcomes. A dedicated repository can host the experimental version while testing continues.
+
+The [14-case live instrument](tests/live/cases.json) and [rubric](tests/live/rubric.md) are included. Check its frozen holdout with `python -B tests/live/check_cases.py --verify-holdout`. `tests/live/check_run.py` checks complete judge annotations and quoted transcript evidence; it cannot decide whether the judge is right, verify unrecorded tool calls, or measure learning. A refusal-only response cannot pass merely by avoiding violations. Fixture passes are parser/scorer checks, not live tutoring results.
+
+To evaluate learning, prepare independently checked criteria/answer keys and comparable unseen tasks before tutoring. Check unaided performance before, immediately after, and after a meaningful gap; keep hints and allowed aids separate. Use matched tasks and a controlled comparison before attributing a gain to this skill. Judge accuracy, transfer, and later recall rather than confidence or fluent explanations. Keep any voluntary learner records outside this repository; no automatic collection is provided. Successful file tests or a few synthetic model conversations establish none of those outcomes.
+
+## Improvement process and results
+
+We started with reproducible reliability bugs, then tested teaching behavior rather than assuming that more tutoring instructions would help. Failures and rejected changes are included in the [published evidence archive](handoff/PUBLICATION.md).
+
+### 1. Reproduce bugs before fixing them
+
+Independent code audits and failing regression tests guided the reliability pass. Fixes cover stale saves changing the graph before refusing, lost review obligations, pause durability, chronology, bounded reads, and honest reporting of partial saves. A minimal state-format migration preserves the original v1 backup before upgrading. The package suite grew from 30 to 74 tests; those tests validate software behavior, not student learning. See the [implementation report](handoff/IMPLEMENTATION_RESULTS.md) for the changes, executed checks, and remaining single-writer/nontransactional limits.
+
+Teaching safeguards were also tightened: check numerical examples and grading, distinguish assisted success from independent work, correct tutor errors transparently, and treat instructions embedded in supplied documents as data rather than permission to run commands. These remain model instructions, not guarantees.
+
+### 2. Freeze questions, preserve actual replies, and compare alternatives
+
+Synthetic learner/tutor runs used DeepSeek V4.1 Flash at low effort. Earlier code audits used DeepSeek V4 Pro at maximum effort. Low effort was not treated as a human-novice model. Task facts were independently checked, protocols and scoring were fixed before runs, and unsuccessful replies were kept.
+
+| Experiment | Observed result | What we learned |
+| --- | --- | --- |
+| [Novel invented rules](handoff/benchmarks/novel-rules/RESULTS.md): 12 learner sessions, 48 replies | Tutoring and worked-example self-study each got 32/32 valid unseen items correct; no instruction got 0/32 | The task was at ceiling. It showed no incremental tutoring benefit. |
+| [Harder concept pilot](handoff/benchmarks/time-to-transfer/RESULTS.md): 4 learners, 12 replies | All final task answers were correct, but the explanation-plus-transfer criterion was met by tutoring **1/2** and self-study **2/2** | Correct numbers can hide incorrect explanations. The pooled 3/4 was not a tutoring advantage. |
+| [Tutor versus competent ordinary chat](handoff/iterations/tutor-vs-chat/RESULTS.md): 17 actual tutor replies | On three fixed confirmation cases, original skill passed **3/3**, candidate **2/3**, ordinary chat **2/3** | The new timing paragraph was not an improvement worth shipping; we rejected it and kept the original core. |
+
+These small, exploratory checks do not establish general superiority, statistical reliability, or human learning gains. They retain conversation context, and their internal tool traces are unavailable. Review annotations and quote checks are not independently calibrated human judgments.
+
+### 3. Optimize useful learning time, not message count
+
+The harder pilot checked workload under explicit reading/attempt-time assumptions. Most paths did not fit a ten-minute reference budget even before live tutor waiting. Those were **unvalidated timing scenarios**, not measured student learning times. Useful extra exchanges can be worthwhile; fewer prompts alone do not mean more efficient learning.
+
+That finding informed a [shorter human lesson draft](handoff/benchmarks/time-to-transfer/HUMAN_LESSON.md): repair the affected step, check it, then use a changed case instead of repeating an entire assessment. Its core is explicitly narrower than the full pilot outcome and has not been validated with people. Worked acceptance case AC-26 records the time-budget requirement. The rejected candidate remains archived, not installed as the current policy.
+
+### 4. Keep the boundary between engineering and learning evidence
+
+Reliability and evaluation coverage improved. We also hardened report capture so prompts, grades, session continuity, and quoted judgments can be checked against recorded evidence. We have **not** shown that students learn faster, retain more, or should prefer this skill over regular chat. The next meaningful evidence would be a voluntary, timed human comparison on real course material, with independently graded unfamiliar questions and a later recall check.
+
+To reproduce the published software checks and recorded reports without calling any models:
+
+```text
+python -B scripts/check_research.py
+```
+
+This runs **92 tests**: 74 package tests and 18 research/oracle/recorder tests, followed by archive, holdout, and report-integrity checks. The [publication guide](handoff/PUBLICATION.md) explains historical workspace paths, source hashes, privacy redactions, and reproduction. The [research notes](research.md) are historical, unverified authoring material, not a source of validated efficacy claims.
 
 ## Installation
 

@@ -1,0 +1,26 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "L-01",
+  "run": 1,
+  "judge": "synthetic fixture judge (authored test data; not a calibrated judge)",
+  "transcript": "transcript.md",
+  "must": [
+    {"index": 0, "observed": true, "turns": [1], "quote": "Subtract 2 from both sides, then divide both sides by 3."},
+    {"index": 1, "observed": false},
+    {"index": 2, "observed": false},
+    {"index": 3, "observed": false}
+  ],
+  "must_not": [
+    {"index": 0, "violation": false},
+    {"index": 1, "violation": false},
+    {"index": 2, "violation": false},
+    {"index": 3, "violation": false}
+  ],
+  "automatic_fails": [
+    {"dimension": "D3", "turns": [1], "quote": "The answer is x = 4", "reason": "canonical answer supplied before any learner attempt"}
+  ],
+  "severe": [],
+  "dimensions": {"D3": 0},
+  "notes": "Authored fixture: a premature answer must fail even when one must item is observed. Not a model run."
+}

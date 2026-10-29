@@ -1,0 +1,1 @@
+Your W inverse and computed states now check. One local written-order mismatch remains: forward S,W,N,S,W must be undone W,S,N,W,S, not W,S,W,N,S. Your numerical steps already followed the correct order; keep them. When writing an undo list, reverse the original list before applying inverse formulas. Everything else on the last packet checked.

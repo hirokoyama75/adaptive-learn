@@ -1,0 +1,57 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "C3",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Your order is completely valid"
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "dividing both sides of an equation by the same nonzero number preserves equality."
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "for independent practice you should keep using whichever order you can execute reliably."
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": false
+    },
+    {
+      "index": 1,
+      "violation": true,
+      "turns": [
+        1
+      ],
+      "quote": "For the worksheet: do it their way on the page",
+      "note": "Requires the worksheet method despite no stated requirement and otherwise accepting the independent method."
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured."
+}

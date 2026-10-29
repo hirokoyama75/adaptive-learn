@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T07:06:34.888749+00:00",
+  "monotonic_ns": 8577701819200,
+  "run": "w1291-tutor",
+  "index": 1,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "9b7aecd84f471e3c8828152c9486753fcaa38d5d264b8d2c41e6aa66da25f596",
+  "material_sha256": "94770df2afa5c2b153fa799a8019c3b64c42cf072cfd2434fcd80945b159539a",
+  "session": "ses_e7987f3b5ffeObRzrPMyw92nWO",
+  "capture_utc": "2026-10-29T07:08:01.515403+00:00",
+  "launch_to_capture_seconds": 86.6266517,
+  "raw_sha256": "ef060a3eb84bb7fd4f3d89470a8660eb5c7f4378fbae5e29663cbbe85b4e70db",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": true,
+      "quote": "Undo a chain by reversing it: inverse of S is S, inverse of N is (a,b)->(a-b,b), and inverse of W is (a,b)->(b-3a,a)."
+    },
+    "loss": {
+      "ok": true,
+      "quote": "there are exactly seven possible starts: (t-4,6) mod 7"
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "N,N,N gives (x+3y,y), and the final W gives (y,x+6y), which is identical to W,S,W"
+    }
+  },
+  "qualifies": true
+}

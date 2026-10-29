@@ -1,0 +1,52 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "D2",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Dividing by \\(x\\) is legal only **when \\(x \\neq 0\\)**."
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Your final set is right, but the justification isn't."
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "before dividing by a variable expression, ask whether it could be zero"
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": false
+    },
+    {
+      "index": 1,
+      "violation": false
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured."
+}

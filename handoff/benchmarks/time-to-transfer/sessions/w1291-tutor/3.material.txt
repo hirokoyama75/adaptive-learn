@@ -1,0 +1,7 @@
+Final transfer: no new help. Prior context remains available.
+
+R: After ['N', 'S', 'W', 'N', 'S'], the pair is [6, 4]. Recover the unique starting pair.
+L: After ['S', 'C', 'W', 'S'], the pair is [6, 5]. Give TWO DISTINCT starting pairs that produce it.
+Q: Are ['W', 'S', 'N'] and ['N', 'N', 'N', 'N'] equivalent for every pair? If not, give one starting pair on which they differ. If equivalent, witness=null.
+B: Build a program of at most 3 operations. Its output must be (0*x+1*y, 0*x+1*y), mod 7, for every starting pair.
+Briefly explain how to undo a chain, why L has no unique start, and your general justification or counterexample for Q.

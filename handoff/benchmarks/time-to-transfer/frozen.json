@@ -1,0 +1,473 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "worlds": [
+    {
+      "seed": 617,
+      "mod": 5,
+      "k": 2,
+      "packets": [
+        {
+          "R": {
+            "program": [
+              "S",
+              "N",
+              "N",
+              "N",
+              "N"
+            ],
+            "observed": [
+              2,
+              0
+            ]
+          },
+          "L": {
+            "program": [
+              "S",
+              "C",
+              "N",
+              "S"
+            ],
+            "observed": [
+              0,
+              0
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "N"
+            ],
+            "right": [
+              "S",
+              "N",
+              "N",
+              "S",
+              "N"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "max_length": 3
+          }
+        },
+        {
+          "R": {
+            "program": [
+              "S",
+              "W",
+              "N",
+              "S",
+              "W"
+            ],
+            "observed": [
+              4,
+              2
+            ]
+          },
+          "L": {
+            "program": [
+              "N",
+              "C",
+              "N",
+              "S"
+            ],
+            "observed": [
+              3,
+              1
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "N"
+            ],
+            "right": [
+              "N",
+              "N",
+              "N"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "max_length": 3
+          }
+        },
+        {
+          "R": {
+            "program": [
+              "N",
+              "W",
+              "W",
+              "W",
+              "W"
+            ],
+            "observed": [
+              4,
+              0
+            ]
+          },
+          "L": {
+            "program": [
+              "W",
+              "C",
+              "N",
+              "S"
+            ],
+            "observed": [
+              1,
+              2
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "W"
+            ],
+            "right": [
+              "S",
+              "N",
+              "N",
+              "S",
+              "W"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "max_length": 3
+          }
+        },
+        {
+          "R": {
+            "program": [
+              "S",
+              "W",
+              "W",
+              "W",
+              "S"
+            ],
+            "observed": [
+              4,
+              3
+            ]
+          },
+          "L": {
+            "program": [
+              "S",
+              "C",
+              "N",
+              "S"
+            ],
+            "observed": [
+              2,
+              4
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "W"
+            ],
+            "right": [
+              "N",
+              "N",
+              "W"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "max_length": 3
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1291,
+      "mod": 7,
+      "k": 3,
+      "packets": [
+        {
+          "R": {
+            "program": [
+              "S",
+              "N",
+              "S",
+              "W",
+              "N"
+            ],
+            "observed": [
+              3,
+              6
+            ]
+          },
+          "L": {
+            "program": [
+              "N",
+              "C",
+              "N",
+              "S"
+            ],
+            "observed": [
+              2,
+              4
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "W"
+            ],
+            "right": [
+              "S",
+              "N",
+              "N",
+              "N",
+              "S",
+              "W"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                4,
+                6
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "max_length": 3
+          }
+        },
+        {
+          "R": {
+            "program": [
+              "W",
+              "W",
+              "N",
+              "W",
+              "N"
+            ],
+            "observed": [
+              1,
+              3
+            ]
+          },
+          "L": {
+            "program": [
+              "W",
+              "C",
+              "W",
+              "S"
+            ],
+            "observed": [
+              3,
+              6
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "W"
+            ],
+            "right": [
+              "N",
+              "N",
+              "N",
+              "W"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "max_length": 3
+          }
+        },
+        {
+          "R": {
+            "program": [
+              "W",
+              "W",
+              "N",
+              "W",
+              "W"
+            ],
+            "observed": [
+              6,
+              3
+            ]
+          },
+          "L": {
+            "program": [
+              "S",
+              "C",
+              "W",
+              "S"
+            ],
+            "observed": [
+              3,
+              6
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "S"
+            ],
+            "right": [
+              "S",
+              "N",
+              "N",
+              "N",
+              "S",
+              "S"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "max_length": 3
+          }
+        },
+        {
+          "R": {
+            "program": [
+              "N",
+              "S",
+              "W",
+              "N",
+              "S"
+            ],
+            "observed": [
+              6,
+              4
+            ]
+          },
+          "L": {
+            "program": [
+              "S",
+              "C",
+              "W",
+              "S"
+            ],
+            "observed": [
+              6,
+              5
+            ]
+          },
+          "Q": {
+            "left": [
+              "W",
+              "S",
+              "N"
+            ],
+            "right": [
+              "N",
+              "N",
+              "N",
+              "N"
+            ]
+          },
+          "B": {
+            "target": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "max_length": 3
+          }
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "w617-tutor",
+      "seed": 617,
+      "arm": "tutor"
+    },
+    {
+      "id": "w617-selfstudy",
+      "seed": 617,
+      "arm": "selfstudy"
+    },
+    {
+      "id": "w1291-selfstudy",
+      "seed": 1291,
+      "arm": "selfstudy"
+    },
+    {
+      "id": "w1291-tutor",
+      "seed": 1291,
+      "arm": "tutor"
+    }
+  ],
+  "source_sha256": "28a37ceb4561bf0291c94d23b3d26d48d197c13c2da7a8e82e781f9990fd49ee",
+  "protocol_sha256": "69ed7488d031edddb4df428b8504142f3bbf7463869aa3a0c5480e9a36ee807c",
+  "skill_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+  "data_sha256": "4f034dd08701dd9107a92550948dcaa90a59fc417dd53e3298346e016cfed964"
+}

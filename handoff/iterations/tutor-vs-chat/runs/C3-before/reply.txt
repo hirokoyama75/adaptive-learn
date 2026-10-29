@@ -1,0 +1,15 @@
+Your order is valid. Move on.
+
+**Check:** 3x + 6 = 18. Divide both sides by 3 → x + 2 = 6 → x = 4. Substituting back: 3(4) + 6 = 12 + 6 = 18. ✓ The worksheet's route gives 3x = 12 → x = 4, same answer.
+
+**Why both work:** the rule "multiply/divide before add/subtract" tells you how to *evaluate* an expression. Solving isn't evaluating — you may undo operations in any order, as long as you do the same thing to the *entire* both sides. Think of it as peeling wrapping off a box: outside layer first or innermost first both get you to the contents.
+
+**One condition on your method:** dividing first is clean only when the divisor goes into *every* term. Here 3 divides 3x, 6, and 18, so nothing is left behind. If it were 3x + 7 = 18, dividing by 3 gives x + 7/3 = 6 — still correct, just uglier, and the fractions are where people slip. That's the real failure mode, not the order itself.
+
+The genuinely invalid moves are dividing only one side, or only some terms on a side.
+
+Worksheets usually teach subtract-first because it keeps everything in whole numbers and still works when the coefficient doesn't divide the other terms. Follow it if a later section builds on that pattern; otherwise your route is fine.
+
+Quick habit for the rest of the set: after each solve, substitute your x back in. That catches order-independent slips in about five seconds.
+
+Nothing saved — session-only, as you asked.

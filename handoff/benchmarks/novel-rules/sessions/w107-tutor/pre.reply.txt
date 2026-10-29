@@ -1,0 +1,1 @@
+{"answers":[{"id":"B1","value":null,"route":"UNKNOWN","trace":[]},{"id":"B2","value":null,"route":"UNKNOWN","trace":[]},{"id":"B3","value":null,"route":"UNKNOWN","trace":[]},{"id":"B4","value":null,"route":"UNKNOWN","trace":[]}],"question":"No rulebook or task question was provided, so the derivations are undefined. Please supply the rules and the question to answer for B1–B4."}

@@ -1,0 +1,1 @@
+{"answers":[{"id":"B1","value":null,"route":"UNKNOWN","trace":[]},{"id":"B2","value":null,"route":"UNKNOWN","trace":[]},{"id":"B3","value":null,"route":"UNKNOWN","trace":[]},{"id":"B4","value":null,"route":"UNKNOWN","trace":[]}],"question":"No rulebook for world 211 was provided; please supply it so the requested values and routes can be computed."}

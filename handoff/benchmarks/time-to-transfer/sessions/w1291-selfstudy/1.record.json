@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T07:06:34.885077+00:00",
+  "monotonic_ns": 8577698148200,
+  "run": "w1291-selfstudy",
+  "index": 1,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "750d50a235027f03ebcb4f825a740cb55923ce22cf0bd0738ec8ce64ff9dfdda",
+  "material_sha256": "2154b17e30edb99cbb54eb3fb5e27432eea9da77fa28ce526fc48097ae5087ba",
+  "session": "ses_e7987f3b9ffeJtcA2Do1nsSkSq",
+  "capture_utc": "2026-10-29T07:08:01.497058+00:00",
+  "launch_to_capture_seconds": 86.6119772,
+  "raw_sha256": "ebb9bdf869cc94a6a650d82b25a0a1c531973c7929b86191af5ea6c6523bb081",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": true,
+      "quote": "Undo from the end using inverses: S is self-inverse, N^-1(u,v)=(u-v,v), and W^-1(u,v)=(v-3u,u)."
+    },
+    "loss": {
+      "ok": true,
+      "quote": "later reversible steps cannot restore the lost distinction."
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "N,N,N,W gives (x+3y,y) then (y,x+6y)=(y,x-y)."
+    }
+  },
+  "qualifies": true
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "D1",
+  "arm": "chat",
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "session": "ses_e774248e2ffeuE4WL5Pqz0fPjV",
+  "raw_sha256": "9379515ea2d0909c8073af70d075c9a9352be147a85dc61600e8f0a252ad95d2",
+  "prompt_sha256": "13767b7df3b4b875ad7fd636407f37e71a0c01e26f8357dbd3652a1ec78f04b4",
+  "capture_utc": "2026-10-29T17:41:09.362094+00:00",
+  "capture": "actual returned tutor reply; internal tool traces unavailable"
+}

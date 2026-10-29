@@ -1,0 +1,31 @@
+Partly. Your two starting pairs are correct, but your explanation names the wrong original number, and your list is incomplete.
+
+Trace the slots, because **S changes which original number is where**:
+
+\[
+(x,y)\xrightarrow{S}(y,x)\xrightarrow{C}(y,y)\xrightarrow{N}(2y,y)\xrightarrow{S}(y,2y)
+\]
+
+At the C step the pair is \((y,x)\), not \((x,y)\). So C overwrites the second slot—which currently holds the **original first number \(x\)**—with the first slot's value \(y\). The original second number \(y\) survives.
+
+For final pair \((2,4)\):
+
+\[
+y=2,\qquad 2y=4
+\]
+
+and \(x\) is completely unconstrained. So all five starts work:
+
+\[
+(0,2),(1,2),(2,2),(3,2),(4,2)
+\]
+
+Your \(x=0\) and \(x=1\) were just two of them.
+
+The information-loss statement is therefore:
+
+> C erases the original first coordinate, because after S that coordinate is sitting in the second slot. The original second coordinate survives and determines the final pair.
+
+That is the key skill here: **track which original value occupies a slot at the moment an operation overwrites it**, rather than trusting the slot's original label.
+
+Quick next check, same sequence \(S,C,N,S\): which starting pairs lead to \((3,1)\), and which original coordinate was lost? Answer that in one line, and you will have corrected the exact slip.

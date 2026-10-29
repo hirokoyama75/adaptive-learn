@@ -1,0 +1,11 @@
+{
+  "case_id": "D2",
+  "arm": "before",
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "session": "ses_e774248dcffe7j0b5fsLsusAx2",
+  "raw_sha256": "9f39e6b6e36a21d359506952f1af94f43dfacb9335acfb808997ebe36cc0ca0e",
+  "prompt_sha256": "14e084a3d7831321c4b946a685b939600960d7da4ccf237bb9d1b27e8a9a594b",
+  "capture_utc": "2026-10-29T17:41:09.379173+00:00",
+  "capture": "actual returned tutor reply; internal tool traces unavailable",
+  "skill_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260"
+}

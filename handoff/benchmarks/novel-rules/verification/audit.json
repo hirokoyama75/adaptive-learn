@@ -1,0 +1,113 @@
+{
+  "distinct_learner_sessions": 12,
+  "actual_reply_captures": 48,
+  "raw_and_recorded_copies_match": true,
+  "original_phase_reports_match_recomputed_reports": true,
+  "aggregate": {
+    "tutor": {
+      "pre_correct_of_4": 0,
+      "practice1_correct": 4,
+      "practice2_correct": 4,
+      "post_known_of_8": 32,
+      "surface_transfer_of_2": 8,
+      "invalid_input_abstention_of_2": 8,
+      "known_traces_of_8": 32,
+      "invalid_replies": 0,
+      "clarification_questions": 4,
+      "prompt_words": 2344,
+      "reply_words": 109,
+      "prompt_characters": 18634,
+      "reply_characters": 4431
+    },
+    "selfstudy": {
+      "pre_correct_of_4": 0,
+      "practice1_correct": 4,
+      "practice2_correct": 4,
+      "post_known_of_8": 32,
+      "surface_transfer_of_2": 8,
+      "invalid_input_abstention_of_2": 8,
+      "known_traces_of_8": 32,
+      "invalid_replies": 0,
+      "clarification_questions": 3,
+      "prompt_words": 2264,
+      "reply_words": 64,
+      "prompt_characters": 18066,
+      "reply_characters": 4164
+    },
+    "control": {
+      "pre_correct_of_4": 0,
+      "practice1_correct": 0,
+      "practice2_correct": 0,
+      "post_known_of_8": 0,
+      "surface_transfer_of_2": 0,
+      "invalid_input_abstention_of_2": 8,
+      "known_traces_of_8": 6,
+      "invalid_replies": 0,
+      "clarification_questions": 4,
+      "prompt_words": 1652,
+      "reply_words": 72,
+      "prompt_characters": 14320,
+      "reply_characters": 4307
+    }
+  },
+  "coverage": [
+    {
+      "seed": 43,
+      "known_items": 8,
+      "ordinary_transform_items": 7,
+      "priority_stop_items": 1,
+      "ordinary_count10_present": true,
+      "intended_upper_boundary_in_pretest": false,
+      "ordinary_items_by_glyph": {
+        "kel": 2,
+        "sor": 1,
+        "teg": 4
+      }
+    },
+    {
+      "seed": 107,
+      "known_items": 8,
+      "ordinary_transform_items": 7,
+      "priority_stop_items": 1,
+      "ordinary_count10_present": true,
+      "intended_upper_boundary_in_pretest": false,
+      "ordinary_items_by_glyph": {
+        "nib": 1,
+        "teg": 4,
+        "lun": 2
+      }
+    },
+    {
+      "seed": 211,
+      "known_items": 8,
+      "ordinary_transform_items": 7,
+      "priority_stop_items": 1,
+      "ordinary_count10_present": true,
+      "intended_upper_boundary_in_pretest": false,
+      "ordinary_items_by_glyph": {
+        "pir": 3,
+        "kel": 2,
+        "dap": 2
+      }
+    },
+    {
+      "seed": 509,
+      "known_items": 8,
+      "ordinary_transform_items": 5,
+      "priority_stop_items": 3,
+      "ordinary_count10_present": false,
+      "intended_upper_boundary_in_pretest": true,
+      "ordinary_items_by_glyph": {
+        "lun": 3,
+        "nib": 1,
+        "zun": 1
+      }
+    }
+  ],
+  "skill_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+  "frozen_data_sha256": "6398bb1d71d2e2871790a756ac549c1f1cf391f8013fe2d1468e608df0e5d0d5",
+  "protocol_sha256": "7fc750e2931f84837aac1b45ca9bad21e1e73728271ae22445d5bc58b9318925",
+  "generator_sha256": "189065c51fb71bd2ed003f571b5388c68ce805dd84db8e11a53f55fa2d9dba8b",
+  "decision_sha256": "feb30b724e3fb149ad7443b1d5ca86147e36ece09eb8b74ee667ad8bb14a1e98",
+  "recorder_after_fix_sha256": "68b6d96f032d0a87f307b56790549533d84f38fa589acc239ebe5576f6497202"
+}

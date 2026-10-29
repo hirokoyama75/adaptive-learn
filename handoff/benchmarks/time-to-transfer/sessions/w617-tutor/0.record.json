@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T06:59:55.455231+00:00",
+  "monotonic_ns": 8178268308300,
+  "run": "w617-tutor",
+  "index": 0,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "e49604dbb3599c9e6c813bacf7b67cb37cb30642a69396549ea0d54070b41a26",
+  "material_sha256": "99c8f5dbea76cb6cec16d92acaab91f30a768d047fd44d668b40104b2cc3309e",
+  "session": "ses_e798a48cdffezbgZyBoVXGd1Ha",
+  "capture_utc": "2026-10-29T07:01:30.317797+00:00",
+  "launch_to_capture_seconds": 94.8625592,
+  "raw_sha256": "b81f6ceff8b7e5a41f542cf00cb3758dfb9b95d386bbebb20d823db905b8c168",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": false,
+      "quote": "W^-1(X,Y)=(X-2Y,Y)"
+    },
+    "loss": {
+      "ok": true,
+      "quote": "S,C,N,S maps any (a,b) to (b,2b), so (0,0) forces b=0 while a is free"
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "at (0,1) P1=(3,1) but P2=(1,1)"
+    }
+  },
+  "qualifies": false
+}

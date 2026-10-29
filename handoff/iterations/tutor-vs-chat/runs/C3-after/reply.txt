@@ -1,0 +1,7 @@
+Your order is valid. Both routes reach x = 4, and substituting gives 3(4) + 6 = 18, which checks out.
+
+**Why yours works:** dividing both sides by 3 is a legal move as long as you divide the *whole* side. 3x + 6 over 3 gives x + 2 — both terms got divided. That's the one place people slip: writing x + 6 instead of x + 2.
+
+**Why the worksheet does it the other way:** on this problem every term happens to be divisible by 3, so your route stays clean. On 3x + 7 = 18, dividing first leaves you with x + 7/3 = 6, i.e. x = 11/3 ≈ 3.67 — still correct, just uglier arithmetic. Subtracting 7 first gives 3x = 11 and x = 11/3 without fractions until the very end. So the worksheet's order is a habit that avoids fractions, not the only legal order.
+
+Ready to move on — you've shown a correct method on this problem; I haven't checked it on a new one yet, so that's the next thing worth doing. If you want a 30-second check, try 5x + 10 = 35 your way, then decide whether to keep dividing first or switch.

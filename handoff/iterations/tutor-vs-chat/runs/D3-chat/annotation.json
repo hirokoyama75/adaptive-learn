@@ -1,0 +1,52 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "D3",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Completing the square is a valid method for any quadratic"
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Different route, same answer."
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Stop there."
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": false
+    },
+    {
+      "index": 1,
+      "violation": false
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured."
+}

@@ -12,11 +12,17 @@ from datetime import datetime, timezone
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import learn_state
 from learn_state import LearningError, initialize, resume, save
 
 
 class StateTests(unittest.TestCase):
     def setUp(self):
+        clock = learn_state._clock
+        fixed_clock = patch("learn_state._clock", side_effect=lambda now=None:
+                            clock(now if now is not None else datetime(2028, 1, 1, tzinfo=timezone.utc)))
+        fixed_clock.start()
+        self.addCleanup(fixed_clock.stop)
         preferred = Path(os.environ.get("LOCALAPPDATA", "")) / "Temp" / "opencode"
         self.temp = tempfile.TemporaryDirectory(
             prefix="adaptive-learn-", dir=preferred if preferred.is_dir() else None
@@ -69,7 +75,7 @@ class StateTests(unittest.TestCase):
         result.update(changes)
         return result
 
-    def test_successes_are_reviewed_and_only_later_independent_retrieval_extends_spacing(self):
+    def test_successes_are_reviewed_and_later_independent_retrieval_extends_spacing(self):
         initialize(self.root, "algebra")
         save(self.root, "algebra", {"expected_revision": 0, "evidence": [self.event()]})
         future = datetime(2026, 11, 10, tzinfo=timezone.utc)
@@ -86,6 +92,48 @@ class StateTests(unittest.TestCase):
         review = resume(self.root, "algebra", now=future)["reviews"][0]
         self.assertEqual(review["interval_days"], 1)
         self.assertEqual(review["last_evidence"], "e3")
+
+    def test_independent_practice_extends_spacing_only_after_a_gap_and_when_due(self):
+        initialize(self.root, "algebra")
+        future = datetime(2027, 2, 1, tzinfo=timezone.utc)
+        for revision, (at, after_gap, interval, due) in enumerate([
+            ("2026-10-27T10:00:00Z", False, 1, "2026-10-28T10:00:00+00:00"),
+            ("2026-10-27T11:00:00Z", True, 1, "2026-10-28T11:00:00+00:00"),
+            ("2026-10-28T11:00:00Z", False, 1, "2026-10-29T11:00:00+00:00"),
+            ("2026-10-29T11:00:00Z", True, 2, "2026-10-31T11:00:00+00:00"),
+            ("2026-11-01T11:00:00Z", True, 4, "2026-11-05T11:00:00+00:00"),
+            ("2026-11-05T11:00:00Z", True, 8, "2026-11-13T11:00:00+00:00"),
+            ("2026-11-13T11:00:00Z", True, 16, "2026-11-29T11:00:00+00:00"),
+            ("2026-11-29T11:00:00Z", True, 30, "2026-12-29T11:00:00+00:00"),
+            ("2026-12-29T11:00:00Z", True, 30, "2027-01-28T11:00:00+00:00"),
+        ]):
+            with self.subTest(revision=revision):
+                save(self.root, "algebra", {"expected_revision": revision, "evidence": [self.event(
+                    f"practice{revision}", at=at, after_gap=after_gap)]})
+                review = resume(self.root, "algebra", now=future)["reviews"][0]
+                self.assertEqual(review["interval_days"], interval)
+                self.assertEqual(review["due_at"], due)
+
+    def test_low_importance_successes_preserve_prior_repairs_and_important_successes(self):
+        future = datetime(2026, 11, 10, tzinfo=timezone.utc)
+        for outcome in ("incorrect", "correct"):
+            with self.subTest(outcome=outcome):
+                root = self.root / outcome
+                initialize(root, "algebra")
+                save(root, "algebra", {"expected_revision": 0, "evidence": [self.event(outcome=outcome)]})
+                original = resume(root, "algebra", now=future)["reviews"]
+                self.assertEqual(len(original), 1)
+                for revision in (1, 2):
+                    save(root, "algebra", {"expected_revision": revision, "evidence": [self.event(
+                        f"low{revision}", at=f"2026-10-{27 + revision}T10:00:00Z", importance="low", after_gap=True)]})
+                    packet = resume(root, "algebra", now=future)
+                    self.assertEqual(packet["reviews"], original)
+                    self.assertEqual(len(packet["evidence"]), revision + 1)
+
+    def test_low_importance_success_alone_creates_no_review(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0, "evidence": [self.event(importance="low")]})
+        self.assertEqual(resume(self.root, "algebra", now=datetime(2026, 11, 10, tzinfo=timezone.utc))["reviews"], [])
 
     def test_false_tutor_error_is_invalidated_without_rewriting_old_evidence(self):
         initialize(self.root, "algebra")
@@ -182,6 +230,36 @@ class StateTests(unittest.TestCase):
         self.assertEqual(list(self.root.rglob(".adaptive-*.tmp")), [])
         self.assertEqual(save(self.root, "algebra", request)["revision"], 1)
         self.assertEqual(resume(self.root, "algebra")["checkpoint"], self.checkpoint())
+
+    def test_interrupted_withdrawal_warns_about_graph_changes_and_allows_retry(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0,
+            "nodes": {"equations": {"kind": "skill", "label": "Equations"}},
+            "evidence": [self.event(target="equations", outcome="incorrect")]})
+        folder = self.root / "algebra/.learning"
+        before = (folder / "state.json").read_bytes()
+        request = {"expected_revision": 1,
+            "withdrawals": [{"id": "equations", "reason": "Tutor's rule was wrong", "replacement": None}],
+            "invalidations": [{"evidence_id": "e1", "reason": "Task used the wrong rule"}]}
+        real_replace = os.replace
+
+        def interrupted(source, destination):
+            if Path(destination).name == "state.json":
+                raise OSError("Simulated state replacement failure")
+            return real_replace(source, destination)
+
+        with patch("os.replace", side_effect=interrupted):
+            with self.assertRaisesRegex(LearningError, "Graph changes were written.*state save is unconfirmed"):
+                save(self.root, "algebra", request)
+        self.assertEqual((folder / "state.json").read_bytes(), before)
+        packet = resume(self.root, "algebra", targets=["equations"], now=datetime(2026, 11, 10, tzinfo=timezone.utc))
+        self.assertEqual(packet["graph"]["nodes"]["equations"]["withdrawn"], "Tutor's rule was wrong")
+        self.assertIsNone(packet["evidence"][0]["invalidated"])
+        self.assertEqual(packet["reviews"], [])
+        self.assertEqual(list(self.root.rglob(".adaptive-*.tmp")), [])
+        self.assertEqual(save(self.root, "algebra", request)["revision"], 2)
+        self.assertEqual(resume(self.root, "algebra", targets=["equations"])["evidence"][0]["invalidated"],
+                         "Task used the wrong rule")
 
     def test_command_line_setup_save_resume_and_errors(self):
         helper = Path(__file__).resolve().parents[1] / "scripts/learn_state.py"
@@ -282,6 +360,39 @@ class StateTests(unittest.TestCase):
                     save(self.root, "algebra", request)
                 for name, value in before.items():
                     self.assertEqual((folder / name).read_bytes(), value)
+
+    def test_revision_changed_after_load_refuses_before_writing_a_withdrawal(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0,
+            "nodes": {"equations": {"kind": "skill", "label": "Equations"}}})
+        stale = learn_state._load(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 1, "goal": "Another writer's update"})
+        folder = self.root / "algebra/.learning"
+        before = {name: (folder / name).read_bytes() for name in ("graph.json", "state.json")}
+        with patch("learn_state._load", return_value=stale):
+            with self.assertRaisesRegex(LearningError, "State changed during save"):
+                save(self.root, "algebra", {"expected_revision": 1, "withdrawals": [
+                    {"id": "equations", "reason": "Stale proposed correction", "replacement": None}]})
+        for name, value in before.items():
+            self.assertEqual((folder / name).read_bytes(), value)
+
+    def test_revision_change_after_graph_write_is_still_refused(self):
+        initialize(self.root, "algebra")
+        real_write = learn_state._atomic_write
+
+        def concurrent_save(root, path, text):
+            real_write(root, path, text)
+            if path.name == "graph.json":
+                save(root, "algebra", {"expected_revision": 0, "goal": "Another writer's update"})
+
+        with patch("learn_state._atomic_write", side_effect=concurrent_save):
+            with self.assertRaisesRegex(LearningError, "Graph changes were written.*State changed during save"):
+                save(self.root, "algebra", {"expected_revision": 0,
+                    "nodes": {"equations": {"kind": "skill", "label": "Equations"}}})
+        packet = resume(self.root, "algebra", targets=["equations"])
+        self.assertEqual(packet["revision"], 1)
+        self.assertEqual(packet["goal"], "Another writer's update")
+        self.assertIn("equations", packet["graph"]["nodes"])
 
     def test_visited_plan_exposure_and_self_report_are_not_performance(self):
         initialize(self.root, "algebra")
@@ -494,6 +605,247 @@ class StateTests(unittest.TestCase):
         self.assertTrue(result["saved"])
         self.assertTrue(any("derived" in warning for warning in result["warnings"]))
         self.assertEqual(resume(self.root, "algebra")["goal"], "This was saved")
+
+    def test_reliability_pause_survives_invalidation_and_can_resume_without_a_review(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0, "evidence": [self.event(outcome="incorrect")]})
+        save(self.root, "algebra", {"expected_revision": 1, "review_actions": [
+            {"target": "provisional:equations", "action": "pause", "reason": "Learner's choice"}]})
+        save(self.root, "algebra", {"expected_revision": 2, "invalidations": [
+            {"evidence_id": "e1", "reason": "Tutor correction"}]})
+        packet = resume(self.root, "algebra")
+        self.assertEqual(packet["reviews"], [])
+        self.assertEqual(packet["suspensions"], {"provisional:equations": "Learner's choice"})
+        save(self.root, "algebra", {"expected_revision": 3, "mode": "cram", "evidence": [self.event(
+            "e2", at="2026-10-28T10:00:00Z", outcome="incorrect")]})
+        self.assertEqual(resume(self.root, "algebra")["reviews"], [])
+        save(self.root, "algebra", {"expected_revision": 4, "invalidations": [
+            {"evidence_id": "e2", "reason": "Another correction"}], "review_actions": [
+            {"target": "provisional:equations", "action": "resume", "reason": "Return to this target"}]})
+        self.assertEqual(resume(self.root, "algebra")["suspensions"], {})
+        save(self.root, "algebra", {"expected_revision": 5, "evidence": [self.event(
+            "e3", at="2026-10-29T10:00:00Z", outcome="incorrect")]})
+        self.assertFalse(resume(self.root, "algebra")["reviews"][0]["paused"])
+
+    def test_reliability_v1_migrates_in_memory_and_preserves_original_on_upgrade(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0, "evidence": [self.event(outcome="incorrect")]})
+        save(self.root, "algebra", {"expected_revision": 1, "review_actions": [
+            {"target": "provisional:equations", "action": "pause", "reason": "Keep this pause"}]})
+        folder = self.root / "algebra/.learning"
+        path = folder / "state.json"
+        legacy = json.loads(path.read_text(encoding="utf-8"))
+        legacy["format_version"] = 1
+        legacy.pop("suspensions", None)
+        legacy_bytes = (json.dumps(legacy, indent=2) + "\n").encode("utf-8")
+        path.write_bytes(legacy_bytes)
+        graph_bytes = (folder / "graph.json").read_bytes()
+        packet = resume(self.root, "algebra")
+        self.assertEqual(packet["format_version"], 2)
+        self.assertEqual(packet["suspensions"], {"provisional:equations": "Keep this pause"})
+        self.assertEqual(path.read_bytes(), legacy_bytes)
+        self.assertFalse((folder / "state.v1.json").exists())
+        save(self.root, "algebra", {"expected_revision": 2})
+        upgraded = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(upgraded["format_version"], 2)
+        self.assertEqual(upgraded["evidence"], legacy["evidence"])
+        self.assertEqual((folder / "state.v1.json").read_bytes(), legacy_bytes)
+        self.assertEqual((folder / "graph.json").read_bytes(), graph_bytes)
+        with self.assertRaises(LearningError):
+            learn_state._version(upgraded, set(legacy))
+        for bad in ({**upgraded, "format_version": 99}, {key: value for key, value in upgraded.items() if key != "suspensions"}):
+            contents = json.dumps(bad)
+            path.write_text(contents, encoding="utf-8")
+            with self.assertRaises(LearningError):
+                resume(self.root, "algebra")
+            self.assertEqual(path.read_text(encoding="utf-8"), contents)
+
+    def test_reliability_due_reviews_never_escape_the_selected_target_slice(self):
+        initialize(self.root, "algebra")
+        checkpoint = self.checkpoint("n0")
+        checkpoint["targets"] = [f"n{i}" for i in range(8)]
+        save(self.root, "algebra", {"expected_revision": 0,
+            "nodes": {f"n{i}": {"kind": "skill", "label": f"Target {i}"} for i in range(9)},
+            "checkpoint": checkpoint, "evidence": [self.event(target="n8", outcome="incorrect")]})
+        for targets, expected in ((None, []), (["n0"], []), (["n8"], ["n8"])):
+            with self.subTest(targets=targets):
+                packet = resume(self.root, "algebra", targets=targets)
+                self.assertEqual([review["target"] for review in packet["reviews"]], expected)
+                self.assertEqual(packet["omitted"]["due_reviews"], 1 - len(expected))
+                self.assertEqual(packet["checkpoint"], checkpoint)
+                self.assertTrue(all(target in packet["graph"]["nodes"] for target in expected))
+
+    def test_reliability_cram_due_set_is_independent_of_insertion_order(self):
+        due_sets = []
+        events = [self.event("a10"), self.event("b12", target="provisional:units", at="2026-10-27T12:00:00Z"),
+                  self.event("a11", at="2026-10-27T11:00:00Z")]
+        for index, order in enumerate((events, [events[0], events[2], events[1]])):
+            root = self.root / str(index)
+            initialize(root, "algebra")
+            save(root, "algebra", {"expected_revision": 0, "mode": "cram", "evidence": order})
+            packet = resume(root, "algebra", now=datetime(2026, 10, 27, 13, tzinfo=timezone.utc))
+            due_sets.append([review["target"] for review in packet["reviews"]])
+            self.assertEqual(len(resume(root, "algebra")["reviews"]), 2)
+        self.assertEqual(due_sets, [["provisional:equations"], ["provisional:equations"]])
+
+    def test_reliability_future_evidence_is_refused_before_writes(self):
+        initialize(self.root, "algebra")
+        folder = self.root / "algebra/.learning"
+        before = {name: (folder / name).read_bytes() for name in ("graph.json", "state.json")}
+        now = datetime(2026, 10, 27, 10, tzinfo=timezone.utc)
+        with self.assertRaisesRegex(LearningError, "future|ahead"):
+            save(self.root, "algebra", {"expected_revision": 0,
+                "nodes": {"new": {"kind": "skill", "label": "Must not be written"}},
+                "evidence": [self.event(at="2026-10-27T10:06:00Z")]}, now=now)
+        for name, contents in before.items():
+            self.assertEqual((folder / name).read_bytes(), contents)
+        save(self.root, "algebra", {"expected_revision": 0, "evidence": [self.event(at="2026-10-27T10:05:00Z")]}, now=now)
+
+    def test_reliability_reviews_are_recomputed_on_read_without_writing(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0, "evidence": [self.event(outcome="incorrect")]})
+        path = self.root / "algebra/.learning/state.json"
+        stored = json.loads(path.read_text(encoding="utf-8"))
+        stored["reviews"][0].update(due_at="2099-01-01T00:00:00Z", interval_days=30, reason="Forged cache")
+        contents = json.dumps(stored)
+        path.write_text(contents, encoding="utf-8")
+        packet = resume(self.root, "algebra")
+        self.assertEqual(packet["reviews"][0]["due_at"], "2026-10-28T10:00:00+00:00")
+        self.assertEqual(packet["reviews"][0]["interval_days"], 1)
+        self.assertNotEqual(packet["reviews"][0]["reason"], "Forged cache")
+        self.assertEqual(path.read_text(encoding="utf-8"), contents)
+
+    def test_reliability_stdin_limit_counts_utf8_bytes(self):
+        initialize(self.root, "algebra")
+        helper = Path(__file__).resolve().parents[1] / "scripts/learn_state.py"
+        payload = json.dumps({"expected_revision": 0, "goal": "é" * 9_000_000}, ensure_ascii=False).encode("utf-8")
+        result = subprocess.run([sys.executable, "-B", str(helper), "save", "--root", str(self.root),
+                                 "--subject", "algebra", "--input", "-"], input=payload, capture_output=True, check=False)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("16 MiB", json.loads(result.stderr.decode("utf-8"))["error"])
+
+    def test_reliability_oversized_profiles_are_refused_without_overwriting(self):
+        initialize(self.root, "algebra")
+        path = self.root / "LEARNER.md"
+        with path.open("wb") as stream:
+            stream.write(b"<!-- adaptive-learn:1 -->\n")
+            stream.truncate(16 * 1024 * 1024 + 1)
+        for operation in (initialize, resume):
+            with self.assertRaisesRegex(LearningError, "16 MiB"):
+                operation(self.root, "algebra")
+        self.assertEqual(path.stat().st_size, 16 * 1024 * 1024 + 1)
+
+    def test_reliability_missing_ignore_rules_are_reported_without_restoring(self):
+        initialize(self.root, "algebra")
+        path = self.root / ".gitignore"
+        path.unlink()
+        saved = save(self.root, "algebra", {"expected_revision": 0})
+        packet = resume(self.root, "algebra")
+        self.assertTrue(any("ignore" in warning.lower() for warning in saved["warnings"]))
+        self.assertTrue(any("ignore" in warning.lower() for warning in packet["warnings"]))
+        self.assertFalse(path.exists())
+
+    def legacy_state(self):
+        initialize(self.root, "algebra")
+        path = self.root / "algebra/.learning/state.json"
+        state = json.loads(path.read_text(encoding="utf-8"))
+        state["format_version"] = 1
+        state.pop("suspensions")
+        contents = ("\ufeff" + json.dumps(state, indent=2).replace("\n", "\r\n") + "\r\n").encode("utf-8")
+        path.write_bytes(contents)
+        return path, contents
+
+    def test_reliability_interrupted_upgrade_preserves_v1_backup_and_retries(self):
+        path, original = self.legacy_state()
+        real_replace = os.replace
+
+        def interrupted(source, destination):
+            if Path(destination).name == "state.json":
+                raise OSError("Interrupted migration")
+            return real_replace(source, destination)
+
+        with patch("os.replace", side_effect=interrupted):
+            with self.assertRaisesRegex(LearningError, "state.v1.json.*unconfirmed"):
+                save(self.root, "algebra", {"expected_revision": 0})
+        self.assertEqual(path.read_bytes(), original)
+        self.assertEqual((path.parent / "state.v1.json").read_bytes(), original)
+        self.assertEqual(resume(self.root, "algebra")["revision"], 0)
+        self.assertEqual(save(self.root, "algebra", {"expected_revision": 0})["revision"], 1)
+        self.assertEqual(json.loads(path.read_text(encoding="utf-8"))["format_version"], 2)
+
+    def test_reliability_conflicting_migration_backup_is_not_overwritten(self):
+        path, original = self.legacy_state()
+        backup = path.parent / "state.v1.json"
+        backup.write_bytes(b"Unfamiliar operator backup")
+        graph = path.parent / "graph.json"
+        before_graph = graph.read_bytes()
+        with self.assertRaisesRegex(LearningError, "backup"):
+            save(self.root, "algebra", {"expected_revision": 0,
+                "nodes": {"new": {"kind": "skill", "label": "Not committed"}}})
+        self.assertEqual(path.read_bytes(), original)
+        self.assertEqual(graph.read_bytes(), before_graph)
+        self.assertEqual(backup.read_bytes(), b"Unfamiliar operator backup")
+
+    def test_reliability_invalid_suspensions_are_rejected_without_writes(self):
+        initialize(self.root, "algebra")
+        path = self.root / "algebra/.learning/state.json"
+        original = json.loads(path.read_text(encoding="utf-8"))
+        for suspensions in ({"ghost": "Dangling target"}, {"provisional:equations": None}, []):
+            contents = json.dumps({**original, "suspensions": suspensions})
+            path.write_text(contents, encoding="utf-8")
+            with self.assertRaises(LearningError):
+                resume(self.root, "algebra")
+            self.assertEqual(path.read_text(encoding="utf-8"), contents)
+
+    def test_reliability_withdrawal_keeps_pause_until_explicitly_resumed(self):
+        initialize(self.root, "algebra")
+        save(self.root, "algebra", {"expected_revision": 0,
+            "nodes": {"old": {"kind": "skill", "label": "Withdrawn target"}},
+            "evidence": [self.event(target="old", outcome="incorrect")]})
+        save(self.root, "algebra", {"expected_revision": 1, "review_actions": [
+            {"target": "old", "action": "pause", "reason": "Preserve this decision"}]})
+        save(self.root, "algebra", {"expected_revision": 2, "withdrawals": [
+            {"id": "old", "reason": "Tutor correction", "replacement": None}]})
+        packet = resume(self.root, "algebra", targets=["old"])
+        self.assertEqual(packet["reviews"], [])
+        self.assertEqual(packet["suspensions"], {"old": "Preserve this decision"})
+        save(self.root, "algebra", {"expected_revision": 3, "review_actions": [
+            {"target": "old", "action": "resume", "reason": "Clear the standing pause"}]})
+        self.assertEqual(resume(self.root, "algebra", targets=["old"])["suspensions"], {})
+
+    def test_reliability_future_clock_slack_does_not_count_as_intervening_work_yet(self):
+        initialize(self.root, "algebra")
+        now = datetime(2026, 10, 27, 10, tzinfo=timezone.utc)
+        save(self.root, "algebra", {"expected_revision": 0, "mode": "cram", "evidence": [self.event()]}, now=now)
+        save(self.root, "algebra", {"expected_revision": 1, "evidence": [self.event(
+            "later", target="provisional:units", at="2026-10-27T10:04:00Z")]}, now=now)
+        self.assertEqual(resume(self.root, "algebra", now=now)["reviews"], [])
+        packet = resume(self.root, "algebra", now=datetime(2026, 10, 27, 10, 5, tzinfo=timezone.utc))
+        self.assertEqual([review["target"] for review in packet["reviews"]], ["provisional:equations"])
+
+    def test_reliability_suspension_slices_stay_bounded_and_keep_checkpoint(self):
+        initialize(self.root, "algebra")
+        checkpoint = self.checkpoint("n0")
+        targets = [f"n{i}" for i in range(12)]
+        save(self.root, "algebra", {"expected_revision": 0, "checkpoint": checkpoint,
+            "nodes": {target: {"kind": "skill", "label": target,
+                               "qualifications": [] if target == "n0" else ["Optional context. " * 40]}
+                      for target in targets},
+            "plan": [{"target": target, "action": "Later work", "status": "upcoming"} for target in targets],
+            "evidence": [self.event(f"e{i}", target=target, outcome="incorrect") for i, target in enumerate(targets)]})
+        save(self.root, "algebra", {"expected_revision": 1, "review_actions": [
+            {"target": target, "action": "pause", "reason": "Learner's standing choice. " * 30} for target in targets]})
+        path = self.root / "algebra/.learning/state.json"
+        original = path.read_bytes()
+        for budget in (2048, 4096, 8192):
+            packet = resume(self.root, "algebra", targets=targets, max_chars=budget)
+            self.assertLessEqual(len(json.dumps(packet, ensure_ascii=False, indent=2) + "\n"), budget)
+            self.assertEqual(packet["checkpoint"], checkpoint)
+            self.assertTrue(set(packet["suspensions"]) <= set(packet["selected_targets"]))
+            self.assertTrue(all(item["target"] in packet["selected_targets"] for item in packet["plan"] + packet["reviews"]))
+            self.assertTrue(all(count >= 0 for count in packet["omitted"].values()))
+            self.assertEqual(packet["omitted"]["suspensions"] + len(packet["suspensions"]), len(targets))
+        self.assertEqual(path.read_bytes(), original)
 
     def test_active_task_does_not_pull_in_unrelated_recent_targets_by_default(self):
         initialize(self.root, "algebra")

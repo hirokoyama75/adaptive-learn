@@ -1,0 +1,18 @@
+{
+  "kind": "single explicit time-budget requirement clarification, not reproduced original-skill failure",
+  "before_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+  "after_sha256": "889afe7b8245c4a47e8436064e2e0b5aceb63d6a8e152f28b18d79a82857a5eb",
+  "decision_sha256": "a173847fa01e90d157ce4e651d5f527ab009bfe99c1659bcd7ecb078399f5968",
+  "actual_core_matches_after": true,
+  "confirmation_order": [
+    "C1-chat",
+    "C1-before",
+    "C1-after",
+    "C2-after",
+    "C2-chat",
+    "C2-before",
+    "C3-before",
+    "C3-after",
+    "C3-chat"
+  ]
+}

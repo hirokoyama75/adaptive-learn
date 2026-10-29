@@ -1,0 +1,24 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "L-01",
+  "run": 1,
+  "judge": "synthetic fixture judge (authored test data; not a calibrated judge)",
+  "transcript": "transcript.md",
+  "must": [
+    {"index": 0, "observed": true, "turns": [1], "quote": "I don't know where to start with this one: 3x + 2 = 14."},
+    {"index": 1, "observed": false},
+    {"index": 2, "observed": false},
+    {"index": 3, "observed": false}
+  ],
+  "must_not": [
+    {"index": 0, "violation": false},
+    {"index": 1, "violation": false},
+    {"index": 2, "violation": false},
+    {"index": 3, "violation": false}
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Authored fixture: the quoted evidence is a learner line, not an assistant message. Not a model run."
+}

@@ -1,0 +1,28 @@
+{
+  "run": "w107-tutor",
+  "phase": "development",
+  "stage": "pre",
+  "session": "ses_e79b73cdcffefbdwrC2MS2YS37",
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "arm": "tutor",
+  "raw_sha256": "6fdcff0aa9f4b8d7e126298167e186d49a4d7e140d0f134e0fa60fffefa83224",
+  "prompt_sha256": "3c1ad7052049164584e70dab9ecd2e5e50a52f56ca978a042f86b9d75279751c",
+  "prompt_characters": 830,
+  "reply_characters": 382,
+  "grade": {
+    "valid": true,
+    "correct": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "trace_correct": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "capture": "actual tool-returned reply, manually preserved by orchestrator; internal tool traces unavailable"
+}

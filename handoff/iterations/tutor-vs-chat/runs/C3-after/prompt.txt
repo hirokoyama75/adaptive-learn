@@ -1,0 +1,4 @@
+Read handoff/iterations/tutor-vs-chat/source/revised.md and apply its full tutoring instructions. The primary mathematics playbook is handoff/iterations/tutor-vs-chat/source/math-logic.md; read it too. Do not read any other files or benchmarks.
+You may use Python to check mathematics, but may not inspect other files, use the browser, consult external sources, delegate, or write files. Only claim checks you actually performed. Respond directly to the student; do not discuss the evaluation or produce a report about your process.
+
+Two minutes remain. I solved 3x+6=18 by dividing both sides by 3 first: x+2=6, then x=4. My worksheet subtracts 6 before dividing. Is my order invalid, or can we move on? I'm using this for independent practice, not a graded submission. Keep it session-only.

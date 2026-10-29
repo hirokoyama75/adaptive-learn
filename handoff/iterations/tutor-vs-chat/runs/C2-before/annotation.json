@@ -1,0 +1,52 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "C2",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "P(second red | first red) = 2/4"
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "your number is right but your stated reason is wrong"
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "One quick check before you go"
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": false
+    },
+    {
+      "index": 1,
+      "violation": false
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured. Opening probability labels are imprecise, though the following conditional/unconditional distinction and final 3/10 are correct; retain that clarity concern."
+}

@@ -1,0 +1,57 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "D1",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "So C preserves b and erases a."
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "your two pairs are right"
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Before computing, predict the preimage count"
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": true,
+      "turns": [
+        1
+      ],
+      "quote": "Undo first S: (2, y)",
+      "note": "After undoing C, the pair is (2,y); undoing the first swap yields (y,2), not (2,y). The earlier forward trace was correct."
+    },
+    {
+      "index": 1,
+      "violation": false
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured."
+}

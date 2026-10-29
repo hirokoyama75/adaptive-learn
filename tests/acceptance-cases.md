@@ -1,6 +1,6 @@
 # Worked acceptance cases
 
-These are concrete solutions to the 25 design acceptance cases, identified as AC-01 through AC-25. They are **worked design walkthroughs, not transcripts from executed live tutoring sessions**. Sample wording is illustrative; equivalent concise responses meeting the criteria are valid.
+These are concrete solutions to the 26 design acceptance cases, identified as AC-01 through AC-26. They are **worked design walkthroughs, not transcripts from executed live tutoring sessions**. Sample wording is illustrative; equivalent concise responses meeting the criteria are valid.
 
 For a future live check, load the skill in a fresh chat with the given setup, compare actual behavior with the response/action and record expectations, and save the observed result separately. Do not mark a learning outcome as validated just because a file test passes. Automated mechanical support lives in [test_state.py](test_state.py); it cannot validate the tutor's judgment or the truthfulness of supplied evidence.
 
@@ -153,3 +153,9 @@ For a future live check, load the skill in a fresh chat with the given setup, co
 - **Given:** Seventy eligible due targets; learner agrees to at most two reviews before returning to current coursework.
 - **Response/action:** Offer two high-value relevant suggestions and disclose that more remain. Let the learner suspend a low-relevance target or choose to continue coursework without clearing the backlog.
 - **Record/check:** One current obligation per target, explicit remaining count, suspension respected across eligible new evidence, no compulsory catch-up. Automated support: bounded-resume selection, review merge/spacing, and suspension tests. The helper does not measure time spent or force the two reviews.
+
+## AC-26 — Time budget, not a turn quota
+
+- **Given:** An eight-minute study block; the learner now reports two minutes left. Their answer and most work check, but one explanation confuses the original variable with the current slot after a swap.
+- **Response/action:** Preserve the checked work, repair the specific distinction with a short trace or local question, and use a changed case if the remaining budget supports it. More useful back-and-forth is allowed; do not optimize for a fixed number of messages. Adjust scope to the reported update, counting reading, thinking, answering, feedback, and waiting, rather than repeating unrelated tasks.
+- **Record/check:** No invented elapsed/read-time measurements, ability inference from typing latency, full-battery restart, or claim that the whole target was learned before time expired. At the deadline, state what remains unverified. This is expected behavior, not a measured human learning-time result.

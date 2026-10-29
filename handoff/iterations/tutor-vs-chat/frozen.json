@@ -1,0 +1,20 @@
+{
+  "kind": "frozen synthetic tutor-behavior comparison",
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "sha256": {
+    "PROTOCOL.md": "dd19316b725f5d815a6d229f6fadc9413f23e8b93cbac46b4a809935bb66f35d",
+    "development.json": "703007c0872f999ea3f30b68d22aea26cddb1349f48394f99e6d0c3881dcfa67",
+    "confirmation.json": "adc92e62e3034098e4c1f3cba0e62a548dea462960e0a3280949b292ce7bae4c",
+    "check.py": "1ea709e1d8c18da5b796721342d7ea03725daab842ed7e6523df27a08df4fb21",
+    "source/original.md": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+    "source/math-logic.md": "6dd38f93a3d3e5bea6662a84b52c6b0d3efbe3c5a34f20ec2f929cae7f4eba92"
+  },
+  "development_order": [
+    "D1-before",
+    "D1-chat",
+    "D2-chat",
+    "D2-before",
+    "D3-before",
+    "D3-chat"
+  ]
+}

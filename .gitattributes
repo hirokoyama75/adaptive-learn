@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+# Archived evidence is byte-hashed; preserve original line endings/Markdown spacing.
+handoff/** -text -whitespace
+research.md -text -whitespace
+tests/live/holdout.json -text -whitespace

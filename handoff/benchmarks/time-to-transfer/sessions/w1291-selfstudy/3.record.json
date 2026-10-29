@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T07:08:33.909713+00:00",
+  "monotonic_ns": 8696722783700,
+  "run": "w1291-selfstudy",
+  "index": 3,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "0534c93e9b179024bd4d0e296b610c9eb8ff96a58312837f2fa58a79221572ec",
+  "material_sha256": "8eb4fd03d0b73b2c7b372da4884ef47dc9405960d695f3c1eb0a266f132bea49",
+  "session": "ses_e7987f3b9ffeJtcA2Do1nsSkSq",
+  "capture_utc": "2026-10-29T07:11:14.711405+00:00",
+  "launch_to_capture_seconds": 160.8016885,
+  "raw_sha256": "a28b519ba55edecd8d511461b003313888398442713e3632508a38fa1f6a6d73",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": true,
+      "quote": "Undo from the end using inverses: S is self-inverse, N^-1(u,v)=(u-v,v), and W^-1(u,v)=(v-3u,u)."
+    },
+    "loss": {
+      "ok": true,
+      "quote": "later reversible moves cannot recover it."
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "both programs compute (x+4y,y): W,S,N gives (x+3y,y) then adds y, while four N operations add 4y."
+    }
+  },
+  "qualifies": true
+}

@@ -1,0 +1,52 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "C2",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "**The draws are dependent, not independent.**"
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "The calculation was fine; the justification was not."
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "once you can state that distinction in one sentence"
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": false
+    },
+    {
+      "index": 1,
+      "violation": false
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured."
+}

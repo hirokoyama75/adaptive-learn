@@ -1,0 +1,3017 @@
+{
+  "format": "adaptive-learn-publication-archive",
+  "version": 1,
+  "file_count": 429,
+  "note": "Preserved original project evidence. Source and published hashes differ only for the listed publication context/redactions. Local originals and planning files are not modified.",
+  "files": [
+    {
+      "path": "handoff/AGENT_BRIEF.md",
+      "source_sha256": "b0ceb37a862a19d2c1f1a02e1e383f18306e90486bb5d26773a442a50dfc5d96",
+      "published_sha256": "b0ceb37a862a19d2c1f1a02e1e383f18306e90486bb5d26773a442a50dfc5d96",
+      "bytes": 5568,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/BASELINE.md",
+      "source_sha256": "5ad8fab0fd1aaed143248e79498e8281272f4bdf958924603c21a29782c7eaaf",
+      "published_sha256": "5ad8fab0fd1aaed143248e79498e8281272f4bdf958924603c21a29782c7eaaf",
+      "bytes": 7765,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/all-results.json",
+      "source_sha256": "37555e7b8dc190a4324fe7460ea8c6a8e811031ca0ec7c9fd034329a63430c6b",
+      "published_sha256": "37555e7b8dc190a4324fe7460ea8c6a8e811031ca0ec7c9fd034329a63430c6b",
+      "bytes": 6447,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/benchmark.py",
+      "source_sha256": "189065c51fb71bd2ed003f571b5388c68ce805dd84db8e11a53f55fa2d9dba8b",
+      "published_sha256": "189065c51fb71bd2ed003f571b5388c68ce805dd84db8e11a53f55fa2d9dba8b",
+      "bytes": 13991,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/confirmation-results.json",
+      "source_sha256": "4f10ccc756765df7c24e708217d7359b70f92fde9a5b535398e4e7dc21a6b21c",
+      "published_sha256": "4f10ccc756765df7c24e708217d7359b70f92fde9a5b535398e4e7dc21a6b21c",
+      "bytes": 3362,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/development-results.json",
+      "source_sha256": "b7325e10066c22b216f612cdc4485ebd1905caaf7b8d53637fe45c7efacad54f",
+      "published_sha256": "b7325e10066c22b216f612cdc4485ebd1905caaf7b8d53637fe45c7efacad54f",
+      "bytes": 3347,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/DEVELOPMENT_DECISION.md",
+      "source_sha256": "feb30b724e3fb149ad7443b1d5ca86147e36ece09eb8b74ee667ad8bb14a1e98",
+      "published_sha256": "feb30b724e3fb149ad7443b1d5ca86147e36ece09eb8b74ee667ad8bb14a1e98",
+      "bytes": 1741,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/frozen.json",
+      "source_sha256": "117b601168260eb0c73e1a88223c2396bb52216d35febeedea98a614f222b472",
+      "published_sha256": "117b601168260eb0c73e1a88223c2396bb52216d35febeedea98a614f222b472",
+      "bytes": 11614,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/PROTOCOL.md",
+      "source_sha256": "7fc750e2931f84837aac1b45ca9bad21e1e73728271ae22445d5bc58b9318925",
+      "published_sha256": "7fc750e2931f84837aac1b45ca9bad21e1e73728271ae22445d5bc58b9318925",
+      "bytes": 4650,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-control-post.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-control-practice1.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-control-practice2.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-control-pre.txt",
+      "source_sha256": "894737924cf75f0c52d2b8e9c8a642c83a5b442b79397633b20f41a564471ba2",
+      "published_sha256": "894737924cf75f0c52d2b8e9c8a642c83a5b442b79397633b20f41a564471ba2",
+      "bytes": 335,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-selfstudy-post.txt",
+      "source_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "published_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "bytes": 554,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-selfstudy-practice1.txt",
+      "source_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "published_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "bytes": 85,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-selfstudy-practice2.txt",
+      "source_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "published_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-selfstudy-pre.txt",
+      "source_sha256": "41fb0ea1cf35f08de57a7277cd5c57d6f97dc3aa8511613a080f076b1ea929c1",
+      "published_sha256": "41fb0ea1cf35f08de57a7277cd5c57d6f97dc3aa8511613a080f076b1ea929c1",
+      "bytes": 336,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-tutor-post.txt",
+      "source_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "published_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "bytes": 554,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-tutor-practice1.txt",
+      "source_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "published_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "bytes": 85,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-tutor-practice2.txt",
+      "source_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "published_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w107-tutor-pre.txt",
+      "source_sha256": "6fdcff0aa9f4b8d7e126298167e186d49a4d7e140d0f134e0fa60fffefa83224",
+      "published_sha256": "6fdcff0aa9f4b8d7e126298167e186d49a4d7e140d0f134e0fa60fffefa83224",
+      "bytes": 384,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-control-post.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-control-practice1.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-control-practice2.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-control-pre.txt",
+      "source_sha256": "b69e2c3a44c9e94294d51d34c481434175a776d8ff72b141e7420e552fb68885",
+      "published_sha256": "b69e2c3a44c9e94294d51d34c481434175a776d8ff72b141e7420e552fb68885",
+      "bytes": 320,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-selfstudy-post.txt",
+      "source_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "published_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "bytes": 558,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-selfstudy-practice1.txt",
+      "source_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "published_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-selfstudy-practice2.txt",
+      "source_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "published_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-selfstudy-pre.txt",
+      "source_sha256": "e8b1a9a08e6212602d501bcf8928c330cf55be3358377fd409201de48d977cf1",
+      "published_sha256": "e8b1a9a08e6212602d501bcf8928c330cf55be3358377fd409201de48d977cf1",
+      "bytes": 352,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-tutor-post.txt",
+      "source_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "published_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "bytes": 558,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-tutor-practice1.txt",
+      "source_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "published_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-tutor-practice2.txt",
+      "source_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "published_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w211-tutor-pre.txt",
+      "source_sha256": "c884724f478ab72b2518ebafbf0c36c095df75ad7d28855ea35302fb7ab8bed7",
+      "published_sha256": "c884724f478ab72b2518ebafbf0c36c095df75ad7d28855ea35302fb7ab8bed7",
+      "bytes": 313,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-control-post.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-control-practice1.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-control-practice2.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-control-pre.txt",
+      "source_sha256": "a858e6e51ef1ae0186da0985d4e6f7a3cc3b0b3b5529b7ef17afd720113e1ff9",
+      "published_sha256": "a858e6e51ef1ae0186da0985d4e6f7a3cc3b0b3b5529b7ef17afd720113e1ff9",
+      "bytes": 367,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-selfstudy-post.txt",
+      "source_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "published_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "bytes": 555,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-selfstudy-practice1.txt",
+      "source_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "published_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-selfstudy-practice2.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-selfstudy-pre.txt",
+      "source_sha256": "40ecdbf18108e6b7dc66b295d006de10e8368bcd898d6f5fa6224d8cf81d9c9b",
+      "published_sha256": "40ecdbf18108e6b7dc66b295d006de10e8368bcd898d6f5fa6224d8cf81d9c9b",
+      "bytes": 246,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-tutor-post.txt",
+      "source_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "published_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "bytes": 555,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-tutor-practice1.txt",
+      "source_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "published_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-tutor-practice2.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w43-tutor-pre.txt",
+      "source_sha256": "95c73c7c122c647b2faeb059bfd7ed9dcdfa950df3be009c3bd2f60257678143",
+      "published_sha256": "95c73c7c122c647b2faeb059bfd7ed9dcdfa950df3be009c3bd2f60257678143",
+      "bytes": 500,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-control-post.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-control-practice1.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-control-practice2.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-control-pre.txt",
+      "source_sha256": "f3a50e10e3f27f49af80c792bf1bb4e9e25ae7b416f45936162241b90bb0eb4a",
+      "published_sha256": "f3a50e10e3f27f49af80c792bf1bb4e9e25ae7b416f45936162241b90bb0eb4a",
+      "bytes": 319,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-selfstudy-post.txt",
+      "source_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "published_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "bytes": 550,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-selfstudy-practice1.txt",
+      "source_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "published_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-selfstudy-practice2.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-selfstudy-pre.txt",
+      "source_sha256": "c7a75ecbdf1920a4d99d494c50e5369b4e1f0a7b582fe2d0feee58ec0261df72",
+      "published_sha256": "c7a75ecbdf1920a4d99d494c50e5369b4e1f0a7b582fe2d0feee58ec0261df72",
+      "bytes": 352,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-tutor-post.txt",
+      "source_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "published_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "bytes": 550,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-tutor-practice1.txt",
+      "source_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "published_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-tutor-practice2.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/raw/w509-tutor-pre.txt",
+      "source_sha256": "255bb69e02e0bf488851add8960bc0d97c265e58e8e2412bb8029ad3c2da4ce1",
+      "published_sha256": "255bb69e02e0bf488851add8960bc0d97c265e58e8e2412bb8029ad3c2da4ce1",
+      "bytes": 356,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/record.py",
+      "source_sha256": "68b6d96f032d0a87f307b56790549533d84f38fa589acc239ebe5576f6497202",
+      "published_sha256": "68b6d96f032d0a87f307b56790549533d84f38fa589acc239ebe5576f6497202",
+      "bytes": 6892,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/RESULTS.md",
+      "source_sha256": "f1414f8ed0b27da214659f64f05a9ae976c4e7bd67630a59b448b128a5956f48",
+      "published_sha256": "f1414f8ed0b27da214659f64f05a9ae976c4e7bd67630a59b448b128a5956f48",
+      "bytes": 11894,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/post.json",
+      "source_sha256": "ad03aac4e45d971009e73075d3b451a7ecb964d3f4b5416d2a1be13fc3c849f3",
+      "published_sha256": "ad03aac4e45d971009e73075d3b451a7ecb964d3f4b5416d2a1be13fc3c849f3",
+      "bytes": 873,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/post.prompt.txt",
+      "source_sha256": "947607baf051098cb9d760247c8a34ace564cbaea3147d68e2c4ec65c85e622a",
+      "published_sha256": "947607baf051098cb9d760247c8a34ace564cbaea3147d68e2c4ec65c85e622a",
+      "bytes": 1411,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/post.reply.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/practice1.json",
+      "source_sha256": "a06e12bf0aecd6845584126c3c018ecd7c7844ee48cfc32e2a569f3a271cb917",
+      "published_sha256": "a06e12bf0aecd6845584126c3c018ecd7c7844ee48cfc32e2a569f3a271cb917",
+      "bytes": 647,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/practice1.prompt.txt",
+      "source_sha256": "ec7f18638843f9edfd953d54d460b40e8ca38fd5cc5d638950b8b8006365223b",
+      "published_sha256": "ec7f18638843f9edfd953d54d460b40e8ca38fd5cc5d638950b8b8006365223b",
+      "bytes": 610,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/practice1.reply.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/practice2.json",
+      "source_sha256": "a83ce33e6539f4b1c99638ffcd34869b735c0dfebea0b69860dd2dc328085ac3",
+      "published_sha256": "a83ce33e6539f4b1c99638ffcd34869b735c0dfebea0b69860dd2dc328085ac3",
+      "bytes": 646,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/practice2.prompt.txt",
+      "source_sha256": "3f7869c77df0ff413ec3d5610b439d7442acb9d359dfd5c15d405c6e32909368",
+      "published_sha256": "3f7869c77df0ff413ec3d5610b439d7442acb9d359dfd5c15d405c6e32909368",
+      "bytes": 732,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/practice2.reply.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/pre.json",
+      "source_sha256": "3b1366fba9c4662820c5bf3c8eb9cceaead1771b723dc44633072b86ad4bcc2a",
+      "published_sha256": "3b1366fba9c4662820c5bf3c8eb9cceaead1771b723dc44633072b86ad4bcc2a",
+      "bytes": 720,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/pre.prompt.txt",
+      "source_sha256": "48567dd502a8b08e48842ee635c6dd6bc2994467186d15d6b7698c2ed4b8cba4",
+      "published_sha256": "48567dd502a8b08e48842ee635c6dd6bc2994467186d15d6b7698c2ed4b8cba4",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-control/pre.reply.txt",
+      "source_sha256": "894737924cf75f0c52d2b8e9c8a642c83a5b442b79397633b20f41a564471ba2",
+      "published_sha256": "894737924cf75f0c52d2b8e9c8a642c83a5b442b79397633b20f41a564471ba2",
+      "bytes": 335,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/post.json",
+      "source_sha256": "4ea165f7b72b382f5eef5f68624fd88014d14b9d743e50f1aaa23a3a78264610",
+      "published_sha256": "4ea165f7b72b382f5eef5f68624fd88014d14b9d743e50f1aaa23a3a78264610",
+      "bytes": 862,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/post.prompt.txt",
+      "source_sha256": "0d8fd4ca356792fe814db213ce575faca731db168582de9bd7d87340a1ef0509",
+      "published_sha256": "0d8fd4ca356792fe814db213ce575faca731db168582de9bd7d87340a1ef0509",
+      "bytes": 1392,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/post.reply.txt",
+      "source_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "published_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "bytes": 554,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/practice1.json",
+      "source_sha256": "445d149bdfe08ec91204f33f938cebc48afc5c80aac0acd16435b92ce4949e5f",
+      "published_sha256": "445d149bdfe08ec91204f33f938cebc48afc5c80aac0acd16435b92ce4949e5f",
+      "bytes": 650,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/practice1.prompt.txt",
+      "source_sha256": "10de3e0d5a6a589472f1e2cd33d034ecd23ecc2f43286b5bd5c4f036e5b7bf0d",
+      "published_sha256": "10de3e0d5a6a589472f1e2cd33d034ecd23ecc2f43286b5bd5c4f036e5b7bf0d",
+      "bytes": 1540,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/practice1.reply.txt",
+      "source_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "published_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "bytes": 85,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/practice2.json",
+      "source_sha256": "c6a5606cd37ce0ded7126049d1c4625d6aa1d9ecbbc684f2eed06c566af15995",
+      "published_sha256": "c6a5606cd37ce0ded7126049d1c4625d6aa1d9ecbbc684f2eed06c566af15995",
+      "bytes": 649,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/practice2.prompt.txt",
+      "source_sha256": "274ee52dde8bcfa3246bffd26982577db068265dc820037489733d8910fa0b7f",
+      "published_sha256": "274ee52dde8bcfa3246bffd26982577db068265dc820037489733d8910fa0b7f",
+      "bytes": 758,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/practice2.reply.txt",
+      "source_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "published_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/pre.json",
+      "source_sha256": "805156c355570c9e151b948799f570145cfa0cfc6cf65526076da4b9b742eebe",
+      "published_sha256": "805156c355570c9e151b948799f570145cfa0cfc6cf65526076da4b9b742eebe",
+      "bytes": 724,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/pre.prompt.txt",
+      "source_sha256": "48567dd502a8b08e48842ee635c6dd6bc2994467186d15d6b7698c2ed4b8cba4",
+      "published_sha256": "48567dd502a8b08e48842ee635c6dd6bc2994467186d15d6b7698c2ed4b8cba4",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-selfstudy/pre.reply.txt",
+      "source_sha256": "41fb0ea1cf35f08de57a7277cd5c57d6f97dc3aa8511613a080f076b1ea929c1",
+      "published_sha256": "41fb0ea1cf35f08de57a7277cd5c57d6f97dc3aa8511613a080f076b1ea929c1",
+      "bytes": 336,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/post.json",
+      "source_sha256": "127a1a3fe781d129f5f04358a9460caa0d0676c0de27965e1d30fe4826016c89",
+      "published_sha256": "127a1a3fe781d129f5f04358a9460caa0d0676c0de27965e1d30fe4826016c89",
+      "bytes": 854,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/post.prompt.txt",
+      "source_sha256": "1c4e6b1e3686687e4fdb1a8cc07bcee1d4162bc6d89a82b2faec33b79114ef07",
+      "published_sha256": "1c4e6b1e3686687e4fdb1a8cc07bcee1d4162bc6d89a82b2faec33b79114ef07",
+      "bytes": 1463,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/post.reply.txt",
+      "source_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "published_sha256": "a0ac1c9cc18b7bdb37e5d2f06b7457395b8c7ab50303890e037e573b2202c642",
+      "bytes": 554,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/practice1.json",
+      "source_sha256": "4558a3125c643f4ac17e6168ba0126e57cfd5abac6329b91bb3308472717cc5f",
+      "published_sha256": "4558a3125c643f4ac17e6168ba0126e57cfd5abac6329b91bb3308472717cc5f",
+      "bytes": 642,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/practice1.prompt.txt",
+      "source_sha256": "10de3e0d5a6a589472f1e2cd33d034ecd23ecc2f43286b5bd5c4f036e5b7bf0d",
+      "published_sha256": "10de3e0d5a6a589472f1e2cd33d034ecd23ecc2f43286b5bd5c4f036e5b7bf0d",
+      "bytes": 1540,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/practice1.reply.txt",
+      "source_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "published_sha256": "c6b5f2b8d6eb95a4214408d64abd8b84bd0bde8c91f4a0831b72724cddfbe1fe",
+      "bytes": 85,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/practice2.json",
+      "source_sha256": "e9393a5e6c80481d60b5850e3be0d67479d7442833c2f7399e64e788f83090c4",
+      "published_sha256": "e9393a5e6c80481d60b5850e3be0d67479d7442833c2f7399e64e788f83090c4",
+      "bytes": 641,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/practice2.prompt.txt",
+      "source_sha256": "ec7d5a5bb43ebc38d564d2fb4b4a9705af1d1b0fecdc46681a962bc77fc2993b",
+      "published_sha256": "ec7d5a5bb43ebc38d564d2fb4b4a9705af1d1b0fecdc46681a962bc77fc2993b",
+      "bytes": 829,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/practice2.reply.txt",
+      "source_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "published_sha256": "e90a115f46c2cb77b01ca877a0122319e44a41acd7af8d41daa7186e4c836a75",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/pre.json",
+      "source_sha256": "1f45b0c9b6cc471fbc8aee0ca9e20bc0a84ded10d2cdb04048c9b6f2b32fdca7",
+      "published_sha256": "1f45b0c9b6cc471fbc8aee0ca9e20bc0a84ded10d2cdb04048c9b6f2b32fdca7",
+      "bytes": 716,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/pre.prompt.txt",
+      "source_sha256": "48567dd502a8b08e48842ee635c6dd6bc2994467186d15d6b7698c2ed4b8cba4",
+      "published_sha256": "48567dd502a8b08e48842ee635c6dd6bc2994467186d15d6b7698c2ed4b8cba4",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w107-tutor/pre.reply.txt",
+      "source_sha256": "6fdcff0aa9f4b8d7e126298167e186d49a4d7e140d0f134e0fa60fffefa83224",
+      "published_sha256": "6fdcff0aa9f4b8d7e126298167e186d49a4d7e140d0f134e0fa60fffefa83224",
+      "bytes": 384,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/post.json",
+      "source_sha256": "e2bd4ab3e58684ea2c3b1cff037549d33819218f7a864785ac85a766822fbb92",
+      "published_sha256": "e2bd4ab3e58684ea2c3b1cff037549d33819218f7a864785ac85a766822fbb92",
+      "bytes": 874,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/post.prompt.txt",
+      "source_sha256": "b3020a66d9722b61d5f365085a066980f38bd37422771cc7c587ebf202ffa262",
+      "published_sha256": "b3020a66d9722b61d5f365085a066980f38bd37422771cc7c587ebf202ffa262",
+      "bytes": 1411,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/post.reply.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/practice1.json",
+      "source_sha256": "24b441bf8814b84fd1640cf23937588e9473230525907bd5a4b566830253f0cf",
+      "published_sha256": "24b441bf8814b84fd1640cf23937588e9473230525907bd5a4b566830253f0cf",
+      "bytes": 648,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/practice1.prompt.txt",
+      "source_sha256": "85ce8e2321ebd0c357cd5e9a070f943761bff0003c221381b464363b6b120b8a",
+      "published_sha256": "85ce8e2321ebd0c357cd5e9a070f943761bff0003c221381b464363b6b120b8a",
+      "bytes": 610,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/practice1.reply.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/practice2.json",
+      "source_sha256": "e95092e1c7767e0eaf61966cd8d7e4e6f4f31367c92ebb4069dd315a7e3576c9",
+      "published_sha256": "e95092e1c7767e0eaf61966cd8d7e4e6f4f31367c92ebb4069dd315a7e3576c9",
+      "bytes": 647,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/practice2.prompt.txt",
+      "source_sha256": "0e48b738a39aecc8988809b8b5e0a4773f1fce9d0ecf62d8b1a0cdb93aa0bf81",
+      "published_sha256": "0e48b738a39aecc8988809b8b5e0a4773f1fce9d0ecf62d8b1a0cdb93aa0bf81",
+      "bytes": 732,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/practice2.reply.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/pre.json",
+      "source_sha256": "5b36a17755c5a040382da22e85da3300abc11d5ed55f106dc98317b934b84f9d",
+      "published_sha256": "5b36a17755c5a040382da22e85da3300abc11d5ed55f106dc98317b934b84f9d",
+      "bytes": 720,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/pre.prompt.txt",
+      "source_sha256": "ccca379ba6f71ca913b025188a2a8178185577b733fd984a20d0d835d7e73424",
+      "published_sha256": "ccca379ba6f71ca913b025188a2a8178185577b733fd984a20d0d835d7e73424",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-control/pre.reply.txt",
+      "source_sha256": "b69e2c3a44c9e94294d51d34c481434175a776d8ff72b141e7420e552fb68885",
+      "published_sha256": "b69e2c3a44c9e94294d51d34c481434175a776d8ff72b141e7420e552fb68885",
+      "bytes": 320,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/post.json",
+      "source_sha256": "303244de16205fda18e3784992a630cf40dcb3feafac7db5e38b7c20e1c44b8e",
+      "published_sha256": "303244de16205fda18e3784992a630cf40dcb3feafac7db5e38b7c20e1c44b8e",
+      "bytes": 863,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/post.prompt.txt",
+      "source_sha256": "e53107454898f6b3ed2c27c869e82da26fdf1566d6fffedf91fac501ba5555fe",
+      "published_sha256": "e53107454898f6b3ed2c27c869e82da26fdf1566d6fffedf91fac501ba5555fe",
+      "bytes": 1392,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/post.reply.txt",
+      "source_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "published_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "bytes": 558,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/practice1.json",
+      "source_sha256": "b3d6febd9728d3772d1a4125e79ae251d0ac7055541f77273cbfe59170cc311e",
+      "published_sha256": "b3d6febd9728d3772d1a4125e79ae251d0ac7055541f77273cbfe59170cc311e",
+      "bytes": 651,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/practice1.prompt.txt",
+      "source_sha256": "deff2aea92374f77a4d79d0a1d71a66e69ba70ff9c1638f3443830bfd6c383e2",
+      "published_sha256": "deff2aea92374f77a4d79d0a1d71a66e69ba70ff9c1638f3443830bfd6c383e2",
+      "bytes": 1540,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/practice1.reply.txt",
+      "source_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "published_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/practice2.json",
+      "source_sha256": "fb5d5a7e01c17ab85c0e7ec499d1c3489bca390ba7f77e4648c5a9a3666b9f08",
+      "published_sha256": "fb5d5a7e01c17ab85c0e7ec499d1c3489bca390ba7f77e4648c5a9a3666b9f08",
+      "bytes": 650,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/practice2.prompt.txt",
+      "source_sha256": "3d3b00888f3a5e50ec6f1ed5f033463bd59a0bbbdfdd20939ccc4cc76f47bc2e",
+      "published_sha256": "3d3b00888f3a5e50ec6f1ed5f033463bd59a0bbbdfdd20939ccc4cc76f47bc2e",
+      "bytes": 757,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/practice2.reply.txt",
+      "source_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "published_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/pre.json",
+      "source_sha256": "f84f51a51e2063071138f6d18cd902a9d503168cf7ed7d1f275c55985230684f",
+      "published_sha256": "f84f51a51e2063071138f6d18cd902a9d503168cf7ed7d1f275c55985230684f",
+      "bytes": 724,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/pre.prompt.txt",
+      "source_sha256": "ccca379ba6f71ca913b025188a2a8178185577b733fd984a20d0d835d7e73424",
+      "published_sha256": "ccca379ba6f71ca913b025188a2a8178185577b733fd984a20d0d835d7e73424",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-selfstudy/pre.reply.txt",
+      "source_sha256": "e8b1a9a08e6212602d501bcf8928c330cf55be3358377fd409201de48d977cf1",
+      "published_sha256": "e8b1a9a08e6212602d501bcf8928c330cf55be3358377fd409201de48d977cf1",
+      "bytes": 352,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/post.json",
+      "source_sha256": "7bb88b1c1ba38df585fa2327d56872affd829724fe42b8c6275a74feca008d35",
+      "published_sha256": "7bb88b1c1ba38df585fa2327d56872affd829724fe42b8c6275a74feca008d35",
+      "bytes": 855,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/post.prompt.txt",
+      "source_sha256": "9818a444d6af4df840ebb85c85b5784c555435206de848a2c0ea38f229c54f43",
+      "published_sha256": "9818a444d6af4df840ebb85c85b5784c555435206de848a2c0ea38f229c54f43",
+      "bytes": 1463,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/post.reply.txt",
+      "source_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "published_sha256": "084accf9b7e3bf61923a41626cef4f42ac56cd7adc009b45c3d7658e61a42dd3",
+      "bytes": 558,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/practice1.json",
+      "source_sha256": "8d7abdf7dad2051d6a32655508f51288e6d58d8f759e2c716407f5838274f09a",
+      "published_sha256": "8d7abdf7dad2051d6a32655508f51288e6d58d8f759e2c716407f5838274f09a",
+      "bytes": 643,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/practice1.prompt.txt",
+      "source_sha256": "deff2aea92374f77a4d79d0a1d71a66e69ba70ff9c1638f3443830bfd6c383e2",
+      "published_sha256": "deff2aea92374f77a4d79d0a1d71a66e69ba70ff9c1638f3443830bfd6c383e2",
+      "bytes": 1540,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/practice1.reply.txt",
+      "source_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "published_sha256": "1ec159f4a45000029010435577ae6256395ad2eb665d44bb77eb54b4e7aa01f7",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/practice2.json",
+      "source_sha256": "769e7b61c4cb56861fe6169ca0a2d3ff050d613a8ddaec54de266eb257cbdbf2",
+      "published_sha256": "769e7b61c4cb56861fe6169ca0a2d3ff050d613a8ddaec54de266eb257cbdbf2",
+      "bytes": 642,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/practice2.prompt.txt",
+      "source_sha256": "35471c2b6fa1a5e0a2d6f848965806c71651f9f21aa89756ef3671b12152d1aa",
+      "published_sha256": "35471c2b6fa1a5e0a2d6f848965806c71651f9f21aa89756ef3671b12152d1aa",
+      "bytes": 828,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/practice2.reply.txt",
+      "source_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "published_sha256": "c6638af6cd09c7c184d96e94200c49ef6d70d0ed7ee325d647830dbed9e2eb2b",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/pre.json",
+      "source_sha256": "9ad5ab3325c5e705e0eee5968fa9de775f59c2f32b7b7e4cbfcfed8590933526",
+      "published_sha256": "9ad5ab3325c5e705e0eee5968fa9de775f59c2f32b7b7e4cbfcfed8590933526",
+      "bytes": 716,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/pre.prompt.txt",
+      "source_sha256": "ccca379ba6f71ca913b025188a2a8178185577b733fd984a20d0d835d7e73424",
+      "published_sha256": "ccca379ba6f71ca913b025188a2a8178185577b733fd984a20d0d835d7e73424",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w211-tutor/pre.reply.txt",
+      "source_sha256": "c884724f478ab72b2518ebafbf0c36c095df75ad7d28855ea35302fb7ab8bed7",
+      "published_sha256": "c884724f478ab72b2518ebafbf0c36c095df75ad7d28855ea35302fb7ab8bed7",
+      "bytes": 313,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/post.json",
+      "source_sha256": "b7ede434e2604203270edb9b3cb95380ae5e8a72894d6a60fec3be322190bc35",
+      "published_sha256": "b7ede434e2604203270edb9b3cb95380ae5e8a72894d6a60fec3be322190bc35",
+      "bytes": 872,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/post.prompt.txt",
+      "source_sha256": "9d8c923b1f5821f6e5e7d8b22988bbe46cb0ec6e9077655afc18741605dd0fe0",
+      "published_sha256": "9d8c923b1f5821f6e5e7d8b22988bbe46cb0ec6e9077655afc18741605dd0fe0",
+      "bytes": 1411,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/post.reply.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/practice1.json",
+      "source_sha256": "2830a2ada8c805fdccfa7f67ff83d76bbab736453ba46b505b7291500aae37b9",
+      "published_sha256": "2830a2ada8c805fdccfa7f67ff83d76bbab736453ba46b505b7291500aae37b9",
+      "bytes": 646,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/practice1.prompt.txt",
+      "source_sha256": "d4d07d04ad70c8b455721c67b1564012c92ead64c0da656a0f40249a1f6e5485",
+      "published_sha256": "d4d07d04ad70c8b455721c67b1564012c92ead64c0da656a0f40249a1f6e5485",
+      "bytes": 610,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/practice1.reply.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/practice2.json",
+      "source_sha256": "9517f1cc6e5552e371bcc3d8e9815a873470ce098c99dc4d5340fbce3e6bdd63",
+      "published_sha256": "9517f1cc6e5552e371bcc3d8e9815a873470ce098c99dc4d5340fbce3e6bdd63",
+      "bytes": 645,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/practice2.prompt.txt",
+      "source_sha256": "df7ecfd46c38dbe054493a8f93512d8694bb5ae70821e42beaa6752db18ac863",
+      "published_sha256": "df7ecfd46c38dbe054493a8f93512d8694bb5ae70821e42beaa6752db18ac863",
+      "bytes": 732,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/practice2.reply.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/pre.json",
+      "source_sha256": "db739dd276dd8e45f72535495b51870bd611b5bbef446d4f4b1774e886ee0c1b",
+      "published_sha256": "db739dd276dd8e45f72535495b51870bd611b5bbef446d4f4b1774e886ee0c1b",
+      "bytes": 719,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/pre.prompt.txt",
+      "source_sha256": "6af659025d2ce40e1cce66c0fbba83ce402dd698db9402c00446468ed3e3e48c",
+      "published_sha256": "6af659025d2ce40e1cce66c0fbba83ce402dd698db9402c00446468ed3e3e48c",
+      "bytes": 830,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-control/pre.reply.txt",
+      "source_sha256": "a858e6e51ef1ae0186da0985d4e6f7a3cc3b0b3b5529b7ef17afd720113e1ff9",
+      "published_sha256": "a858e6e51ef1ae0186da0985d4e6f7a3cc3b0b3b5529b7ef17afd720113e1ff9",
+      "bytes": 367,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/post.json",
+      "source_sha256": "430954b552059d761cdc64eb46f2684e89cd3ea61d628ff8b0747de4af815aad",
+      "published_sha256": "430954b552059d761cdc64eb46f2684e89cd3ea61d628ff8b0747de4af815aad",
+      "bytes": 861,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/post.prompt.txt",
+      "source_sha256": "98e206df0b94a74e7cb4541e6dc3c6348099828a1cd3de85db3d95d43349d62f",
+      "published_sha256": "98e206df0b94a74e7cb4541e6dc3c6348099828a1cd3de85db3d95d43349d62f",
+      "bytes": 1392,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/post.reply.txt",
+      "source_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "published_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "bytes": 555,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/practice1.json",
+      "source_sha256": "4f72fbe7129f8d99f751cd91e8a3375867bbf565e38241bafc09134271e59061",
+      "published_sha256": "4f72fbe7129f8d99f751cd91e8a3375867bbf565e38241bafc09134271e59061",
+      "bytes": 649,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/practice1.prompt.txt",
+      "source_sha256": "7ad6294a2cc0a7b8e8d883e5455a3c0fefc3cde56bf70349459adedbf9b7d5ef",
+      "published_sha256": "7ad6294a2cc0a7b8e8d883e5455a3c0fefc3cde56bf70349459adedbf9b7d5ef",
+      "bytes": 1538,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/practice1.reply.txt",
+      "source_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "published_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/practice2.json",
+      "source_sha256": "a07a34cb9d8fbb2d537ee173deb715e9c326b52ae1b9eb641885e653485e13ce",
+      "published_sha256": "a07a34cb9d8fbb2d537ee173deb715e9c326b52ae1b9eb641885e653485e13ce",
+      "bytes": 648,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/practice2.prompt.txt",
+      "source_sha256": "fae39d750b529b2feb431e5fdfdaf1e497114380c47fe5eedbcf0c0a3c3c17fc",
+      "published_sha256": "fae39d750b529b2feb431e5fdfdaf1e497114380c47fe5eedbcf0c0a3c3c17fc",
+      "bytes": 757,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/practice2.reply.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/pre.json",
+      "source_sha256": "71af5ef97a9cce211e651a19db3618a9916893c6b43c06975a1d732dae98ba30",
+      "published_sha256": "71af5ef97a9cce211e651a19db3618a9916893c6b43c06975a1d732dae98ba30",
+      "bytes": 723,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/pre.prompt.txt",
+      "source_sha256": "6af659025d2ce40e1cce66c0fbba83ce402dd698db9402c00446468ed3e3e48c",
+      "published_sha256": "6af659025d2ce40e1cce66c0fbba83ce402dd698db9402c00446468ed3e3e48c",
+      "bytes": 830,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-selfstudy/pre.reply.txt",
+      "source_sha256": "40ecdbf18108e6b7dc66b295d006de10e8368bcd898d6f5fa6224d8cf81d9c9b",
+      "published_sha256": "40ecdbf18108e6b7dc66b295d006de10e8368bcd898d6f5fa6224d8cf81d9c9b",
+      "bytes": 246,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/post.json",
+      "source_sha256": "8c3816aece89ef2cc50ed39a3e5b4ccc795af7cd54eeec122b9a86c25da0664f",
+      "published_sha256": "8c3816aece89ef2cc50ed39a3e5b4ccc795af7cd54eeec122b9a86c25da0664f",
+      "bytes": 853,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/post.prompt.txt",
+      "source_sha256": "7691f56c5f595e5fb3b97f81ae1e24736ced6c703d5b6fd4d2cde76298f22aae",
+      "published_sha256": "7691f56c5f595e5fb3b97f81ae1e24736ced6c703d5b6fd4d2cde76298f22aae",
+      "bytes": 1463,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/post.reply.txt",
+      "source_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "published_sha256": "ed89ac70dfa5776ca420cdd90ad80bf2766d667800f13b46962792d942fce78b",
+      "bytes": 555,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/practice1.json",
+      "source_sha256": "17929e0c88be3195d55b65956b9d74bf15122edd81456f861a0c340c104e7feb",
+      "published_sha256": "17929e0c88be3195d55b65956b9d74bf15122edd81456f861a0c340c104e7feb",
+      "bytes": 641,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/practice1.prompt.txt",
+      "source_sha256": "7ad6294a2cc0a7b8e8d883e5455a3c0fefc3cde56bf70349459adedbf9b7d5ef",
+      "published_sha256": "7ad6294a2cc0a7b8e8d883e5455a3c0fefc3cde56bf70349459adedbf9b7d5ef",
+      "bytes": 1538,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/practice1.reply.txt",
+      "source_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "published_sha256": "1960c014de5a4353ad90adb79d937b9e647092c6b39a4ca62d7efd3c0a35d71b",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/practice2.json",
+      "source_sha256": "ce78b316102c9b20c260f45beb9ff3dde7d8be8cef1ac7105dea1a8124f64ebe",
+      "published_sha256": "ce78b316102c9b20c260f45beb9ff3dde7d8be8cef1ac7105dea1a8124f64ebe",
+      "bytes": 640,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/practice2.prompt.txt",
+      "source_sha256": "4fe4c2d81843026e5169bc1920111e654b7a6316097fbcdae3e2d0d23bb6308d",
+      "published_sha256": "4fe4c2d81843026e5169bc1920111e654b7a6316097fbcdae3e2d0d23bb6308d",
+      "bytes": 828,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/practice2.reply.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/pre.json",
+      "source_sha256": "d5bea0da4ff0517342e87ab207559444685234a65fe497de3d5f723cb2b14545",
+      "published_sha256": "d5bea0da4ff0517342e87ab207559444685234a65fe497de3d5f723cb2b14545",
+      "bytes": 715,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/pre.prompt.txt",
+      "source_sha256": "6af659025d2ce40e1cce66c0fbba83ce402dd698db9402c00446468ed3e3e48c",
+      "published_sha256": "6af659025d2ce40e1cce66c0fbba83ce402dd698db9402c00446468ed3e3e48c",
+      "bytes": 830,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w43-tutor/pre.reply.txt",
+      "source_sha256": "95c73c7c122c647b2faeb059bfd7ed9dcdfa950df3be009c3bd2f60257678143",
+      "published_sha256": "95c73c7c122c647b2faeb059bfd7ed9dcdfa950df3be009c3bd2f60257678143",
+      "bytes": 500,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/post.json",
+      "source_sha256": "b72de85b5615aef9adf772b25b93a1e6fe0ff7b7fd21dc423bf776bc9509a96d",
+      "published_sha256": "b72de85b5615aef9adf772b25b93a1e6fe0ff7b7fd21dc423bf776bc9509a96d",
+      "bytes": 872,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/post.prompt.txt",
+      "source_sha256": "b197a2acc652c7405e76a7d470fa71eccb0ffc426dca247d4bfa12dc0e344052",
+      "published_sha256": "b197a2acc652c7405e76a7d470fa71eccb0ffc426dca247d4bfa12dc0e344052",
+      "bytes": 1412,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/post.reply.txt",
+      "source_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "published_sha256": "82fa8ad7dd14b7332594c9a3956274a15ee440a1d7c4471f0470fe698f01f89d",
+      "bytes": 571,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/practice1.json",
+      "source_sha256": "10b1c0cdf22e50489348109f727b5ccb7c0b58275229ea38ec9122a803eef68f",
+      "published_sha256": "10b1c0cdf22e50489348109f727b5ccb7c0b58275229ea38ec9122a803eef68f",
+      "bytes": 648,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/practice1.prompt.txt",
+      "source_sha256": "6116bbb4c5781d42b12daf12d06381881c555dcac9180b84170524db2d11c705",
+      "published_sha256": "6116bbb4c5781d42b12daf12d06381881c555dcac9180b84170524db2d11c705",
+      "bytes": 610,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/practice1.reply.txt",
+      "source_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "published_sha256": "6bbcc47baf31d92f8cd5b5fa9e5c01f1689bb53dcad87ff9acf2342b87b40748",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/practice2.json",
+      "source_sha256": "a6c88e63aaf6fa5e792249b49d9a1414d928ef22886391bc938d77b791d3c1c9",
+      "published_sha256": "a6c88e63aaf6fa5e792249b49d9a1414d928ef22886391bc938d77b791d3c1c9",
+      "bytes": 647,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/practice2.prompt.txt",
+      "source_sha256": "f8f4fb48020aeb91ea2d9f1a7a75eecd3cde0e57444f25229dd9dd70166f44ad",
+      "published_sha256": "f8f4fb48020aeb91ea2d9f1a7a75eecd3cde0e57444f25229dd9dd70166f44ad",
+      "bytes": 732,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/practice2.reply.txt",
+      "source_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "published_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+      "bytes": 86,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/pre.json",
+      "source_sha256": "dd8bbd74c454ce6a8e5adef1fb4b01d3fcad1700ff86cbbef0467c1fdf90b3a2",
+      "published_sha256": "dd8bbd74c454ce6a8e5adef1fb4b01d3fcad1700ff86cbbef0467c1fdf90b3a2",
+      "bytes": 721,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/pre.prompt.txt",
+      "source_sha256": "5c628aef44aa928acfaaec7a57acddf7cdb7bd797608abf5895ed674e49202a6",
+      "published_sha256": "5c628aef44aa928acfaaec7a57acddf7cdb7bd797608abf5895ed674e49202a6",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-control/pre.reply.txt",
+      "source_sha256": "f3a50e10e3f27f49af80c792bf1bb4e9e25ae7b416f45936162241b90bb0eb4a",
+      "published_sha256": "f3a50e10e3f27f49af80c792bf1bb4e9e25ae7b416f45936162241b90bb0eb4a",
+      "bytes": 319,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/post.json",
+      "source_sha256": "df7bb5e5fe1c7bfa3da35dd6935eebec7cc544ffac185431aa76db283d886638",
+      "published_sha256": "df7bb5e5fe1c7bfa3da35dd6935eebec7cc544ffac185431aa76db283d886638",
+      "bytes": 863,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/post.prompt.txt",
+      "source_sha256": "15875098b217cf2425364a1960dda987ce3774481f4815923317e7965ae6146d",
+      "published_sha256": "15875098b217cf2425364a1960dda987ce3774481f4815923317e7965ae6146d",
+      "bytes": 1393,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/post.reply.txt",
+      "source_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "published_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "bytes": 550,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/practice1.json",
+      "source_sha256": "a0fccdc47f33284211d133f2154c6f862e174795d082b997e3db25c141c5ed11",
+      "published_sha256": "a0fccdc47f33284211d133f2154c6f862e174795d082b997e3db25c141c5ed11",
+      "bytes": 651,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/practice1.prompt.txt",
+      "source_sha256": "d058656994564bc5ff65dda5bc830567a06bc24c434591b2a497696a352c6842",
+      "published_sha256": "d058656994564bc5ff65dda5bc830567a06bc24c434591b2a497696a352c6842",
+      "bytes": 1543,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/practice1.reply.txt",
+      "source_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "published_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/practice2.json",
+      "source_sha256": "9e7d88763fcd601d4364f4ca343a48f401ecb5429bae8dc7672ac86ac7056dcb",
+      "published_sha256": "9e7d88763fcd601d4364f4ca343a48f401ecb5429bae8dc7672ac86ac7056dcb",
+      "bytes": 650,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/practice2.prompt.txt",
+      "source_sha256": "f01d2cd46f2d4e172f1045005a76642d4e5c0e512eb72903a00f615c099563be",
+      "published_sha256": "f01d2cd46f2d4e172f1045005a76642d4e5c0e512eb72903a00f615c099563be",
+      "bytes": 757,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/practice2.reply.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/pre.json",
+      "source_sha256": "3ea9aeb336cd90a4e8406f590c0d61e7b2ae36ab9c510364610edab84060acf0",
+      "published_sha256": "3ea9aeb336cd90a4e8406f590c0d61e7b2ae36ab9c510364610edab84060acf0",
+      "bytes": 725,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/pre.prompt.txt",
+      "source_sha256": "5c628aef44aa928acfaaec7a57acddf7cdb7bd797608abf5895ed674e49202a6",
+      "published_sha256": "5c628aef44aa928acfaaec7a57acddf7cdb7bd797608abf5895ed674e49202a6",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-selfstudy/pre.reply.txt",
+      "source_sha256": "c7a75ecbdf1920a4d99d494c50e5369b4e1f0a7b582fe2d0feee58ec0261df72",
+      "published_sha256": "c7a75ecbdf1920a4d99d494c50e5369b4e1f0a7b582fe2d0feee58ec0261df72",
+      "bytes": 352,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/post.json",
+      "source_sha256": "a6939fdd167969dae8d36493a7456f28df564c4de8cafdbd7ae02f3ae130fe1e",
+      "published_sha256": "a6939fdd167969dae8d36493a7456f28df564c4de8cafdbd7ae02f3ae130fe1e",
+      "bytes": 855,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/post.prompt.txt",
+      "source_sha256": "2ebfc4b25f04c98b76fd4c1ba88410e73f0691a413f5cc4ee1b06cbbe492a5bd",
+      "published_sha256": "2ebfc4b25f04c98b76fd4c1ba88410e73f0691a413f5cc4ee1b06cbbe492a5bd",
+      "bytes": 1464,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/post.reply.txt",
+      "source_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "published_sha256": "1e96be8dd635bf86001f0f9795e45c6f89f1f0eb3730df69105f7e5d5d91455f",
+      "bytes": 550,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/practice1.json",
+      "source_sha256": "fe429a75a348d41dfeeb37cf5fac4f902c06c5487ece542621c0e7ba855ac55d",
+      "published_sha256": "fe429a75a348d41dfeeb37cf5fac4f902c06c5487ece542621c0e7ba855ac55d",
+      "bytes": 643,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/practice1.prompt.txt",
+      "source_sha256": "d058656994564bc5ff65dda5bc830567a06bc24c434591b2a497696a352c6842",
+      "published_sha256": "d058656994564bc5ff65dda5bc830567a06bc24c434591b2a497696a352c6842",
+      "bytes": 1543,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/practice1.reply.txt",
+      "source_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "published_sha256": "0f49a2fbc9287df000e2c65b66b080df8505fd45558ce1638a42c30aec8ee774",
+      "bytes": 84,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/practice2.json",
+      "source_sha256": "d3dbf4b4f55f0542b4c7921f9f2d41fb4729486e295f1152f6551650f664272b",
+      "published_sha256": "d3dbf4b4f55f0542b4c7921f9f2d41fb4729486e295f1152f6551650f664272b",
+      "bytes": 642,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/practice2.prompt.txt",
+      "source_sha256": "517aeef2efad35f8f225d11e6ccdab3e6820c53bc1d353043e351cd1b2b567e4",
+      "published_sha256": "517aeef2efad35f8f225d11e6ccdab3e6820c53bc1d353043e351cd1b2b567e4",
+      "bytes": 828,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/practice2.reply.txt",
+      "source_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "published_sha256": "5695be2546a1a7d8264a6f652b9410ca902dbb794aec566ca40814b6a4402780",
+      "bytes": 82,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/pre.json",
+      "source_sha256": "547852f702cbe39dd04aa35b43f65b0c53eb41dc03bcffd82ee3834012cfdb12",
+      "published_sha256": "547852f702cbe39dd04aa35b43f65b0c53eb41dc03bcffd82ee3834012cfdb12",
+      "bytes": 717,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/pre.prompt.txt",
+      "source_sha256": "5c628aef44aa928acfaaec7a57acddf7cdb7bd797608abf5895ed674e49202a6",
+      "published_sha256": "5c628aef44aa928acfaaec7a57acddf7cdb7bd797608abf5895ed674e49202a6",
+      "bytes": 831,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/sessions/w509-tutor/pre.reply.txt",
+      "source_sha256": "255bb69e02e0bf488851add8960bc0d97c265e58e8e2412bb8029ad3c2da4ce1",
+      "published_sha256": "255bb69e02e0bf488851add8960bc0d97c265e58e8e2412bb8029ad3c2da4ce1",
+      "bytes": 356,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/test_benchmark.py",
+      "source_sha256": "8bd903429d54a2e337f775abbca1e5e8550cfe90668dbb955e2849bb0e23007e",
+      "published_sha256": "8bd903429d54a2e337f775abbca1e5e8550cfe90668dbb955e2849bb0e23007e",
+      "bytes": 3511,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/test_record.py",
+      "source_sha256": "385aafa9a2ba9dd7b38f37e7db69fb2db5df89f08bb21be7b1e5cac0651d77e0",
+      "published_sha256": "385aafa9a2ba9dd7b38f37e7db69fb2db5df89f08bb21be7b1e5cac0651d77e0",
+      "bytes": 5237,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/verification/audit.json",
+      "source_sha256": "23f83c60487379bdbc03e9ce3a89ca31808f0b805ae4eb6b67dff117b7c64dd3",
+      "published_sha256": "23f83c60487379bdbc03e9ce3a89ca31808f0b805ae4eb6b67dff117b7c64dd3",
+      "bytes": 3294,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/novel-rules/verification/report-integrity-red.txt",
+      "source_sha256": "cf0badfee933231a30772451bc5678604b8bd927b7c887e19398af7f26b4ffe1",
+      "published_sha256": "66e53f6e6d9f5545be79d9f6c9eee80593734fb78154ae9797f6ea013e9f713b",
+      "bytes": 9302,
+      "publication_changes": [
+        "Redacted 11 machine-local traceback path prefixes; original local log remains untouched."
+      ]
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/FACILITATOR.md",
+      "source_sha256": "b77f55de935e19b614110c1a1074e9f47e35add9a418b89a0e2dfc17cc66d6ed",
+      "published_sha256": "b77f55de935e19b614110c1a1074e9f47e35add9a418b89a0e2dfc17cc66d6ed",
+      "bytes": 4808,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/feedback/w1291-selfstudy-0.txt",
+      "source_sha256": "d53482b9f0c87caf0dc369e7317650e657ce94b815ce460b8c631430c4b30095",
+      "published_sha256": "d53482b9f0c87caf0dc369e7317650e657ce94b815ce460b8c631430c4b30095",
+      "bytes": 656,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/feedback/w1291-tutor-0.txt",
+      "source_sha256": "645dfb8dfad4c59a09deac92f9c42d08d34a516e78ee6b6b5b2101ab0742b66e",
+      "published_sha256": "645dfb8dfad4c59a09deac92f9c42d08d34a516e78ee6b6b5b2101ab0742b66e",
+      "bytes": 498,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/feedback/w617-tutor-0.txt",
+      "source_sha256": "2912b4114ddf9589e1b42b0e9d4c04ad481ddb13e9817c4d3442b133c8515d6e",
+      "published_sha256": "2912b4114ddf9589e1b42b0e9d4c04ad481ddb13e9817c4d3442b133c8515d6e",
+      "bytes": 515,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/feedback/w617-tutor-1.txt",
+      "source_sha256": "b34c183291aa211d4dc302688582e4aece5b1dc2385b4c89910a9a975e92e7f9",
+      "published_sha256": "b34c183291aa211d4dc302688582e4aece5b1dc2385b4c89910a9a975e92e7f9",
+      "bytes": 346,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/frozen.json",
+      "source_sha256": "ff7acb18a3dd8a7edb35ed9a5906badf1bb60a35c259ed7e3c52f0eefb2f03ec",
+      "published_sha256": "ff7acb18a3dd8a7edb35ed9a5906badf1bb60a35c259ed7e3c52f0eefb2f03ec",
+      "bytes": 8591,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/HUMAN_LESSON.md",
+      "source_sha256": "14a755b9b1957a9e056fc6b50d6ceabee2ffb6bd9a53040ab0b944cc685d2571",
+      "published_sha256": "14a755b9b1957a9e056fc6b50d6ceabee2ffb6bd9a53040ab0b944cc685d2571",
+      "bytes": 1753,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/pilot.py",
+      "source_sha256": "28a37ceb4561bf0291c94d23b3d26d48d197c13c2da7a8e82e781f9990fd49ee",
+      "published_sha256": "28a37ceb4561bf0291c94d23b3d26d48d197c13c2da7a8e82e781f9990fd49ee",
+      "bytes": 16838,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/PROTOCOL.md",
+      "source_sha256": "69ed7488d031edddb4df428b8504142f3bbf7463869aa3a0c5480e9a36ee807c",
+      "published_sha256": "69ed7488d031edddb4df428b8504142f3bbf7463869aa3a0c5480e9a36ee807c",
+      "bytes": 7918,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w1291-selfstudy-0.txt",
+      "source_sha256": "03d91455cc9aa81db1c08e7e95cbb6031b55c9ba3734f649ebe197ebeea7706d",
+      "published_sha256": "03d91455cc9aa81db1c08e7e95cbb6031b55c9ba3734f649ebe197ebeea7706d",
+      "bytes": 723,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w1291-selfstudy-1.txt",
+      "source_sha256": "ebb9bdf869cc94a6a650d82b25a0a1c531973c7929b86191af5ea6c6523bb081",
+      "published_sha256": "ebb9bdf869cc94a6a650d82b25a0a1c531973c7929b86191af5ea6c6523bb081",
+      "bytes": 601,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w1291-selfstudy-3.txt",
+      "source_sha256": "a28b519ba55edecd8d511461b003313888398442713e3632508a38fa1f6a6d73",
+      "published_sha256": "a28b519ba55edecd8d511461b003313888398442713e3632508a38fa1f6a6d73",
+      "bytes": 559,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w1291-tutor-0.txt",
+      "source_sha256": "4e073c6dfd4cc13f4c6d34f266043945e073211c5138d14da39f84feaad11a20",
+      "published_sha256": "4e073c6dfd4cc13f4c6d34f266043945e073211c5138d14da39f84feaad11a20",
+      "bytes": 700,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w1291-tutor-1.txt",
+      "source_sha256": "ef060a3eb84bb7fd4f3d89470a8660eb5c7f4378fbae5e29663cbbe85b4e70db",
+      "published_sha256": "ef060a3eb84bb7fd4f3d89470a8660eb5c7f4378fbae5e29663cbbe85b4e70db",
+      "bytes": 613,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w1291-tutor-3.txt",
+      "source_sha256": "d6e0696ef18a5815a29ed427a8d6c7213a676ab4b8bd5f755b3519a4b2465510",
+      "published_sha256": "d6e0696ef18a5815a29ed427a8d6c7213a676ab4b8bd5f755b3519a4b2465510",
+      "bytes": 596,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w617-selfstudy-0.txt",
+      "source_sha256": "cb76ea7d2e27e2956f6a76ec530ff3af617ffd418fe1a18cb118353203369046",
+      "published_sha256": "cb76ea7d2e27e2956f6a76ec530ff3af617ffd418fe1a18cb118353203369046",
+      "bytes": 722,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w617-selfstudy-3.txt",
+      "source_sha256": "d3481dc58cefe4aa5853f0d4d70f281ac2e1f4d1c36d718310c25bd3e87c5032",
+      "published_sha256": "d3481dc58cefe4aa5853f0d4d70f281ac2e1f4d1c36d718310c25bd3e87c5032",
+      "bytes": 727,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w617-tutor-0.txt",
+      "source_sha256": "b81f6ceff8b7e5a41f542cf00cb3758dfb9b95d386bbebb20d823db905b8c168",
+      "published_sha256": "b81f6ceff8b7e5a41f542cf00cb3758dfb9b95d386bbebb20d823db905b8c168",
+      "bytes": 653,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w617-tutor-1.txt",
+      "source_sha256": "d75b380ffc51a7418ad41bec9bd7e219b6ad338b6f7525f4e7f7b1c785ad465b",
+      "published_sha256": "d75b380ffc51a7418ad41bec9bd7e219b6ad338b6f7525f4e7f7b1c785ad465b",
+      "bytes": 842,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w617-tutor-2.txt",
+      "source_sha256": "46566052f8b2e15192d3f6848dd33e3df0ab6cb67a1fa8e7a8600b7d8e6fe81f",
+      "published_sha256": "46566052f8b2e15192d3f6848dd33e3df0ab6cb67a1fa8e7a8600b7d8e6fe81f",
+      "bytes": 834,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/raw/w617-tutor-3.txt",
+      "source_sha256": "ea9bd0375696d36eb4245ed3ce69f12a62ffdb41b0278573813dfa4ba3fe65fa",
+      "published_sha256": "ea9bd0375696d36eb4245ed3ce69f12a62ffdb41b0278573813dfa4ba3fe65fa",
+      "bytes": 876,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/results.json",
+      "source_sha256": "2b8c9e65293d7bffdb49c9663c9b3e974f997ba4e26ebcb207dabdfd2ed3f581",
+      "published_sha256": "2b8c9e65293d7bffdb49c9663c9b3e974f997ba4e26ebcb207dabdfd2ed3f581",
+      "bytes": 5921,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/RESULTS.md",
+      "source_sha256": "cc29d776d2663ee5503e577278a6f869cc2dca5546ba329d82ccb938a3658ef7",
+      "published_sha256": "cc29d776d2663ee5503e577278a6f869cc2dca5546ba329d82ccb938a3658ef7",
+      "bytes": 11517,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/REVIEW_NOTES.md",
+      "source_sha256": "1f582af74f1dfb3c0a6e7d9ca9b943edd1e7794ab77f2bbf9e3bc3b735898612",
+      "published_sha256": "1f582af74f1dfb3c0a6e7d9ca9b943edd1e7794ab77f2bbf9e3bc3b735898612",
+      "bytes": 2721,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/0.launch.json",
+      "source_sha256": "0d43734fd064469f48b04a5b93e46db6cf559a549108d99f5801369fff9d6e0e",
+      "published_sha256": "0d43734fd064469f48b04a5b93e46db6cf559a549108d99f5801369fff9d6e0e",
+      "bytes": 349,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/0.material.txt",
+      "source_sha256": "ac08f23909b2ff0372a80bdb1e7f54243a320ba7c2d07de89460c03832b729c3",
+      "published_sha256": "ac08f23909b2ff0372a80bdb1e7f54243a320ba7c2d07de89460c03832b729c3",
+      "bytes": 1367,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/0.prompt.txt",
+      "source_sha256": "4a121049b3f1f9afedf8290b76931e70a498247c884770ff81da88735b83337c",
+      "published_sha256": "4a121049b3f1f9afedf8290b76931e70a498247c884770ff81da88735b83337c",
+      "bytes": 1889,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/0.record.json",
+      "source_sha256": "cb151f3dd8c7df5c5489a717ad812dd71ffe9274feeca4485ed9722779d3ade3",
+      "published_sha256": "cb151f3dd8c7df5c5489a717ad812dd71ffe9274feeca4485ed9722779d3ade3",
+      "bytes": 1139,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/0.reply.txt",
+      "source_sha256": "03d91455cc9aa81db1c08e7e95cbb6031b55c9ba3734f649ebe197ebeea7706d",
+      "published_sha256": "03d91455cc9aa81db1c08e7e95cbb6031b55c9ba3734f649ebe197ebeea7706d",
+      "bytes": 723,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/1.launch.json",
+      "source_sha256": "fcf0a90bc2af2bcfb2b6b87d3074e050de57fccb779014b36b3ac6b90d35f071",
+      "published_sha256": "fcf0a90bc2af2bcfb2b6b87d3074e050de57fccb779014b36b3ac6b90d35f071",
+      "bytes": 349,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/1.material.txt",
+      "source_sha256": "6a0d4d63fe1f99f768f473d6cd05e4bedeb8d453011076b7b0a89b08d37f7c97",
+      "published_sha256": "6a0d4d63fe1f99f768f473d6cd05e4bedeb8d453011076b7b0a89b08d37f7c97",
+      "bytes": 1239,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/1.prompt.txt",
+      "source_sha256": "1337c2ca2258565d77c7dacf6a7b3363de3fb67d8a97b2a1918bce5f6fb05ce1",
+      "published_sha256": "1337c2ca2258565d77c7dacf6a7b3363de3fb67d8a97b2a1918bce5f6fb05ce1",
+      "bytes": 1761,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/1.record.json",
+      "source_sha256": "2b95bebf484b64318325f2f595a7982606caafdde2c5b1df6b9df49655ad4194",
+      "published_sha256": "2b95bebf484b64318325f2f595a7982606caafdde2c5b1df6b9df49655ad4194",
+      "bytes": 1134,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/1.reply.txt",
+      "source_sha256": "ebb9bdf869cc94a6a650d82b25a0a1c531973c7929b86191af5ea6c6523bb081",
+      "published_sha256": "ebb9bdf869cc94a6a650d82b25a0a1c531973c7929b86191af5ea6c6523bb081",
+      "bytes": 601,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/3.launch.json",
+      "source_sha256": "cbd9e26dec7b81aba09060390ec995e1223517cb4b2e49616cbea58454d0c96e",
+      "published_sha256": "cbd9e26dec7b81aba09060390ec995e1223517cb4b2e49616cbea58454d0c96e",
+      "bytes": 349,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/3.material.txt",
+      "source_sha256": "56e4efaf3ec070cf01006e3ea142672397f378b41f0ee3db5e3a314893023c79",
+      "published_sha256": "56e4efaf3ec070cf01006e3ea142672397f378b41f0ee3db5e3a314893023c79",
+      "bytes": 646,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/3.prompt.txt",
+      "source_sha256": "64e00b9cd8fdff1c37369b364e7c76c9bef78cc2391716f43afd13be7ae302ac",
+      "published_sha256": "64e00b9cd8fdff1c37369b364e7c76c9bef78cc2391716f43afd13be7ae302ac",
+      "bytes": 1168,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/3.record.json",
+      "source_sha256": "b34952090b4399b1b7c407430b1e19566a5da78ca7309c64f66b5968ceb5f136",
+      "published_sha256": "b34952090b4399b1b7c407430b1e19566a5da78ca7309c64f66b5968ceb5f136",
+      "bytes": 1169,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-selfstudy/3.reply.txt",
+      "source_sha256": "a28b519ba55edecd8d511461b003313888398442713e3632508a38fa1f6a6d73",
+      "published_sha256": "a28b519ba55edecd8d511461b003313888398442713e3632508a38fa1f6a6d73",
+      "bytes": 559,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/0.launch.json",
+      "source_sha256": "0d8f5e6c7f2ecc9fd9b6faebc448b3519c4344357dfd9df532ea003acdabdf8c",
+      "published_sha256": "0d8f5e6c7f2ecc9fd9b6faebc448b3519c4344357dfd9df532ea003acdabdf8c",
+      "bytes": 345,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/0.material.txt",
+      "source_sha256": "ac08f23909b2ff0372a80bdb1e7f54243a320ba7c2d07de89460c03832b729c3",
+      "published_sha256": "ac08f23909b2ff0372a80bdb1e7f54243a320ba7c2d07de89460c03832b729c3",
+      "bytes": 1367,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/0.prompt.txt",
+      "source_sha256": "4a121049b3f1f9afedf8290b76931e70a498247c884770ff81da88735b83337c",
+      "published_sha256": "4a121049b3f1f9afedf8290b76931e70a498247c884770ff81da88735b83337c",
+      "bytes": 1889,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/0.record.json",
+      "source_sha256": "8773a01c52ef2d77d91151d26c33dcfd1e6ffea6cebd9e9c72f1c152b442fd40",
+      "published_sha256": "8773a01c52ef2d77d91151d26c33dcfd1e6ffea6cebd9e9c72f1c152b442fd40",
+      "bytes": 1185,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/0.reply.txt",
+      "source_sha256": "4e073c6dfd4cc13f4c6d34f266043945e073211c5138d14da39f84feaad11a20",
+      "published_sha256": "4e073c6dfd4cc13f4c6d34f266043945e073211c5138d14da39f84feaad11a20",
+      "bytes": 700,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/1.launch.json",
+      "source_sha256": "83a4c91e39da81efa9ae2b55b43814ee9e854f468d67df0b68244282f4a7a7a5",
+      "published_sha256": "83a4c91e39da81efa9ae2b55b43814ee9e854f468d67df0b68244282f4a7a7a5",
+      "bytes": 345,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/1.material.txt",
+      "source_sha256": "bba29b5fa224919c79156ac75d3ef02746243135518353936561c38397d0e388",
+      "published_sha256": "bba29b5fa224919c79156ac75d3ef02746243135518353936561c38397d0e388",
+      "bytes": 1081,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/1.prompt.txt",
+      "source_sha256": "6f0859ce990af93c00b5003c62e7dfc93f54f7a3a660c0a50c8b217be9a183e9",
+      "published_sha256": "6f0859ce990af93c00b5003c62e7dfc93f54f7a3a660c0a50c8b217be9a183e9",
+      "bytes": 1603,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/1.record.json",
+      "source_sha256": "d7976d1d8be7cff11a81fd4bc361301505360a1452713c004db16a062552994b",
+      "published_sha256": "d7976d1d8be7cff11a81fd4bc361301505360a1452713c004db16a062552994b",
+      "bytes": 1183,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/1.reply.txt",
+      "source_sha256": "ef060a3eb84bb7fd4f3d89470a8660eb5c7f4378fbae5e29663cbbe85b4e70db",
+      "published_sha256": "ef060a3eb84bb7fd4f3d89470a8660eb5c7f4378fbae5e29663cbbe85b4e70db",
+      "bytes": 613,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/3.launch.json",
+      "source_sha256": "b5dcee1353b9a8d8fa59a2c4f8a0a861b194fcde25f83c9aac19d8e5ed3ae3a4",
+      "published_sha256": "b5dcee1353b9a8d8fa59a2c4f8a0a861b194fcde25f83c9aac19d8e5ed3ae3a4",
+      "bytes": 345,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/3.material.txt",
+      "source_sha256": "56e4efaf3ec070cf01006e3ea142672397f378b41f0ee3db5e3a314893023c79",
+      "published_sha256": "56e4efaf3ec070cf01006e3ea142672397f378b41f0ee3db5e3a314893023c79",
+      "bytes": 646,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/3.prompt.txt",
+      "source_sha256": "64e00b9cd8fdff1c37369b364e7c76c9bef78cc2391716f43afd13be7ae302ac",
+      "published_sha256": "64e00b9cd8fdff1c37369b364e7c76c9bef78cc2391716f43afd13be7ae302ac",
+      "bytes": 1168,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/3.record.json",
+      "source_sha256": "586a04260aa5ff26ad78bd1798daf0d2fc2afecb7ff13c8c34a22d9634f3abf7",
+      "published_sha256": "586a04260aa5ff26ad78bd1798daf0d2fc2afecb7ff13c8c34a22d9634f3abf7",
+      "bytes": 1146,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w1291-tutor/3.reply.txt",
+      "source_sha256": "d6e0696ef18a5815a29ed427a8d6c7213a676ab4b8bd5f755b3519a4b2465510",
+      "published_sha256": "d6e0696ef18a5815a29ed427a8d6c7213a676ab4b8bd5f755b3519a4b2465510",
+      "bytes": 596,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/0.launch.json",
+      "source_sha256": "7b8f198155df586a920213f8e42fbf77f78b9f379448bf80dc14a584c71eb709",
+      "published_sha256": "7b8f198155df586a920213f8e42fbf77f78b9f379448bf80dc14a584c71eb709",
+      "bytes": 348,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/0.material.txt",
+      "source_sha256": "7301a21120dbfb37c3d1e3d4946c46fa1fc73d829f54b67227c1c5f183d07271",
+      "published_sha256": "7301a21120dbfb37c3d1e3d4946c46fa1fc73d829f54b67227c1c5f183d07271",
+      "bytes": 1362,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/0.prompt.txt",
+      "source_sha256": "c7e5923f1029ab7c1478517adcd2623fb58a2bd2e957bfd843b1f603da5f79ba",
+      "published_sha256": "c7e5923f1029ab7c1478517adcd2623fb58a2bd2e957bfd843b1f603da5f79ba",
+      "bytes": 1884,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/0.record.json",
+      "source_sha256": "d3b5dbc5f1b2bb0e117a8a1070cb803bacddbb968640f1a221ac1956eab6a30d",
+      "published_sha256": "d3b5dbc5f1b2bb0e117a8a1070cb803bacddbb968640f1a221ac1956eab6a30d",
+      "bytes": 1172,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/0.reply.txt",
+      "source_sha256": "cb76ea7d2e27e2956f6a76ec530ff3af617ffd418fe1a18cb118353203369046",
+      "published_sha256": "cb76ea7d2e27e2956f6a76ec530ff3af617ffd418fe1a18cb118353203369046",
+      "bytes": 722,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/3.launch.json",
+      "source_sha256": "68f00038dbb3fda193c3480a8a76b94389766d906c2ded79dcee939ab8f9a1ac",
+      "published_sha256": "68f00038dbb3fda193c3480a8a76b94389766d906c2ded79dcee939ab8f9a1ac",
+      "bytes": 348,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/3.material.txt",
+      "source_sha256": "7e970c96016609dac9a761e3b4968902780265ebf1d6116682d7376eac9dc59f",
+      "published_sha256": "7e970c96016609dac9a761e3b4968902780265ebf1d6116682d7376eac9dc59f",
+      "bytes": 641,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/3.prompt.txt",
+      "source_sha256": "002a8754ac38b2b955a67f349cb12c26cd840aa2f261b53c631e4fed5a7bf19b",
+      "published_sha256": "002a8754ac38b2b955a67f349cb12c26cd840aa2f261b53c631e4fed5a7bf19b",
+      "bytes": 1163,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/3.record.json",
+      "source_sha256": "e57de478315049a78d4b3d2e508c8a56458d17bd68db3f9d9f9c27899f5b9a4c",
+      "published_sha256": "e57de478315049a78d4b3d2e508c8a56458d17bd68db3f9d9f9c27899f5b9a4c",
+      "bytes": 1108,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-selfstudy/3.reply.txt",
+      "source_sha256": "d3481dc58cefe4aa5853f0d4d70f281ac2e1f4d1c36d718310c25bd3e87c5032",
+      "published_sha256": "d3481dc58cefe4aa5853f0d4d70f281ac2e1f4d1c36d718310c25bd3e87c5032",
+      "bytes": 727,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/0.launch.json",
+      "source_sha256": "3a06367056a8d6f2c2345b00c36f51fdf75d8b4a3376b88d9c81d0bcaa7f2e43",
+      "published_sha256": "3a06367056a8d6f2c2345b00c36f51fdf75d8b4a3376b88d9c81d0bcaa7f2e43",
+      "bytes": 344,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/0.material.txt",
+      "source_sha256": "7301a21120dbfb37c3d1e3d4946c46fa1fc73d829f54b67227c1c5f183d07271",
+      "published_sha256": "7301a21120dbfb37c3d1e3d4946c46fa1fc73d829f54b67227c1c5f183d07271",
+      "bytes": 1362,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/0.prompt.txt",
+      "source_sha256": "c7e5923f1029ab7c1478517adcd2623fb58a2bd2e957bfd843b1f603da5f79ba",
+      "published_sha256": "c7e5923f1029ab7c1478517adcd2623fb58a2bd2e957bfd843b1f603da5f79ba",
+      "bytes": 1884,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/0.record.json",
+      "source_sha256": "917e96fc51b231c450ae432f01fb4a5fa5781b0f647878718576bf1273880eb9",
+      "published_sha256": "917e96fc51b231c450ae432f01fb4a5fa5781b0f647878718576bf1273880eb9",
+      "bytes": 1049,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/0.reply.txt",
+      "source_sha256": "b81f6ceff8b7e5a41f542cf00cb3758dfb9b95d386bbebb20d823db905b8c168",
+      "published_sha256": "b81f6ceff8b7e5a41f542cf00cb3758dfb9b95d386bbebb20d823db905b8c168",
+      "bytes": 653,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/1.launch.json",
+      "source_sha256": "081640bc8d543d815017ce67807fd44bae5d61ccda176a9f940cd47c25c9a9fc",
+      "published_sha256": "081640bc8d543d815017ce67807fd44bae5d61ccda176a9f940cd47c25c9a9fc",
+      "bytes": 344,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/1.material.txt",
+      "source_sha256": "35d8ede501ec397698e5ec5167f4d861236a410e9b70a7a5c5978cabbd9751d9",
+      "published_sha256": "35d8ede501ec397698e5ec5167f4d861236a410e9b70a7a5c5978cabbd9751d9",
+      "bytes": 1093,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/1.prompt.txt",
+      "source_sha256": "7f53c0611beca759a5dffa10c4dd3456fab41243a36a5d477c550abd39358efe",
+      "published_sha256": "7f53c0611beca759a5dffa10c4dd3456fab41243a36a5d477c550abd39358efe",
+      "bytes": 1615,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/1.record.json",
+      "source_sha256": "a3506e2a2c7305343744f4b10d1b1ae3aaa5db24fe7ddc2277ac872ff052d251",
+      "published_sha256": "a3506e2a2c7305343744f4b10d1b1ae3aaa5db24fe7ddc2277ac872ff052d251",
+      "bytes": 1059,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/1.reply.txt",
+      "source_sha256": "d75b380ffc51a7418ad41bec9bd7e219b6ad338b6f7525f4e7f7b1c785ad465b",
+      "published_sha256": "d75b380ffc51a7418ad41bec9bd7e219b6ad338b6f7525f4e7f7b1c785ad465b",
+      "bytes": 842,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/2.launch.json",
+      "source_sha256": "1692a6d26ce50ba990f39903e2e1f7b3b315542b92cf46a7151c309ec5a2babb",
+      "published_sha256": "1692a6d26ce50ba990f39903e2e1f7b3b315542b92cf46a7151c309ec5a2babb",
+      "bytes": 344,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/2.material.txt",
+      "source_sha256": "3e52fc4e234bdc662ffeaf10d39e95e908ffcff31cf76e26376c738724b7fb85",
+      "published_sha256": "3e52fc4e234bdc662ffeaf10d39e95e908ffcff31cf76e26376c738724b7fb85",
+      "bytes": 934,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/2.prompt.txt",
+      "source_sha256": "26341fb3fe07319df07808abb57188fa040d9ec92a9b2290f923b30f8973a102",
+      "published_sha256": "26341fb3fe07319df07808abb57188fa040d9ec92a9b2290f923b30f8973a102",
+      "bytes": 1456,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/2.record.json",
+      "source_sha256": "4fa5fdb6b8aab1bf83db79b03655e3463345fa32781423c2cbfb4bab9343d90b",
+      "published_sha256": "4fa5fdb6b8aab1bf83db79b03655e3463345fa32781423c2cbfb4bab9343d90b",
+      "bytes": 1174,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/2.reply.txt",
+      "source_sha256": "46566052f8b2e15192d3f6848dd33e3df0ab6cb67a1fa8e7a8600b7d8e6fe81f",
+      "published_sha256": "46566052f8b2e15192d3f6848dd33e3df0ab6cb67a1fa8e7a8600b7d8e6fe81f",
+      "bytes": 834,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/3.launch.json",
+      "source_sha256": "087f7465c82e91cecd2c096bc81903817817b446f4e3b01493c5ac3960509545",
+      "published_sha256": "087f7465c82e91cecd2c096bc81903817817b446f4e3b01493c5ac3960509545",
+      "bytes": 344,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/3.material.txt",
+      "source_sha256": "7e970c96016609dac9a761e3b4968902780265ebf1d6116682d7376eac9dc59f",
+      "published_sha256": "7e970c96016609dac9a761e3b4968902780265ebf1d6116682d7376eac9dc59f",
+      "bytes": 641,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/3.prompt.txt",
+      "source_sha256": "002a8754ac38b2b955a67f349cb12c26cd840aa2f261b53c631e4fed5a7bf19b",
+      "published_sha256": "002a8754ac38b2b955a67f349cb12c26cd840aa2f261b53c631e4fed5a7bf19b",
+      "bytes": 1163,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/3.record.json",
+      "source_sha256": "9daa5c55007f71c622937b69c813efb32d715022031436f5f88f156fffebc8ef",
+      "published_sha256": "9daa5c55007f71c622937b69c813efb32d715022031436f5f88f156fffebc8ef",
+      "bytes": 1148,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/sessions/w617-tutor/3.reply.txt",
+      "source_sha256": "ea9bd0375696d36eb4245ed3ce69f12a62ffdb41b0278573813dfa4ba3fe65fa",
+      "published_sha256": "ea9bd0375696d36eb4245ed3ce69f12a62ffdb41b0278573813dfa4ba3fe65fa",
+      "bytes": 876,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/TEACHING_COMPLETE.md",
+      "source_sha256": "563cdfcf404154f85bd80463c3ffe0f10766b737b1a70e6eeff696bc9be80ccf",
+      "published_sha256": "563cdfcf404154f85bd80463c3ffe0f10766b737b1a70e6eeff696bc9be80ccf",
+      "bytes": 1121,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/test_pilot.py",
+      "source_sha256": "994334e39af97c174b996bc8815a356251f38af7beb6353cf729d9cd6410e267",
+      "published_sha256": "994334e39af97c174b996bc8815a356251f38af7beb6353cf729d9cd6410e267",
+      "bytes": 7721,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/benchmarks/time-to-transfer/verification.json",
+      "source_sha256": "63bec631fbde4782874f300e19ffd9e9b8e0ea149bd85ab703f9d90a767d149f",
+      "published_sha256": "63bec631fbde4782874f300e19ffd9e9b8e0ea149bd85ab703f9d90a767d149f",
+      "bytes": 972,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/CITATIONS.md",
+      "source_sha256": "6dd296af8040cc39f26f5240f501649d57c52cd7a2a9c5af4b51b5d61743e42b",
+      "published_sha256": "6dd296af8040cc39f26f5240f501649d57c52cd7a2a9c5af4b51b5d61743e42b",
+      "bytes": 9075,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/CONTENT_PLAN.md",
+      "source_sha256": "cc4c3c94219abeb826f6a363deabbe45c52468146f26626a324add83a86177b9",
+      "published_sha256": "cc4c3c94219abeb826f6a363deabbe45c52468146f26626a324add83a86177b9",
+      "bytes": 11782,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/DECISIONS.md",
+      "source_sha256": "6259c72a4c507bbecbdc13ecd97ba9efb3a50a95c97db5ef2fa4c16858ed175f",
+      "published_sha256": "6259c72a4c507bbecbdc13ecd97ba9efb3a50a95c97db5ef2fa4c16858ed175f",
+      "bytes": 14945,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/drafts/accessibility-block.md",
+      "source_sha256": "12c6989b0f1bacc715744c470a19ae574cd17dc35c966ea9bd7fa19702f059c0",
+      "published_sha256": "12c6989b0f1bacc715744c470a19ae574cd17dc35c966ea9bd7fa19702f059c0",
+      "bytes": 1052,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/drafts/exam-craft.md",
+      "source_sha256": "054a0d8dc6017db33aa0c7a777161e27d7cd1260564d33681fc1a4afec47b623",
+      "published_sha256": "054a0d8dc6017db33aa0c7a777161e27d7cd1260564d33681fc1a4afec47b623",
+      "bytes": 2410,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/drafts/study-skills.md",
+      "source_sha256": "08770f1716ff91613666319abd904ff2f86961501a708ce0abc5ad7388658c33",
+      "published_sha256": "08770f1716ff91613666319abd904ff2f86961501a708ce0abc5ad7388658c33",
+      "bytes": 2229,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/IMPLEMENTATION.md",
+      "source_sha256": "e0d0bcba0a0f31bd840b8c6225ee10cbd684a152557c0d39e1d867dddcfc2a23",
+      "published_sha256": "e0d0bcba0a0f31bd840b8c6225ee10cbd684a152557c0d39e1d867dddcfc2a23",
+      "bytes": 29376,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/IMPLEMENTATION_RESULTS.md",
+      "source_sha256": "9d5be60532946f640a5cd8fcb38c07ec5ec65507b6755d46bb0dea5157c0daa7",
+      "published_sha256": "9d5be60532946f640a5cd8fcb38c07ec5ec65507b6755d46bb0dea5157c0daa7",
+      "bytes": 6188,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/check.py",
+      "source_sha256": "1ea709e1d8c18da5b796721342d7ea03725daab842ed7e6523df27a08df4fb21",
+      "published_sha256": "1ea709e1d8c18da5b796721342d7ea03725daab842ed7e6523df27a08df4fb21",
+      "bytes": 3521,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/confirmation.json",
+      "source_sha256": "adc92e62e3034098e4c1f3cba0e62a548dea462960e0a3280949b292ce7bae4c",
+      "published_sha256": "adc92e62e3034098e4c1f3cba0e62a548dea462960e0a3280949b292ce7bae4c",
+      "bytes": 3622,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/DECISION.md",
+      "source_sha256": "a173847fa01e90d157ce4e651d5f527ab009bfe99c1659bcd7ecb078399f5968",
+      "published_sha256": "a173847fa01e90d157ce4e651d5f527ab009bfe99c1659bcd7ecb078399f5968",
+      "bytes": 1763,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/development-results.json",
+      "source_sha256": "2f4d21f1d440e0aad1a98d0557f94be9921ebf2d1c341182e9568305705e4983",
+      "published_sha256": "2f4d21f1d440e0aad1a98d0557f94be9921ebf2d1c341182e9568305705e4983",
+      "bytes": 1392,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/development.json",
+      "source_sha256": "703007c0872f999ea3f30b68d22aea26cddb1349f48394f99e6d0c3881dcfa67",
+      "published_sha256": "703007c0872f999ea3f30b68d22aea26cddb1349f48394f99e6d0c3881dcfa67",
+      "bytes": 3912,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/final-state.json",
+      "source_sha256": "727f4696b7a71aec24cb73646d4d7631203b392e5a9e45b72832e2057a2f53a2",
+      "published_sha256": "727f4696b7a71aec24cb73646d4d7631203b392e5a9e45b72832e2057a2f53a2",
+      "bytes": 879,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/frozen.json",
+      "source_sha256": "b4bacb7fb040f99ac7e9a5a48ad5639c5d85ccaacfa322d783296214fed93ada",
+      "published_sha256": "b4bacb7fb040f99ac7e9a5a48ad5639c5d85ccaacfa322d783296214fed93ada",
+      "bytes": 798,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/OUTCOME.md",
+      "source_sha256": "2a153461433f1519180f9162f9f368e735a0128b64b5aab7d945d1891534fd5d",
+      "published_sha256": "2a153461433f1519180f9162f9f368e735a0128b64b5aab7d945d1891534fd5d",
+      "bytes": 1834,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/PROTOCOL.md",
+      "source_sha256": "dd19316b725f5d815a6d229f6fadc9413f23e8b93cbac46b4a809935bb66f35d",
+      "published_sha256": "dd19316b725f5d815a6d229f6fadc9413f23e8b93cbac46b4a809935bb66f35d",
+      "bytes": 4179,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/results.json",
+      "source_sha256": "98572bc9fc9505e6957c3dbfc2fa46de65c365d9d9cb345b9c18ab0b01c7dda9",
+      "published_sha256": "98572bc9fc9505e6957c3dbfc2fa46de65c365d9d9cb345b9c18ab0b01c7dda9",
+      "bytes": 3702,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/RESULTS.md",
+      "source_sha256": "f5a70aa7b3bc5ba984b120123c82a301ebbae4e096630a7d33b2d5968107fbda",
+      "published_sha256": "f5a70aa7b3bc5ba984b120123c82a301ebbae4e096630a7d33b2d5968107fbda",
+      "bytes": 7560,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/revision.json",
+      "source_sha256": "e65e8104b88920b943c6d5670ca27157f969455da308fcc36f928e7c3ac1df2f",
+      "published_sha256": "e65e8104b88920b943c6d5670ca27157f969455da308fcc36f928e7c3ac1df2f",
+      "bytes": 582,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-after/annotation.json",
+      "source_sha256": "8335260f5940396b62fcfc70b019e71c092bb1a04f38e6e996c68b0b85fff6f8",
+      "published_sha256": "8335260f5940396b62fcfc70b019e71c092bb1a04f38e6e996c68b0b85fff6f8",
+      "bytes": 1284,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-after/metadata.json",
+      "source_sha256": "19867dd8ecf9fd35a7ee9cad33f19ff919efcb140551a4293375379609973a9b",
+      "published_sha256": "19867dd8ecf9fd35a7ee9cad33f19ff919efcb140551a4293375379609973a9b",
+      "bytes": 525,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-after/prompt.txt",
+      "source_sha256": "771357cce9d7849f75c3678f7a5f24c55e5c3a79bb18043bbae679da9ae28f77",
+      "published_sha256": "771357cce9d7849f75c3678f7a5f24c55e5c3a79bb18043bbae679da9ae28f77",
+      "bytes": 1078,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-after/reply.txt",
+      "source_sha256": "2d75c7a79c94572cc20514049a1159a61bb5bd2a0c08c7eeb23a89e699070276",
+      "published_sha256": "2d75c7a79c94572cc20514049a1159a61bb5bd2a0c08c7eeb23a89e699070276",
+      "bytes": 2119,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-after/transcript.md",
+      "source_sha256": "5907484a43fd5bfeb2580c21c06a0f1ba4e49a6f652a7f42f90db3628923b7bd",
+      "published_sha256": "5907484a43fd5bfeb2580c21c06a0f1ba4e49a6f652a7f42f90db3628923b7bd",
+      "bytes": 2702,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-before/annotation.json",
+      "source_sha256": "8d046b99b84299f583ac4a38bc0c5f5ee7d1eff963896be8ba7bfb79414834c4",
+      "published_sha256": "8d046b99b84299f583ac4a38bc0c5f5ee7d1eff963896be8ba7bfb79414834c4",
+      "bytes": 964,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-before/metadata.json",
+      "source_sha256": "81bacd0f5154e58cff234b96d9cc06703b58812fe0f22b364a864eb3815d63b0",
+      "published_sha256": "81bacd0f5154e58cff234b96d9cc06703b58812fe0f22b364a864eb3815d63b0",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-before/prompt.txt",
+      "source_sha256": "f9f0d3293ee846036dd44656b13fa0de58555ea6f9067872cfaf8eb75534f3fb",
+      "published_sha256": "f9f0d3293ee846036dd44656b13fa0de58555ea6f9067872cfaf8eb75534f3fb",
+      "bytes": 1079,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-before/reply.txt",
+      "source_sha256": "8b01f134032c17584fa3bc5db6effcef48f342efbd60d896931204580db8cf25",
+      "published_sha256": "8b01f134032c17584fa3bc5db6effcef48f342efbd60d896931204580db8cf25",
+      "bytes": 1228,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-before/transcript.md",
+      "source_sha256": "671fb84e7fc245f9b7fdba2beac4f9c2a16f7920b5af4b12908287c0b9322863",
+      "published_sha256": "671fb84e7fc245f9b7fdba2beac4f9c2a16f7920b5af4b12908287c0b9322863",
+      "bytes": 1811,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-chat/annotation.json",
+      "source_sha256": "b482e8622bf50b56172bc0661630163437498531805afbe2c95fddc3bd68eefc",
+      "published_sha256": "b482e8622bf50b56172bc0661630163437498531805afbe2c95fddc3bd68eefc",
+      "bytes": 1010,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-chat/metadata.json",
+      "source_sha256": "cab0be907f996aeeca7baed28a2e27e48b1cc6a459b93a96fa569a9a9707f50e",
+      "published_sha256": "cab0be907f996aeeca7baed28a2e27e48b1cc6a459b93a96fa569a9a9707f50e",
+      "bytes": 438,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-chat/prompt.txt",
+      "source_sha256": "147b63e7537cf73b8a2931a2aadbcbcfbadc27f1084ad876dba450e73670d1ab",
+      "published_sha256": "147b63e7537cf73b8a2931a2aadbcbcfbadc27f1084ad876dba450e73670d1ab",
+      "bytes": 943,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-chat/reply.txt",
+      "source_sha256": "7a9fdf09c2f9d6dc9f15eefc413282a5b467ca20718f07fbed2fd92f324f276e",
+      "published_sha256": "7a9fdf09c2f9d6dc9f15eefc413282a5b467ca20718f07fbed2fd92f324f276e",
+      "bytes": 1667,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C1-chat/transcript.md",
+      "source_sha256": "7e3712554afdf8f65391ebb07063ca01c0691105ccb755aaa809abc8a346b27c",
+      "published_sha256": "7e3712554afdf8f65391ebb07063ca01c0691105ccb755aaa809abc8a346b27c",
+      "bytes": 2250,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-after/annotation.json",
+      "source_sha256": "81091347f9adfc699f500396fd18481134bcfd8b604f9f6cc01c1b6bee837e3b",
+      "published_sha256": "81091347f9adfc699f500396fd18481134bcfd8b604f9f6cc01c1b6bee837e3b",
+      "bytes": 971,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-after/metadata.json",
+      "source_sha256": "a7e586019bcf961473c190194fe6bf2f10980d4ad741cd67b9eb87c37267302a",
+      "published_sha256": "a7e586019bcf961473c190194fe6bf2f10980d4ad741cd67b9eb87c37267302a",
+      "bytes": 525,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-after/prompt.txt",
+      "source_sha256": "e85d1050a4de01bc0c55ab9199eed40a2421a702003430a18e8c63190f28a135",
+      "published_sha256": "e85d1050a4de01bc0c55ab9199eed40a2421a702003430a18e8c63190f28a135",
+      "bytes": 977,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-after/reply.txt",
+      "source_sha256": "55a06163d2d695da767b62e75903d1c95b26775e1165a2299a4022aaf8cf3cd5",
+      "published_sha256": "55a06163d2d695da767b62e75903d1c95b26775e1165a2299a4022aaf8cf3cd5",
+      "bytes": 1569,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-after/transcript.md",
+      "source_sha256": "047dc17c07163d441b146f16b87ef9b65c1e37a31a67763c8f76484afc725628",
+      "published_sha256": "047dc17c07163d441b146f16b87ef9b65c1e37a31a67763c8f76484afc725628",
+      "bytes": 2051,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-before/annotation.json",
+      "source_sha256": "a6848b27ed7b137e5c29af015ee2f57fdbe0b64c43a3b4f6f9f097cbf083bec8",
+      "published_sha256": "a6848b27ed7b137e5c29af015ee2f57fdbe0b64c43a3b4f6f9f097cbf083bec8",
+      "bytes": 1126,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-before/metadata.json",
+      "source_sha256": "19658c4b9873bfdb0d6bbdf35a955e8e1592511d7a10b336613daf4cbe6e3ec3",
+      "published_sha256": "19658c4b9873bfdb0d6bbdf35a955e8e1592511d7a10b336613daf4cbe6e3ec3",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-before/prompt.txt",
+      "source_sha256": "2f9692266f3d5e73c89e814082f3b8078f3eb680ce1cf3ac187d7d8a50b05dba",
+      "published_sha256": "2f9692266f3d5e73c89e814082f3b8078f3eb680ce1cf3ac187d7d8a50b05dba",
+      "bytes": 978,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-before/reply.txt",
+      "source_sha256": "73698f6116e0d3bfe435bbb8fcdd29dec8041c500619d90405fa6937d1f23d1c",
+      "published_sha256": "73698f6116e0d3bfe435bbb8fcdd29dec8041c500619d90405fa6937d1f23d1c",
+      "bytes": 1352,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-before/transcript.md",
+      "source_sha256": "2a5eac1a86cedbe50b4958d4046b4520d73ec595342bd081dd6683bf4fdeee82",
+      "published_sha256": "2a5eac1a86cedbe50b4958d4046b4520d73ec595342bd081dd6683bf4fdeee82",
+      "bytes": 1834,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-chat/annotation.json",
+      "source_sha256": "225be53f56db0da02a01fc880103cdd29b786db970f2833220071937c58c6b18",
+      "published_sha256": "225be53f56db0da02a01fc880103cdd29b786db970f2833220071937c58c6b18",
+      "bytes": 1004,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-chat/metadata.json",
+      "source_sha256": "30f05eb6d4bae461119a88f951f702671419524949759e0a2ce6567bd15c5a27",
+      "published_sha256": "30f05eb6d4bae461119a88f951f702671419524949759e0a2ce6567bd15c5a27",
+      "bytes": 438,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-chat/prompt.txt",
+      "source_sha256": "3d2ccf59532372bf0647d9aa7cc59c22ec467544547209c0b4222f13528bedff",
+      "published_sha256": "3d2ccf59532372bf0647d9aa7cc59c22ec467544547209c0b4222f13528bedff",
+      "bytes": 842,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-chat/reply.txt",
+      "source_sha256": "4150c4ace15cb8cb2a326c473e8ff20f3a93a60fc6cc40e265037a02d81cd497",
+      "published_sha256": "4150c4ace15cb8cb2a326c473e8ff20f3a93a60fc6cc40e265037a02d81cd497",
+      "bytes": 1368,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C2-chat/transcript.md",
+      "source_sha256": "7a4c9a4cb0d24d7f9ef7ba24e5dc81527803eb76fe8060ce2313067426174f29",
+      "published_sha256": "7a4c9a4cb0d24d7f9ef7ba24e5dc81527803eb76fe8060ce2313067426174f29",
+      "bytes": 1850,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-after/annotation.json",
+      "source_sha256": "d0dc635258e6bcb9e0afd373a3ebe5b511f82404424547bcb2f512ddeb8a0bbc",
+      "published_sha256": "d0dc635258e6bcb9e0afd373a3ebe5b511f82404424547bcb2f512ddeb8a0bbc",
+      "bytes": 1018,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-after/metadata.json",
+      "source_sha256": "e355b534a068523624f7cd8407cf4c7092decdeff48179726181ff093a266d68",
+      "published_sha256": "e355b534a068523624f7cd8407cf4c7092decdeff48179726181ff093a266d68",
+      "bytes": 525,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-after/prompt.txt",
+      "source_sha256": "74cf164ccd4a684aa084c51b404114f03635744f2a10ac3d8adac9f504900d1c",
+      "published_sha256": "74cf164ccd4a684aa084c51b404114f03635744f2a10ac3d8adac9f504900d1c",
+      "bytes": 793,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-after/reply.txt",
+      "source_sha256": "e8da6e54e6ad28e58d9283f5e8fffc288684cb1504c6b9e2137646c374da1fb1",
+      "published_sha256": "e8da6e54e6ad28e58d9283f5e8fffc288684cb1504c6b9e2137646c374da1fb1",
+      "bytes": 1009,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-after/transcript.md",
+      "source_sha256": "e5070907e2ede4e54e668ee159e54cb621334bdc66782d8ecdfc693ed051a23c",
+      "published_sha256": "e5070907e2ede4e54e668ee159e54cb621334bdc66782d8ecdfc693ed051a23c",
+      "bytes": 1307,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-before/annotation.json",
+      "source_sha256": "49865e22a68d89979067ba3ab5291fbc8051b2d712fdf84004d1d8e02bd16e72",
+      "published_sha256": "49865e22a68d89979067ba3ab5291fbc8051b2d712fdf84004d1d8e02bd16e72",
+      "bytes": 1185,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-before/metadata.json",
+      "source_sha256": "47433535e614c86263a93c36c0a4935676b85f124e801d8e41645a03c6ab23d3",
+      "published_sha256": "47433535e614c86263a93c36c0a4935676b85f124e801d8e41645a03c6ab23d3",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-before/prompt.txt",
+      "source_sha256": "877d8b6866710ee0bd7ec464b8f4233568095aefe756add6f37e2b53e3f93cfa",
+      "published_sha256": "877d8b6866710ee0bd7ec464b8f4233568095aefe756add6f37e2b53e3f93cfa",
+      "bytes": 794,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-before/reply.txt",
+      "source_sha256": "16747d49f3b7a4d23dcff0a06159938da6f387610d2976ece9e1184c1b625acd",
+      "published_sha256": "16747d49f3b7a4d23dcff0a06159938da6f387610d2976ece9e1184c1b625acd",
+      "bytes": 1418,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-before/transcript.md",
+      "source_sha256": "b10a1237561b14e5d040dea2ed6ee68a79abe50b449eaeeee78b5241778451fe",
+      "published_sha256": "b10a1237561b14e5d040dea2ed6ee68a79abe50b449eaeeee78b5241778451fe",
+      "bytes": 1716,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-chat/annotation.json",
+      "source_sha256": "8b0b6b68fbfa0ef87d5042e28f645fba01d85627b3bc2d640f39e4bd6a7fb320",
+      "published_sha256": "8b0b6b68fbfa0ef87d5042e28f645fba01d85627b3bc2d640f39e4bd6a7fb320",
+      "bytes": 1280,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-chat/metadata.json",
+      "source_sha256": "c314a78b569a4cf4516b0570efd9516dd990b0b9a00ded63a94238a892f49fe5",
+      "published_sha256": "c314a78b569a4cf4516b0570efd9516dd990b0b9a00ded63a94238a892f49fe5",
+      "bytes": 438,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-chat/prompt.txt",
+      "source_sha256": "d540b165c9b1721df3623c017c7469125c184a13128b3e5535af7a0c66f36186",
+      "published_sha256": "d540b165c9b1721df3623c017c7469125c184a13128b3e5535af7a0c66f36186",
+      "bytes": 658,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-chat/reply.txt",
+      "source_sha256": "9ae21fd238843b10190fda61394d3a9329c72c397157ec7b06b58af00603d50a",
+      "published_sha256": "9ae21fd238843b10190fda61394d3a9329c72c397157ec7b06b58af00603d50a",
+      "bytes": 1214,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/C3-chat/transcript.md",
+      "source_sha256": "594d0c273683b57c7328238d4a8a0fdf71c6c6d4f41e55baca883c4c511c7121",
+      "published_sha256": "594d0c273683b57c7328238d4a8a0fdf71c6c6d4f41e55baca883c4c511c7121",
+      "bytes": 1512,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-after/annotation.json",
+      "source_sha256": "eee398f12b543d2ef396020771707e2eacd942cfa0b9467716d00f0aa4965d46",
+      "published_sha256": "eee398f12b543d2ef396020771707e2eacd942cfa0b9467716d00f0aa4965d46",
+      "bytes": 1154,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-after/metadata.json",
+      "source_sha256": "a9fda7c9bfef8989a7228edb69c0e483c71030c0cdf6c09e4fd948518aab92fd",
+      "published_sha256": "a9fda7c9bfef8989a7228edb69c0e483c71030c0cdf6c09e4fd948518aab92fd",
+      "bytes": 525,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-after/prompt.txt",
+      "source_sha256": "5faba7ed5c944e71693cddf87511502a2f0ef44dc4683651a2595d2a3de5da05",
+      "published_sha256": "5faba7ed5c944e71693cddf87511502a2f0ef44dc4683651a2595d2a3de5da05",
+      "bytes": 1127,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-after/reply.txt",
+      "source_sha256": "df3024123d3a1f762f67663cff06da4ee8211fce5730277701b184dec7e8ebc5",
+      "published_sha256": "df3024123d3a1f762f67663cff06da4ee8211fce5730277701b184dec7e8ebc5",
+      "bytes": 1950,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-after/transcript.md",
+      "source_sha256": "02f37da01baad4a7d920abac7cef219571a80d521dd1d0862e0ddca5ece158bf",
+      "published_sha256": "02f37da01baad4a7d920abac7cef219571a80d521dd1d0862e0ddca5ece158bf",
+      "bytes": 2582,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before/annotation.json",
+      "source_sha256": "cd7716d6a3fe5c713f9c3b77e1a222b2f27514974c72c40c22ec227e29cd8520",
+      "published_sha256": "cd7716d6a3fe5c713f9c3b77e1a222b2f27514974c72c40c22ec227e29cd8520",
+      "bytes": 966,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before/metadata.json",
+      "source_sha256": "56eafd021d9578205c1ef7915246da9a79906b20e450f81e957aa1e2d4494394",
+      "published_sha256": "56eafd021d9578205c1ef7915246da9a79906b20e450f81e957aa1e2d4494394",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before/prompt.txt",
+      "source_sha256": "d9be7c4b877d95e5edf2685eacb2d424aba8e193775875bb8399d9b422aaa2f0",
+      "published_sha256": "d9be7c4b877d95e5edf2685eacb2d424aba8e193775875bb8399d9b422aaa2f0",
+      "bytes": 1128,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before/reply.txt",
+      "source_sha256": "1b22fb79b6e62857713afb7d3fee6abc28ca1010f37e3201eb771d0a097123a9",
+      "published_sha256": "1b22fb79b6e62857713afb7d3fee6abc28ca1010f37e3201eb771d0a097123a9",
+      "bytes": 1192,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before/transcript.md",
+      "source_sha256": "0315695f3f1706ac76fe1e432d50df60431a53a9f4e3fc0725d64463dd9fff8e",
+      "published_sha256": "0315695f3f1706ac76fe1e432d50df60431a53a9f4e3fc0725d64463dd9fff8e",
+      "bytes": 1824,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before-repeat/annotation.json",
+      "source_sha256": "2559120804ff314f066cfa868abf0b8f18365f27bbd8743b61444c4d78ddc9c2",
+      "published_sha256": "2559120804ff314f066cfa868abf0b8f18365f27bbd8743b61444c4d78ddc9c2",
+      "bytes": 960,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before-repeat/metadata.json",
+      "source_sha256": "9bebea722a34dbb313c86fce8ec35b4f4b18a41129bc91ee12a22d15cff241db",
+      "published_sha256": "9bebea722a34dbb313c86fce8ec35b4f4b18a41129bc91ee12a22d15cff241db",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before-repeat/prompt.txt",
+      "source_sha256": "d9be7c4b877d95e5edf2685eacb2d424aba8e193775875bb8399d9b422aaa2f0",
+      "published_sha256": "d9be7c4b877d95e5edf2685eacb2d424aba8e193775875bb8399d9b422aaa2f0",
+      "bytes": 1128,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before-repeat/reply.txt",
+      "source_sha256": "21314ea8a0e3c620a3eeb33ca8e88e77fb2a608898ab26c37d4c4f5eb352b3f6",
+      "published_sha256": "21314ea8a0e3c620a3eeb33ca8e88e77fb2a608898ab26c37d4c4f5eb352b3f6",
+      "bytes": 1305,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-before-repeat/transcript.md",
+      "source_sha256": "b85b9973df98da78c2217a3e95baca65273e60a12f28648782e59354aa67ece2",
+      "published_sha256": "b85b9973df98da78c2217a3e95baca65273e60a12f28648782e59354aa67ece2",
+      "bytes": 1937,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-chat/annotation.json",
+      "source_sha256": "536fd3ee21da75dfc24b6ca5707cf42d336efd777c051b009f34079af23209ed",
+      "published_sha256": "536fd3ee21da75dfc24b6ca5707cf42d336efd777c051b009f34079af23209ed",
+      "bytes": 1168,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-chat/metadata.json",
+      "source_sha256": "29b762c869495985f0503310f115a2dd11e1ab80a79f9fd5f3face975ad6275c",
+      "published_sha256": "29b762c869495985f0503310f115a2dd11e1ab80a79f9fd5f3face975ad6275c",
+      "bytes": 438,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-chat/prompt.txt",
+      "source_sha256": "13767b7df3b4b875ad7fd636407f37e71a0c01e26f8357dbd3652a1ec78f04b4",
+      "published_sha256": "13767b7df3b4b875ad7fd636407f37e71a0c01e26f8357dbd3652a1ec78f04b4",
+      "bytes": 992,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-chat/reply.txt",
+      "source_sha256": "9379515ea2d0909c8073af70d075c9a9352be147a85dc61600e8f0a252ad95d2",
+      "published_sha256": "9379515ea2d0909c8073af70d075c9a9352be147a85dc61600e8f0a252ad95d2",
+      "bytes": 1993,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D1-chat/transcript.md",
+      "source_sha256": "774145e5e82c3adefa2d4f26abdd5def8ddd5791828b1e1af58dd8db853f0ee3",
+      "published_sha256": "774145e5e82c3adefa2d4f26abdd5def8ddd5791828b1e1af58dd8db853f0ee3",
+      "bytes": 2625,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-before/annotation.json",
+      "source_sha256": "6d2975c789b6ffa041dde3213fdf060f937a5696a7d864ae1af0f93fd8dffc94",
+      "published_sha256": "6d2975c789b6ffa041dde3213fdf060f937a5696a7d864ae1af0f93fd8dffc94",
+      "bytes": 1008,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-before/metadata.json",
+      "source_sha256": "a1c743d8e0a6b30363b59e44685ae9ecf2ea569675b8ac37b917de582f6cfd33",
+      "published_sha256": "a1c743d8e0a6b30363b59e44685ae9ecf2ea569675b8ac37b917de582f6cfd33",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-before/prompt.txt",
+      "source_sha256": "14e084a3d7831321c4b946a685b939600960d7da4ccf237bb9d1b27e8a9a594b",
+      "published_sha256": "14e084a3d7831321c4b946a685b939600960d7da4ccf237bb9d1b27e8a9a594b",
+      "bytes": 988,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-before/reply.txt",
+      "source_sha256": "9f39e6b6e36a21d359506952f1af94f43dfacb9335acfb808997ebe36cc0ca0e",
+      "published_sha256": "9f39e6b6e36a21d359506952f1af94f43dfacb9335acfb808997ebe36cc0ca0e",
+      "bytes": 1240,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-before/transcript.md",
+      "source_sha256": "73c99db9f306a5f38acc96bf39aba3ff62ebf1d77c115936acb2831b137ef825",
+      "published_sha256": "73c99db9f306a5f38acc96bf39aba3ff62ebf1d77c115936acb2831b137ef825",
+      "bytes": 1732,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-chat/annotation.json",
+      "source_sha256": "b1057583b4f7a2e51103bfd31945dff7ba6b3806e1d2e1207dd4faecdeedf837",
+      "published_sha256": "b1057583b4f7a2e51103bfd31945dff7ba6b3806e1d2e1207dd4faecdeedf837",
+      "bytes": 1038,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-chat/metadata.json",
+      "source_sha256": "370e074e5c32ffb62275f5b4cbcd88560971f40291c212dd5eab8fef540a1d16",
+      "published_sha256": "370e074e5c32ffb62275f5b4cbcd88560971f40291c212dd5eab8fef540a1d16",
+      "bytes": 438,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-chat/prompt.txt",
+      "source_sha256": "7cde2d29cbffa12daa73a23f370fa3977cbc74634a1432a10beddcc71aca40eb",
+      "published_sha256": "7cde2d29cbffa12daa73a23f370fa3977cbc74634a1432a10beddcc71aca40eb",
+      "bytes": 852,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-chat/reply.txt",
+      "source_sha256": "e9fac528dec39c30bf36918b90bc0e8282fb0575f8438f0281cbbb57437a5856",
+      "published_sha256": "e9fac528dec39c30bf36918b90bc0e8282fb0575f8438f0281cbbb57437a5856",
+      "bytes": 974,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D2-chat/transcript.md",
+      "source_sha256": "7719cf8b798cf688cf71455ced01fa8e59b71c9c4ad84495c3d4d6b255c416a2",
+      "published_sha256": "7719cf8b798cf688cf71455ced01fa8e59b71c9c4ad84495c3d4d6b255c416a2",
+      "bytes": 1466,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-before/annotation.json",
+      "source_sha256": "3c11f3903df5925ed468493b99ac0a6ca4ef3edbc3f50ccd3f5c0b1ef3029b85",
+      "published_sha256": "3c11f3903df5925ed468493b99ac0a6ca4ef3edbc3f50ccd3f5c0b1ef3029b85",
+      "bytes": 965,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-before/metadata.json",
+      "source_sha256": "45a591e9b12dec503ab7e1566786c62c834361052d71eb5df2c72a09ff6c8f23",
+      "published_sha256": "45a591e9b12dec503ab7e1566786c62c834361052d71eb5df2c72a09ff6c8f23",
+      "bytes": 526,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-before/prompt.txt",
+      "source_sha256": "85ebbc1f295c819bfa22f1ef6b45b487cc241ef298fb4d501ead930a5ae088cb",
+      "published_sha256": "85ebbc1f295c819bfa22f1ef6b45b487cc241ef298fb4d501ead930a5ae088cb",
+      "bytes": 915,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-before/reply.txt",
+      "source_sha256": "37c2c5473e30d93138e2cd08b7e61ac1dbc9e426aa9edd4a7816252f78a76db6",
+      "published_sha256": "37c2c5473e30d93138e2cd08b7e61ac1dbc9e426aa9edd4a7816252f78a76db6",
+      "bytes": 1147,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-before/transcript.md",
+      "source_sha256": "7f0e098d55bd7196516a7adba1ffe4b7484ae98c638c90ec99c4369e0f577db6",
+      "published_sha256": "7f0e098d55bd7196516a7adba1ffe4b7484ae98c638c90ec99c4369e0f577db6",
+      "bytes": 1566,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-chat/annotation.json",
+      "source_sha256": "17426b0a406a2a1a47cfe59c3bdc728bdc393185d2df0bcc3d4f5cdea299ac21",
+      "published_sha256": "17426b0a406a2a1a47cfe59c3bdc728bdc393185d2df0bcc3d4f5cdea299ac21",
+      "bytes": 953,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-chat/metadata.json",
+      "source_sha256": "07746a28b44587a55376a247baf01a429beb35f3fb1d5e832a0c027132fad3a8",
+      "published_sha256": "07746a28b44587a55376a247baf01a429beb35f3fb1d5e832a0c027132fad3a8",
+      "bytes": 438,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-chat/prompt.txt",
+      "source_sha256": "30c60aedfd92d6b83de19cf5d9f788c003351d8c61d5ca68c7dc82a5bf5ccb6f",
+      "published_sha256": "30c60aedfd92d6b83de19cf5d9f788c003351d8c61d5ca68c7dc82a5bf5ccb6f",
+      "bytes": 779,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-chat/reply.txt",
+      "source_sha256": "e9d53c5d5119fec2cd51d6690bfe016fd70bb15e35575ea42440c5639e6348be",
+      "published_sha256": "e9d53c5d5119fec2cd51d6690bfe016fd70bb15e35575ea42440c5639e6348be",
+      "bytes": 1286,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/runs/D3-chat/transcript.md",
+      "source_sha256": "78f68b2d54de67bc649a258c911fffe300648ba36ff407b5b9fb07bea32120c0",
+      "published_sha256": "78f68b2d54de67bc649a258c911fffe300648ba36ff407b5b9fb07bea32120c0",
+      "bytes": 1705,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/source/math-logic.md",
+      "source_sha256": "6dd38f93a3d3e5bea6662a84b52c6b0d3efbe3c5a34f20ec2f929cae7f4eba92",
+      "published_sha256": "6dd38f93a3d3e5bea6662a84b52c6b0d3efbe3c5a34f20ec2f929cae7f4eba92",
+      "bytes": 995,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/source/original.md",
+      "source_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+      "published_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+      "bytes": 15445,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/source/revised.md",
+      "source_sha256": "889afe7b8245c4a47e8436064e2e0b5aceb63d6a8e152f28b18d79a82857a5eb",
+      "published_sha256": "889afe7b8245c4a47e8436064e2e0b5aceb63d6a8e152f28b18d79a82857a5eb",
+      "bytes": 15677,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/iterations/tutor-vs-chat/test_oracles.py",
+      "source_sha256": "f753650e35c399d75abbfdef58480c2642c52d6a343ef45ef77728c3ace407af",
+      "published_sha256": "f753650e35c399d75abbfdef58480c2642c52d6a343ef45ef77728c3ace407af",
+      "bytes": 4352,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/LESSONS.md",
+      "source_sha256": "dff373d1c502cec2ac2b0e4aa29595239203396c0194956d875ab3e604e1dcb0",
+      "published_sha256": "dff373d1c502cec2ac2b0e4aa29595239203396c0194956d875ab3e604e1dcb0",
+      "bytes": 2637,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/MANIFEST.json",
+      "source_sha256": "f70a42da38621af7a9be935f8ee72d54f7797d10c9fc488c2bf98a266d7b23c2",
+      "published_sha256": "f70a42da38621af7a9be935f8ee72d54f7797d10c9fc488c2bf98a266d7b23c2",
+      "bytes": 8623,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/MIGRATION.md",
+      "source_sha256": "f145e33867d581fdc6bfdb621b2cdd45f7215c857e4091510666bb0b2af2d085",
+      "published_sha256": "f145e33867d581fdc6bfdb621b2cdd45f7215c857e4091510666bb0b2af2d085",
+      "bytes": 9492,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/NON_GOALS.md",
+      "source_sha256": "fbba0ae89390b2a5f60454c4500e91b1b798937a8233e91a428769d406497641",
+      "published_sha256": "fbba0ae89390b2a5f60454c4500e91b1b798937a8233e91a428769d406497641",
+      "bytes": 6560,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/prompts/implementer.md",
+      "source_sha256": "456e64980fd24af937ada468586b3cabb2259f3429fb087912294fe015e0ebfe",
+      "published_sha256": "456e64980fd24af937ada468586b3cabb2259f3429fb087912294fe015e0ebfe",
+      "bytes": 6156,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/prompts/judge.md",
+      "source_sha256": "830448e5ccbdfe9394c504db8938dddb87791ff6f204ad3f7321df9b0accddc6",
+      "published_sha256": "830448e5ccbdfe9394c504db8938dddb87791ff6f204ad3f7321df9b0accddc6",
+      "bytes": 4886,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/prompts/reviewer.md",
+      "source_sha256": "c7b460e76a9cef933939c0b8ebdfca7181da8bd07915762cf539cd29f52bbac2",
+      "published_sha256": "c7b460e76a9cef933939c0b8ebdfca7181da8bd07915762cf539cd29f52bbac2",
+      "bytes": 5510,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/PROPOSAL.md",
+      "source_sha256": "c3e70a6e7faa98792375d3e3bc851c8158cd4dd5ee072f0aa4bd59ddf05161fc",
+      "published_sha256": "c3e70a6e7faa98792375d3e3bc851c8158cd4dd5ee072f0aa4bd59ddf05161fc",
+      "bytes": 21868,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/README.md",
+      "source_sha256": "9e1d786d3d68f9100d80a5c21e1498984d59c5d8414f899536a9aab8876e5361",
+      "published_sha256": "11a0c95d3a2f5456b7a9519bb10e17c32933a3795df36fa8fb30f90f8c21ceac",
+      "bytes": 6364,
+      "publication_changes": [
+        "Added a historical-context banner; original document content retained."
+      ]
+    },
+    {
+      "path": "handoff/SCHEMA_V2.md",
+      "source_sha256": "a14cb5f6b87871c2170a0f027bebe9ab90901234492b841fdfb013bcdd4c8cdb",
+      "published_sha256": "a14cb5f6b87871c2170a0f027bebe9ab90901234492b841fdfb013bcdd4c8cdb",
+      "bytes": 12691,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/SECURITY_PRIVACY.md",
+      "source_sha256": "8b2c1a05972d9665883c1df870e820898be4a9561f224029650060cbda911ab0",
+      "published_sha256": "8b2c1a05972d9665883c1df870e820898be4a9561f224029650060cbda911ab0",
+      "bytes": 12877,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/smoke/2026-10-29/before-L-09-run-1.md",
+      "source_sha256": "1fef373ce09253ce7807646d9059f0631366777729adb062326bb9ff567cbe93",
+      "published_sha256": "1fef373ce09253ce7807646d9059f0631366777729adb062326bb9ff567cbe93",
+      "bytes": 3979,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/smoke/2026-10-29/before-L-09-run-2.md",
+      "source_sha256": "35e30c079aeebf828a40e897c7598b92e1a7cc9637af8e689bb0aa1148a4a0b5",
+      "published_sha256": "35e30c079aeebf828a40e897c7598b92e1a7cc9637af8e689bb0aa1148a4a0b5",
+      "bytes": 3113,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/smoke/2026-10-29/candidate-L-09-run-1.md",
+      "source_sha256": "614892a195d26b8bd87172d9b15e955d49493a05a489faca787dcf48a78ec387",
+      "published_sha256": "614892a195d26b8bd87172d9b15e955d49493a05a489faca787dcf48a78ec387",
+      "bytes": 3577,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/smoke/2026-10-29/candidate-L-09-run-2.md",
+      "source_sha256": "391eab48dc61c2142b4ba383cab9519fed647256af6e18218086d9df9dfb90a1",
+      "published_sha256": "391eab48dc61c2142b4ba383cab9519fed647256af6e18218086d9df9dfb90a1",
+      "bytes": 3845,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/smoke/2026-10-29/final-numeric-smoke.md",
+      "source_sha256": "d37ae8aa91ee3ffcbaccab2d30082c57761cf94bcede045942f234a3088f21ab",
+      "published_sha256": "d37ae8aa91ee3ffcbaccab2d30082c57761cf94bcede045942f234a3088f21ab",
+      "bytes": 989,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/smoke/2026-10-29/MANIFEST.md",
+      "source_sha256": "25e0a54c66b16418ab917f12e551e28c136a2379b8e63ba8f74c8ebb8ee6af93",
+      "published_sha256": "25e0a54c66b16418ab917f12e551e28c136a2379b8e63ba8f74c8ebb8ee6af93",
+      "bytes": 3829,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/SYNTHESIS_TASK.md",
+      "source_sha256": "e08dcf292c981b945daf8bacfa495d53785225021e63e8796aa2c34982d9173e",
+      "published_sha256": "e08dcf292c981b945daf8bacfa495d53785225021e63e8796aa2c34982d9173e",
+      "bytes": 8122,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/tests/adversarial/cases.md",
+      "source_sha256": "0fc81b08294f4ab96e1946a38a3fd3505339b617cfbbea723e14d4c4b5e795ef",
+      "published_sha256": "0fc81b08294f4ab96e1946a38a3fd3505339b617cfbbea723e14d4c4b5e795ef",
+      "bytes": 7373,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/tests/live/cases.json",
+      "source_sha256": "d56cc7453135d25317e4772923d61bc73658e9e452689740f757b189e453bf5e",
+      "published_sha256": "d56cc7453135d25317e4772923d61bc73658e9e452689740f757b189e453bf5e",
+      "bytes": 27318,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/tests/live/check_cases.py",
+      "source_sha256": "15ba8e04e54d24d3c2503c84e6c6c0d2f060e0f491cc26bf64ec21511a80661a",
+      "published_sha256": "15ba8e04e54d24d3c2503c84e6c6c0d2f060e0f491cc26bf64ec21511a80661a",
+      "bytes": 8745,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/tests/live/holdout.json",
+      "source_sha256": "a923519a0d94303cf1735d7fed54173ae102d06f7eb72628c0c46cbe5ebaa3cc",
+      "published_sha256": "a923519a0d94303cf1735d7fed54173ae102d06f7eb72628c0c46cbe5ebaa3cc",
+      "bytes": 309,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/tests/live/README.md",
+      "source_sha256": "828f4f2d67ce76d0da6caedd67f7ab54c49e9d586e06289c37df82ec194d32aa",
+      "published_sha256": "828f4f2d67ce76d0da6caedd67f7ab54c49e9d586e06289c37df82ec194d32aa",
+      "bytes": 7338,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/tests/live/rubric.md",
+      "source_sha256": "fd0c8f6f024a47dbf3d4c3f7edf1f54ff6b5f190e054d43322d41948fd75fda4",
+      "published_sha256": "fd0c8f6f024a47dbf3d4c3f7edf1f54ff6b5f190e054d43322d41948fd75fda4",
+      "bytes": 9436,
+      "publication_changes": []
+    },
+    {
+      "path": "handoff/WORK_ORDER.md",
+      "source_sha256": "aeecda75f656f572199dcf0dd8f914d18be6efa49dde7d4b813689f3ba06788f",
+      "published_sha256": "aeecda75f656f572199dcf0dd8f914d18be6efa49dde7d4b813689f3ba06788f",
+      "bytes": 12059,
+      "publication_changes": []
+    },
+    {
+      "path": "research.md",
+      "source_sha256": "bef560b029e5b6f8d991dd983c8000d52b2691da6eb700d544a458bc0287dc5a",
+      "published_sha256": "939401649070352a9e3389dff4872c3896f369987251689b3ad5862f9c99bbe6",
+      "bytes": 57212,
+      "publication_changes": [
+        "Added historical/citation context and redacted one local interpreter path."
+      ]
+    }
+  ]
+}

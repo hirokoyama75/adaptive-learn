@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T06:59:55.459069+00:00",
+  "monotonic_ns": 8178272136300,
+  "run": "w617-selfstudy",
+  "index": 0,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "e49604dbb3599c9e6c813bacf7b67cb37cb30642a69396549ea0d54070b41a26",
+  "material_sha256": "99c8f5dbea76cb6cec16d92acaab91f30a768d047fd44d668b40104b2cc3309e",
+  "session": "ses_e798a48c9ffeWtOGiCXnmBJ6L1",
+  "capture_utc": "2026-10-29T07:01:30.329178+00:00",
+  "launch_to_capture_seconds": 94.8701089,
+  "raw_sha256": "cb76ea7d2e27e2956f6a76ec530ff3af617ffd418fe1a18cb118353203369046",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": true,
+      "quote": "Undo a chain by applying each op's inverse in reverse order: S is its own inverse, N^-1(a,b)=(a-b,b), W^-1(a,b)=(b-2a,a) (mod 5)."
+    },
+    "loss": {
+      "ok": true,
+      "quote": "erasing x, and the rest forces y=0, so every (x,0) works"
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "at [0,1] these are [3,1] vs [1,1], so not equivalent."
+    }
+  },
+  "qualifies": true
+}

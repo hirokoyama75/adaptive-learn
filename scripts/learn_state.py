@@ -18,6 +18,8 @@ from functools import wraps
 PROFILE_MARKER = "<!-- adaptive-learn:1 -->"
 VIEW_MARKER = "<!-- adaptive-learn generated view; state.json is canonical -->"
 VERSION = 1
+STATE_VERSION = 2
+MAX_BYTES = 16 * 1024 * 1024
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -102,11 +104,17 @@ def _reject_constant(value):
     raise LearningError(f"Invalid JSON constant: {value}")
 
 
-def _read_json(path):
+def _read_bytes(path):
     _require(path.is_file(), f"Missing or non-regular learning file: {path}")
-    _require(path.stat().st_size <= 16 * 1024 * 1024, f"Learning file exceeds the 16 MiB safety limit: {path}")
+    with path.open("rb") as stream:
+        raw = stream.read(MAX_BYTES + 1)
+    _require(len(raw) <= MAX_BYTES, f"Learning file exceeds the 16 MiB safety limit: {path}")
+    return raw
+
+
+def _read_json(path):
     try:
-        return json.loads(path.read_text(encoding="utf-8-sig"), object_pairs_hook=_pairs,
+        return json.loads(_read_bytes(path).decode("utf-8-sig"), object_pairs_hook=_pairs,
                           parse_constant=_reject_constant)
     except (UnicodeError, json.JSONDecodeError, RecursionError) as error:
         raise LearningError(f"Malformed learning data in {path}: {error}") from error
@@ -118,9 +126,9 @@ def _fields(value, allowed, required=()):
     _require(set(required) <= set(value), f"Missing fields: {sorted(set(required) - set(value))}")
 
 
-def _version(value, fields):
+def _version(value, fields, version=VERSION):
     _fields(value, fields, fields)
-    _require(type(value["format_version"]) is int and value["format_version"] == VERSION,
+    _require(type(value["format_version"]) is int and value["format_version"] == version,
              "Unsupported learning format; existing data was not reinitialized.")
 
 
@@ -269,7 +277,7 @@ def _is_withdrawn(target, graph):
 
 def _reviews(state, graph):
     result = {}
-    paused = {review["target"]: (review["paused"], review["pause_reason"]) for review in state["reviews"]}
+    paused = {target: (True, reason) for target, reason in state["suspensions"].items()}
     events = sorted(enumerate(state["evidence"]), key=lambda item: (_at(item[1]["at"]), item[0]))
     for _, event in events:
         target = event["target"]
@@ -277,12 +285,11 @@ def _reviews(state, graph):
             continue
         sound = event["outcome"] == "correct" and event["independence"] == "independent"
         if sound and event["importance"] == "low" and not paused.get(target, (False, None))[0]:
-            result.pop(target, None)
             continue
         previous = result.get(target)
         observed = _at(event["at"])
         interval = previous["interval_days"] if previous and sound else 1
-        if previous and sound and event["kind"] == "retrieval" and observed >= _at(previous["due_at"]):
+        if previous and sound and event["after_gap"] and observed >= _at(previous["due_at"]):
             interval = min(interval * 2, 30)
         due = observed + timedelta(days=interval)
         deadline = state["constraints"]["deadline"]
@@ -312,11 +319,13 @@ def _due(review, state, now):
     anchor = review["after_evidence_id"]
     if anchor is None:
         return False
-    index = next(index for index, event in enumerate(state["evidence"]) if event["id"] == anchor)
-    observed = _at(state["evidence"][index]["at"])
+    event = next((event for event in state["evidence"] if event["id"] == anchor), None)
+    if event is None:
+        return False
+    observed = _at(event["at"])
     return any(not event["invalidated"] and event["kind"] in ("performance", "retrieval")
-               and event["target"] != review["target"] and _at(event["at"]) >= observed
-               for event in state["evidence"][index + 1:])
+               and event["target"] != review["target"] and observed <= _at(event["at"]) <= now
+               for event in state["evidence"])
 
 
 def _due_reviews(state, graph, now):
@@ -334,6 +343,11 @@ def _validate_state(state, graph):
     _text(state["goal"], empty=True)
     _require(state["mode"] in ("cram", "class", "depth"), "Mode must be cram, class, or depth.")
     _constraints(state["constraints"])
+    suspensions = state.get("suspensions", {})
+    _require(isinstance(suspensions, dict), "Suspensions must map target IDs to reasons.")
+    for target, reason in suspensions.items():
+        _target(target, graph)
+        _text(reason)
     _checkpoint(state["checkpoint"], graph)
     _require(isinstance(state["plan"], list) and len(state["plan"]) <= 64, "Plan must stay compact.")
     for item in state["plan"]:
@@ -446,25 +460,39 @@ def _validate_graph(graph, root=None):
 def _load(root, subject):
     root, folder = _location(root, subject)
     profile = root / "LEARNER.md"
-    _require(profile.is_file() and profile.read_text(encoding="utf-8-sig").startswith(PROFILE_MARKER),
+    _require(profile.is_file() and _read_bytes(profile).decode("utf-8-sig").startswith(PROFILE_MARKER),
              "No recognized LEARNER.md marker at the explicitly selected root.")
     graph = _read_json(folder / "graph.json")
     state = _read_json(folder / "state.json")
     _version(graph, {"format_version", "nodes", "prerequisites", "arguments", "links"})
-    _version(state, {"format_version", "revision", "subject", "goal", "mode", "constraints",
-                     "checkpoint", "plan", "evidence", "reviews", "saved_at"})
+    state_version = state.get("format_version") if isinstance(state, dict) else None
+    _require(type(state_version) is int and state_version in (1, STATE_VERSION),
+             "Unsupported learning format; existing data was not reinitialized.")
+    fields = {"format_version", "revision", "subject", "goal", "mode", "constraints",
+              "checkpoint", "plan", "evidence", "reviews", "saved_at"}
+    _version(state, fields | ({"suspensions"} if state_version == STATE_VERSION else set()), state_version)
     _require(state["subject"] == subject, "State belongs to a different subject.")
     _validate_graph(graph, root)
     _validate_state(state, graph)
-    return root, folder, graph, state
+    migrated = state_version == 1
+    if migrated:
+        state = {**state, "format_version": STATE_VERSION,
+                 "suspensions": {review["target"]: review["pause_reason"]
+                                 for review in state["reviews"] if review["paused"]}}
+    state["reviews"] = _reviews(state, graph)
+    _validate_state(state, graph)
+    return root, folder, graph, state, migrated
 
 
-def _privacy(root, subject):
+def _privacy(root, subject, *, repair=True):
     path = _owned(root, root / ".gitignore")
     existing = path.read_bytes() if path.exists() else b""
     rules = [b"/LEARNER.md", f"/{subject}/.learning/".encode("ascii")]
     missing = [rule for rule in rules if rule not in existing.splitlines()]
-    if missing:
+    warnings = []
+    if missing and not repair:
+        warnings.append("Learner Git ignore rules are missing; inspect before sharing or run init to restore them. No rules were changed.")
+    if missing and repair:
         suffix = (b"\n" if existing and not existing.endswith(b"\n") else b"") + b"\n".join(missing) + b"\n"
         # Preserve even non-UTF8 user rules byte-for-byte.
         descriptor, temporary = tempfile.mkstemp(prefix=".adaptive-", suffix=".tmp", dir=root)
@@ -477,7 +505,6 @@ def _privacy(root, subject):
         finally:
             if os.path.exists(temporary):
                 os.unlink(temporary)
-    warnings = []
     git = shutil.which("git")
     if git:
         try:
@@ -498,6 +525,13 @@ def _privacy(root, subject):
     else:
         warnings.append("Git was unavailable; existing tracking was not checked.")
     return warnings
+
+
+def _privacy_warnings(root, subject):
+    try:
+        return _privacy(root, subject, repair=False)
+    except (OSError, UnicodeError, LearningError) as error:
+        return [f"Could not verify learner Git ignore/tracking protection: {error}. Inspect before sharing; no rules were changed."]
 
 
 def _views(root, folder, state, changes=None):
@@ -544,15 +578,15 @@ def initialize(root, subject):
     profile = root / "LEARNER.md"
     existing = (folder / "state.json").exists() or (folder / "graph.json").exists()
     if profile.exists():
-        _require(profile.is_file() and profile.read_text(encoding="utf-8-sig").startswith(PROFILE_MARKER),
+        _require(profile.is_file() and _read_bytes(profile).decode("utf-8-sig").startswith(PROFILE_MARKER),
                  "Unfamiliar LEARNER.md; choose another root or inspect it, not overwrite it.")
     if existing:
-        _, _, _, state = _load(root, subject)
+        _, _, _, state, _ = _load(root, subject)
     else:
-        state = {"format_version": VERSION, "revision": 0, "subject": subject, "goal": "", "mode": "class",
+        state = {"format_version": STATE_VERSION, "revision": 0, "subject": subject, "goal": "", "mode": "class",
                  "constraints": {"deadline": None, "study_minutes": None, "scope": [],
                                  "scope_status": "unknown", "scope_source": None},
-                 "checkpoint": None, "plan": [], "evidence": [], "reviews": [], "saved_at": None}
+                 "checkpoint": None, "plan": [], "evidence": [], "reviews": [], "suspensions": {}, "saved_at": None}
     root.mkdir(parents=True, exist_ok=True)
     warnings = _privacy(root, subject)
     if not profile.exists():
@@ -568,7 +602,7 @@ def initialize(root, subject):
 @_operation
 def resume(root, subject, *, targets=None, review_limit=3, evidence_limit=12, max_chars=24000, now=None):
     """Read a selected, bounded working view; never change learner data."""
-    root, _, graph, state = _load(root, subject)
+    root, _, graph, state, migrated = _load(root, subject)
     _require(type(review_limit) is int and 0 <= review_limit <= 20, "Review limit must be 0–20.")
     _require(type(evidence_limit) is int and 0 <= evidence_limit <= 100, "Evidence limit must be 0–100.")
     _require(type(max_chars) is int and 1024 <= max_chars <= 64000, "Resume character budget must be 1024–64000.")
@@ -585,17 +619,21 @@ def resume(root, subject, *, targets=None, review_limit=3, evidence_limit=12, ma
             selected.append(target)
     selected = list(dict.fromkeys(selected))
     relevant = [event for event in state["evidence"] if event["target"] in selected]
-    profile = (root / "LEARNER.md").read_text(encoding="utf-8-sig")
+    profile = _read_bytes(root / "LEARNER.md").decode("utf-8-sig")
     packet = {**state, "constraints": deepcopy(state["constraints"]), "selected_targets": selected,
               "evidence": relevant[-evidence_limit:] if evidence_limit else [],
-              "reviews": due[:review_limit], "plan": [item for item in state["plan"] if item["target"] in selected],
+              "reviews": [review for review in due if review["target"] in selected][:review_limit],
+              "plan": [item for item in state["plan"] if item["target"] in selected],
+              "suspensions": {target: reason for target, reason in state["suspensions"].items() if target in selected},
               "graph": {"format_version": VERSION,
                         "nodes": {key: value for key, value in graph["nodes"].items() if key in selected},
                         "prerequisites": [edge for edge in graph["prerequisites"] if edge["target"] in selected and edge["requires"] in selected],
                         "arguments": {key: value for key, value in graph["arguments"].items()
                                       if all(endpoint in selected for endpoint in value["premises"] + [value["conclusion"]])},
                         "links": [link for link in graph["links"] if link["target"] in selected]},
-              "profile": profile[:4000], "omitted": {}, "warnings": []}
+              "profile": profile[:4000], "omitted": {}, "warnings": _privacy_warnings(root, subject)}
+    if migrated:
+        packet["warnings"].append("Version 1 loaded in memory; resume changed no files. The next successful save upgrades state to version 2 and preserves state.v1.json.")
     if any(_is_withdrawn(target, graph) for target in selected):
         packet["warnings"].append("Selected context includes explicitly withdrawn claims; do not teach them as true or reuse their evidence as current competence.")
 
@@ -606,6 +644,7 @@ def resume(root, subject, *, targets=None, review_limit=3, evidence_limit=12, ma
                              "plan": len(state["plan"]) - len(packet["plan"]),
                              "scope": len(state["constraints"]["scope"]) - len(packet["constraints"]["scope"]),
                              "profile_characters": len(profile) - len(packet["profile"]),
+                             "suspensions": len(state["suspensions"]) - len(packet["suspensions"]),
                              **{field: len(graph[field]) - len(packet["graph"][field])
                                 for field in ("nodes", "prerequisites", "arguments", "links")}}
 
@@ -621,6 +660,8 @@ def resume(root, subject, *, targets=None, review_limit=3, evidence_limit=12, ma
             packet["constraints"]["scope"].pop()
         elif packet["reviews"]:
             packet["reviews"].pop()
+        elif packet["suspensions"]:
+            packet["suspensions"].pop(next(reversed(packet["suspensions"])))
         else:
             removable = [key for key in packet["graph"]["nodes"] if key not in checkpoint_targets]
             _require(bool(removable), "The intact active checkpoint and essential context exceed the resume budget. Increase max_chars or explicitly condense the checkpoint; nothing was truncated or saved.")
@@ -636,9 +677,10 @@ def resume(root, subject, *, targets=None, review_limit=3, evidence_limit=12, ma
 
 
 @_operation
-def save(root, subject, update):
+def save(root, subject, update, *, now=None):
     """Validate and save one update at the expected revision."""
-    root, folder, graph, state = _load(root, subject)
+    root, folder, graph, state, migrated = _load(root, subject)
+    observed_now = _clock(now)
     _fields(update, {"expected_revision", "goal", "mode", "constraints", "nodes", "checkpoint", "plan", "evidence",
                      "invalidations", "review_actions", "prerequisites", "arguments", "links", "withdrawals"}, {"expected_revision"})
     _require(type(update["expected_revision"]) is int and update["expected_revision"] == state["revision"],
@@ -685,6 +727,8 @@ def save(root, subject, update):
     _require(isinstance(additions, list), "Evidence additions must be a list.")
     for event in additions:
         _evidence(event, new_graph)
+        _require(_at(event["at"]) <= observed_now + timedelta(minutes=5),
+                 "Evidence cannot be dated more than five minutes ahead of the current time.")
         candidate["evidence"].append({**deepcopy(event), "invalidated": None})
     invalidations = update.get("invalidations", [])
     _require(isinstance(invalidations, list), "Invalidations must be a list.")
@@ -707,25 +751,52 @@ def save(root, subject, update):
         _text(action["reason"])
         _require(action["action"] in ("pause", "resume"), "Unknown review action.")
         review = next((item for item in candidate["reviews"] if item["target"] == action["target"]), None)
-        _require(review is not None, "No review obligation exists for this action.")
-        review["paused"] = action["action"] == "pause"
-        review["pause_reason"] = action["reason"] if review["paused"] else None
+        _require(review is not None or action["target"] in candidate["suspensions"],
+                 "No review obligation or saved suspension exists for this action.")
+        paused = action["action"] == "pause"
+        if paused:
+            candidate["suspensions"][action["target"]] = action["reason"]
+        else:
+            candidate["suspensions"].pop(action["target"], None)
+        if review is not None:
+            review["paused"] = paused
+            review["pause_reason"] = action["reason"] if paused else None
     candidate["revision"] += 1
-    candidate["saved_at"] = datetime.now(timezone.utc).isoformat()
+    candidate["saved_at"] = observed_now.isoformat()
     _validate_graph(new_graph, root)
     _validate_state(candidate, new_graph)
     graph_text, state_text = _json_text(new_graph), _json_text(candidate)
-    _require(max(len(graph_text.encode("utf-8")), len(state_text.encode("utf-8"))) <= 16 * 1024 * 1024,
+    _require(max(len(graph_text.encode("utf-8")), len(state_text.encode("utf-8"))) <= MAX_BYTES,
              "Proposed graph/state exceeds the readable 16 MiB safety limit. Existing files were not replaced; explicitly archive/condense or continue session-only.")
-    if new_graph != graph:
-        _atomic_write(root, folder / "graph.json", graph_text)
-    actual_graph = _read_json(folder / "graph.json")
-    _validate_graph(actual_graph, root)
-    _validate_state(candidate, actual_graph)
     _require(_read_json(folder / "state.json")["revision"] == update["expected_revision"],
              "State changed during save; single-writer use is required.")
-    _atomic_write(root, folder / "state.json", state_text)
-    return {"saved": True, "revision": candidate["revision"], "warnings": _views(root, folder, candidate, update)}
+    if migrated:
+        original = _read_bytes(folder / "state.json")
+        backup = _owned(root, folder / "state.v1.json")
+        if backup.exists():
+            _require(_read_bytes(backup) == original,
+                     "Existing state.v1.json differs from current v1 state; inspect the backup before retrying. Nothing was overwritten.")
+        else:
+            _atomic_write(root, backup, original.decode("utf-8"))
+    if new_graph != graph:
+        _atomic_write(root, folder / "graph.json", graph_text)
+    try:
+        actual_graph = _read_json(folder / "graph.json")
+        _validate_graph(actual_graph, root)
+        _validate_state(candidate, actual_graph)
+        _require(_read_json(folder / "state.json")["revision"] == update["expected_revision"],
+                 "State changed during save; single-writer use is required.")
+        _atomic_write(root, folder / "state.json", state_text)
+    except (OSError, UnicodeError, ValueError, TypeError, OverflowError) as error:
+        if new_graph != graph:
+            raise LearningError(f"Graph changes were written, but the state save is unconfirmed. {error} "
+                                "Resume to verify both files before retrying; do not reinitialize.") from error
+        if migrated:
+            raise LearningError(f"Original state is preserved in state.v1.json, but the upgrade is unconfirmed. {error} "
+                                "Resume before retrying; do not reinitialize.") from error
+        raise
+    return {"saved": True, "revision": candidate["revision"],
+            "warnings": _views(root, folder, candidate, update) + _privacy_warnings(root, subject)}
 
 
 def main(argv=None):
@@ -752,9 +823,10 @@ def main(argv=None):
             result = initialize(args.root, args.subject)
         elif args.command == "save":
             if args.input == "-":
-                text = sys.stdin.read(16 * 1024 * 1024 + 1)
-                _require(len(text) <= 16 * 1024 * 1024, "Input exceeds the 16 MiB safety limit.")
-                update = json.loads(text.lstrip("\ufeff"), object_pairs_hook=_pairs,
+                stream = getattr(sys.stdin, "buffer", None)
+                raw = stream.read(MAX_BYTES + 1) if stream else sys.stdin.read(MAX_BYTES + 1).encode("utf-8")
+                _require(len(raw) <= MAX_BYTES, "Input exceeds the 16 MiB safety limit.")
+                update = json.loads(raw.decode("utf-8-sig"), object_pairs_hook=_pairs,
                                     parse_constant=_reject_constant)
             else:
                 update = _read_json(Path(args.input))  # Explicit source read, never a state destination.

@@ -1,0 +1,256 @@
+{
+  "bundle": "adaptive-learn-improvement-handoff",
+  "manifest_version": 1,
+  "generated": "2026-10-28",
+  "skill": {
+    "path": "../adaptive-learn",
+    "commit": "1485e0b",
+    "modified": false,
+    "tests_passing": 30,
+    "python_checked": [
+      "3.13.14",
+      "3.10"
+    ]
+  },
+  "claims": {
+    "live_baseline_run": false,
+    "citations_verified": false,
+    "screenshots_or_transcripts": false
+  },
+  "file_count": 25,
+  "files_sha_note": "Hashes computed at manifest generation; regenerate after any edit.",
+  "files": [
+    {
+      "path": "AGENT_BRIEF.md",
+      "purpose": "Operating brief: scope, authority, budgets, output format, stop conditions.",
+      "status": "complete",
+      "read_order": 1,
+      "bytes": 5568,
+      "sha256": "b0ceb37a862a19d2c1f1a02e1e383f18306e90486bb5d26773a442a50dfc5d96"
+    },
+    {
+      "path": "SYNTHESIS_TASK.md",
+      "purpose": "The assignment: review the evidence, decide what to adopt, produce PROPOSAL.md.",
+      "status": "complete",
+      "read_order": 2,
+      "bytes": 8122,
+      "sha256": "e08dcf292c981b945daf8bacfa495d53785225021e63e8796aa2c34982d9173e"
+    },
+    {
+      "path": "NON_GOALS.md",
+      "purpose": "Hard prohibitions, preservation checklist, diff budget.",
+      "status": "complete",
+      "read_order": 4,
+      "bytes": 6560,
+      "sha256": "fbba0ae89390b2a5f60454c4500e91b1b798937a8233e91a428769d406497641"
+    },
+    {
+      "path": "DECISIONS.md",
+      "purpose": "Canonical D1-D14; governs on conflict.",
+      "status": "complete",
+      "read_order": 5,
+      "bytes": 14945,
+      "sha256": "6259c72a4c507bbecbdc13ecd97ba9efb3a50a95c97db5ef2fa4c16858ed175f"
+    },
+    {
+      "path": "WORK_ORDER.md",
+      "purpose": "Phases 0-4 with gates, commands, rollback.",
+      "status": "complete",
+      "read_order": 6,
+      "bytes": 11681,
+      "sha256": "e4d01aff2b0498066b56341f19590a031a1921d1fb9f9bc8ca01a3a27277e64f"
+    },
+    {
+      "path": "IMPLEMENTATION.md",
+      "purpose": "Change manifest and proposed patch text; anchors advisory.",
+      "status": "complete-unvalidated",
+      "read_order": 7,
+      "bytes": 29047,
+      "sha256": "73f2a0b4ba11cb9187bda21c263e0ec171036a93c95af4cd82e704709f33614d"
+    },
+    {
+      "path": "tests/live/cases.json",
+      "purpose": "14 live scenarios; 4 holdout.",
+      "status": "complete",
+      "read_order": 8,
+      "bytes": 27318,
+      "sha256": "d56cc7453135d25317e4772923d61bc73658e9e452689740f757b189e453bf5e"
+    },
+    {
+      "path": "tests/live/rubric.md",
+      "purpose": "Six scoring dimensions with observable anchors.",
+      "status": "complete",
+      "read_order": 9,
+      "bytes": 7584,
+      "sha256": "3642d4be10984f317f3166d553b8c71083112bfd33565e2f6015ab149f35ece0"
+    },
+    {
+      "path": "BASELINE.md",
+      "purpose": "Protocol for capturing the before-state; no results.",
+      "status": "protocol",
+      "read_order": null,
+      "bytes": 6446,
+      "sha256": "9b866c354a1cca868b86f307244da6945b41d50d70dc5c19b8e49adb21841ce2"
+    },
+    {
+      "path": "CITATIONS.md",
+      "purpose": "Citation verification ledger; nothing marked verified.",
+      "status": "ledger-unverified",
+      "read_order": null,
+      "bytes": 9075,
+      "sha256": "6dd296af8040cc39f26f5240f501649d57c52cd7a2a9c5af4b51b5d61743e42b"
+    },
+    {
+      "path": "CONTENT_PLAN.md",
+      "purpose": "Subject fold table, task-verb router, reference outlines, AC-26-29.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 11782,
+      "sha256": "cc4c3c94219abeb826f6a363deabbe45c52468146f26626a324add83a86177b9"
+    },
+    {
+      "path": "LESSONS.md",
+      "purpose": "Template for dated, falsifiable post-run lessons.",
+      "status": "template",
+      "read_order": null,
+      "bytes": 2637,
+      "sha256": "dff373d1c502cec2ac2b0e4aa29595239203396c0194956d875ab3e604e1dcb0"
+    },
+    {
+      "path": "MIGRATION.md",
+      "purpose": "v1 to v2 migration procedure and edge cases.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 9184,
+      "sha256": "fa1e42e3e79800570011cdd447ac72f7f6891785931675e5c4221a14e348973b"
+    },
+    {
+      "path": "README.md",
+      "purpose": "Index, status, authority order, quick checks.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 6121,
+      "sha256": "9e1d786d3d68f9100d80a5c21e1498984d59c5d8414f899536a9aab8876e5361"
+    },
+    {
+      "path": "SCHEMA_V2.md",
+      "purpose": "Field contract for the four evidence fields and scheduler rules.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 12379,
+      "sha256": "c62094df7ec0e6d169d24eee722a83f2af3d21bab2ac266aa8c0131d670744b6"
+    },
+    {
+      "path": "SECURITY_PRIVACY.md",
+      "purpose": "Threat model, injection, privacy wording, minors, supply chain.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 12877,
+      "sha256": "8b2c1a05972d9665883c1df870e820898be4a9561f224029650060cbda911ab0"
+    },
+    {
+      "path": "drafts/accessibility-block.md",
+      "purpose": "Paste-ready accessibility block; not installed.",
+      "status": "draft",
+      "read_order": null,
+      "bytes": 1052,
+      "sha256": "12c6989b0f1bacc715744c470a19ae574cd17dc35c966ea9bd7fa19702f059c0"
+    },
+    {
+      "path": "drafts/exam-craft.md",
+      "purpose": "Draft reference; not installed.",
+      "status": "draft",
+      "read_order": null,
+      "bytes": 2410,
+      "sha256": "054a0d8dc6017db33aa0c7a777161e27d7cd1260564d33681fc1a4afec47b623"
+    },
+    {
+      "path": "drafts/study-skills.md",
+      "purpose": "Draft reference; not installed.",
+      "status": "draft",
+      "read_order": null,
+      "bytes": 2229,
+      "sha256": "08770f1716ff91613666319abd904ff2f86961501a708ce0abc5ad7388658c33"
+    },
+    {
+      "path": "prompts/implementer.md",
+      "purpose": "Copy-paste brief for the implementing model.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 6156,
+      "sha256": "456e64980fd24af937ada468586b3cabb2259f3429fb087912294fe015e0ebfe"
+    },
+    {
+      "path": "prompts/judge.md",
+      "purpose": "Blind pairwise transcript judge.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 4886,
+      "sha256": "830448e5ccbdfe9394c504db8938dddb87791ff6f204ad3f7321df9b0accddc6"
+    },
+    {
+      "path": "prompts/reviewer.md",
+      "purpose": "Adversarial review prompt; defaults to reject.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 5510,
+      "sha256": "c7b460e76a9cef933939c0b8ebdfca7181da8bd07915762cf539cd29f52bbac2"
+    },
+    {
+      "path": "tests/adversarial/cases.md",
+      "purpose": "12 inert injection fixtures with expected behavior.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 7373,
+      "sha256": "0fc81b08294f4ab96e1946a38a3fd3505339b617cfbbea723e14d4c4b5e795ef"
+    },
+    {
+      "path": "tests/live/README.md",
+      "purpose": "Baseline capture, run layout, blind comparison, power limits.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 5559,
+      "sha256": "aaef79a50457a3d7c23078bce90af6b511edfd91622a4761441f93d68ae14bdc"
+    },
+    {
+      "path": "tests/live/check_cases.py",
+      "purpose": "Stdlib validator; freeze and verify the holdout hash.",
+      "status": "complete",
+      "read_order": null,
+      "bytes": 8745,
+      "sha256": "15ba8e04e54d24d3c2503c84e6c6c0d2f060e0f491cc26bf64ec21511a80661a"
+    },
+    {
+      "path": "tests/live/holdout.json",
+      "purpose": "Frozen holdout IDs and SHA-256.",
+      "status": "frozen",
+      "read_order": null,
+      "bytes": 309,
+      "sha256": "a923519a0d94303cf1735d7fed54173ae102d06f7eb72628c0c46cbe5ebaa3cc"
+    }
+  ],
+  "external_inputs": [
+    {
+      "path": "../research.md",
+      "purpose": "Evidence base and rationale; never shipped as a citation.",
+      "status": "unverified",
+      "bytes": 56916,
+      "sha256": "bef560b029e5b6f8d991dd983c8000d52b2691da6eb700d544a458bc0287dc5a"
+    }
+  ],
+  "authority": {
+    "binding": [
+      "AGENT_BRIEF.md section 3",
+      "NON_GOALS.md invariants"
+    ],
+    "arguable": [
+      "DECISIONS.md",
+      "WORK_ORDER.md",
+      "IMPLEMENTATION.md",
+      "research.md"
+    ],
+    "ground_truth": "../adaptive-learn source"
+  },
+  "deliverable": "handoff/PROPOSAL.md",
+  "task_mode": "review-and-decide"
+}

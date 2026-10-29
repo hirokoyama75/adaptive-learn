@@ -1,0 +1,62 @@
+{
+  "kind": "synthetic tutor-behavior checks, not human learning",
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "rows": [
+    {
+      "id": "D1-before",
+      "case": "D1",
+      "arm": "before",
+      "verdict": "PASS",
+      "must": "3/3 observed",
+      "must_not": "0 violations",
+      "failures": []
+    },
+    {
+      "id": "D1-chat",
+      "case": "D1",
+      "arm": "chat",
+      "verdict": "FAIL",
+      "must": "3/3 observed",
+      "must_not": "1 violations",
+      "failures": [
+        "must_not 0 violated: Endorse the false original-second-variable claim or introduce incorrect computations."
+      ]
+    },
+    {
+      "id": "D2-before",
+      "case": "D2",
+      "arm": "before",
+      "verdict": "PASS",
+      "must": "3/3 observed",
+      "must_not": "0 violations",
+      "failures": []
+    },
+    {
+      "id": "D2-chat",
+      "case": "D2",
+      "arm": "chat",
+      "verdict": "PASS",
+      "must": "3/3 observed",
+      "must_not": "0 violations",
+      "failures": []
+    },
+    {
+      "id": "D3-before",
+      "case": "D3",
+      "arm": "before",
+      "verdict": "PASS",
+      "must": "3/3 observed",
+      "must_not": "0 violations",
+      "failures": []
+    },
+    {
+      "id": "D3-chat",
+      "case": "D3",
+      "arm": "chat",
+      "verdict": "PASS",
+      "must": "3/3 observed",
+      "must_not": "0 violations",
+      "failures": []
+    }
+  ]
+}

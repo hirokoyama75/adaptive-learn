@@ -1,0 +1,13 @@
+Your result and intermediate values match this item. That is open-context execution, not checked retention. Original count=10 and flag=1 trigger the priority stop: value=null, route=kel, trace=[]. No transforms run.
+Posttest: no new help. Prior conversation remains available; this is not a retention test.
+Q1: {"count":10,"flag":1,"glyph":"lun","seal":"fep"}
+Q2: {"count":10,"flag":0,"glyph":"nib","seal":"fep"}
+Q3: {"count":0,"flag":1,"glyph":"teg","seal":"dap"}
+Q4: {"count":3,"flag":0,"glyph":"lun","seal":"fep"}
+Q5: {"count":1,"flag":1,"glyph":"lun","seal":"fep"}
+Q6: {"count":9,"flag":0,"glyph":"teg","seal":"dap"}
+Q7: A parcel starts at count 7; its outer seal is fep, its glyph is teg, and its flag is 0. Give the final value/route.
+Q8: A parcel starts at count 5; its outer seal is fep, its glyph is teg, and its flag is 1. Give the final value/route.
+Q9: {"count":0,"flag":1,"glyph":"teg","seal":"unlisted-seal"}
+Q10: {"count":3,"glyph":"lun","seal":"fep"}
+Reply only JSON: {"answers":[{"id":"ID","value":null,"route":"UNKNOWN","trace":[]}],"question":null}. Include every requested ID exactly once. Use computed integers/routes when justified; UNKNOWN/null/[] means the required rules or fields are unavailable. Do not pretend to be human, deliberately fail, or invent rules. No tools, files, browser, other agents, or external sources. Show only the three task intermediate values, not hidden reasoning. question may be a brief clarification request.

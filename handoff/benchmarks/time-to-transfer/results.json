@@ -1,0 +1,235 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "human_learning_time_measured": false,
+  "data_sha256": "4f034dd08701dd9107a92550948dcaa90a59fc417dd53e3298346e016cfed964",
+  "rows": [
+    {
+      "id": "w617-tutor",
+      "seed": 617,
+      "arm": "tutor",
+      "turns": [
+        {
+          "index": 0,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": false,
+          "launch_to_capture_seconds": 94.8625592
+        },
+        {
+          "index": 1,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": false,
+          "launch_to_capture_seconds": 183.2747518
+        },
+        {
+          "index": 2,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 86.6049336
+        },
+        {
+          "index": 3,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": false,
+          "launch_to_capture_seconds": 160.7697029
+        }
+      ],
+      "confirmed_criterion": false,
+      "human_facing_words": 703,
+      "agent_protocol_words": 208,
+      "human_workload_scenarios_not_measurements": {
+        "fast": {
+          "assumed_active_seconds": 735.8,
+          "remaining_of_600_seconds_for_live_waiting": -135.8
+        },
+        "reference": {
+          "assumed_active_seconds": 1074.3,
+          "remaining_of_600_seconds_for_live_waiting": -474.3
+        },
+        "slower": {
+          "assumed_active_seconds": 1551.5,
+          "remaining_of_600_seconds_for_live_waiting": -951.5
+        }
+      }
+    },
+    {
+      "id": "w617-selfstudy",
+      "seed": 617,
+      "arm": "selfstudy",
+      "turns": [
+        {
+          "index": 0,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 94.8701089
+        },
+        {
+          "index": 3,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 160.7850539
+        }
+      ],
+      "confirmed_criterion": true,
+      "human_facing_words": 353,
+      "agent_protocol_words": 104,
+      "human_workload_scenarios_not_measurements": {
+        "fast": {
+          "assumed_active_seconds": 368.2,
+          "remaining_of_600_seconds_for_live_waiting": 231.8
+        },
+        "reference": {
+          "assumed_active_seconds": 537.7,
+          "remaining_of_600_seconds_for_live_waiting": 62.3
+        },
+        "slower": {
+          "assumed_active_seconds": 776.5,
+          "remaining_of_600_seconds_for_live_waiting": -176.5
+        }
+      }
+    },
+    {
+      "id": "w1291-selfstudy",
+      "seed": 1291,
+      "arm": "selfstudy",
+      "turns": [
+        {
+          "index": 0,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": false,
+          "launch_to_capture_seconds": 183.2818441
+        },
+        {
+          "index": 1,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 86.6119772
+        },
+        {
+          "index": 3,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 160.8016885
+        }
+      ],
+      "confirmed_criterion": true,
+      "human_facing_words": 573,
+      "agent_protocol_words": 156,
+      "human_workload_scenarios_not_measurements": {
+        "fast": {
+          "assumed_active_seconds": 563.2,
+          "remaining_of_600_seconds_for_live_waiting": 36.8
+        },
+        "reference": {
+          "assumed_active_seconds": 821.0,
+          "remaining_of_600_seconds_for_live_waiting": -221.0
+        },
+        "slower": {
+          "assumed_active_seconds": 1186.5,
+          "remaining_of_600_seconds_for_live_waiting": -586.5
+        }
+      }
+    },
+    {
+      "id": "w1291-tutor",
+      "seed": 1291,
+      "arm": "tutor",
+      "turns": [
+        {
+          "index": 0,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": false,
+          "launch_to_capture_seconds": 183.2885034
+        },
+        {
+          "index": 1,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 86.6266517
+        },
+        {
+          "index": 3,
+          "correct": {
+            "R": true,
+            "L": true,
+            "Q": true,
+            "B": true
+          },
+          "qualifies": true,
+          "launch_to_capture_seconds": 160.8159991
+        }
+      ],
+      "confirmed_criterion": true,
+      "human_facing_words": 543,
+      "agent_protocol_words": 156,
+      "human_workload_scenarios_not_measurements": {
+        "fast": {
+          "assumed_active_seconds": 555.8,
+          "remaining_of_600_seconds_for_live_waiting": 44.2
+        },
+        "reference": {
+          "assumed_active_seconds": 811.0,
+          "remaining_of_600_seconds_for_live_waiting": -211.0
+        },
+        "slower": {
+          "assumed_active_seconds": 1171.5,
+          "remaining_of_600_seconds_for_live_waiting": -571.5
+        }
+      }
+    }
+  ]
+}

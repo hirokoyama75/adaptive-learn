@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T07:02:34.755989+00:00",
+  "monotonic_ns": 8337569061400,
+  "run": "w1291-selfstudy",
+  "index": 0,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "a8dff6654dd9ccd52d364670ced8738eb4743e297c5ec819ea6c3ec22b396900",
+  "material_sha256": "6ec4b892e1e802ba035b9636b8a27e5cdf3bcec76a062f7ae1f52401ffc603b6",
+  "session": "ses_e7987f3b9ffeJtcA2Do1nsSkSq",
+  "capture_utc": "2026-10-29T07:05:38.037836+00:00",
+  "launch_to_capture_seconds": 183.2818441,
+  "raw_sha256": "03d91455cc9aa81db1c08e7e95cbb6031b55c9ba3734f649ebe197ebeea7706d",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": true,
+      "quote": "Undo a chain by reversing it and applying inverse operations: S is its own inverse, N^-1(a,b)=(a-b,b), and W^-1(a,b)=(b-3a,a)."
+    },
+    "loss": {
+      "ok": true,
+      "quote": "any (2,t) can precede C, giving starts (2-t,t)"
+    },
+    "equivalence": {
+      "ok": false,
+      "quote": "while the second gives (1,3)."
+    }
+  },
+  "qualifies": false
+}

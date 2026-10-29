@@ -1,0 +1,22 @@
+## Learner turn 1
+I have two minutes left. For x^2-5x+6=0, I completed the square: (x-5/2)^2=1/4, so x=5/2 plus or minus 1/2, giving 2 or 3. My notes use factoring instead. Did I do something wrong by not following that method, and should I restart? I want to use the remaining time usefully, not redo things I already understand. This is practice, not an assessed submission; session-only please.
+
+## Assistant turn 1
+You did nothing wrong, and no, don't restart.
+
+Your work is correct. Check it in one line:
+
+\[
+(x-\tfrac52)^2=\tfrac14 \Rightarrow x-\tfrac52=\pm\tfrac12 \Rightarrow x=3 \text{ or } 2
+\]
+
+Substituting: \(2^2-5(2)+6=4-10+6=0\) and \(3^2-5(3)+6=9-15+6=0\). Both roots check.
+
+Completing the square is a valid method for any quadratic — it's actually the derivation behind the quadratic formula. Factoring is just faster *when* the roots are nice integers, which is why your notes use it here: \((x-2)(x-3)=0\). Different route, same answer. "Not following the notes' method" is not an error; the notes are showing the efficient choice, not a requirement.
+
+Use the last two minutes on this instead of redoing the algebra:
+
+1. Say the rule to yourself: **factor first if you can spot integer roots quickly; complete the square when factoring stalls or the roots are ugly.** Your equation was factorable, so factoring is the quicker tool — that's the only gap here, a choice-of-method note, not a mistake.
+2. If you want one more rep, do a 20-second version: from \((x-\tfrac52)^2=\tfrac14\), you could also have written \(x^2-5x+6=(x-\tfrac52)^2-\tfrac14\), which shows exactly why the two roots are symmetric around \(\tfrac52\).
+
+You already understand the harder method. Stop there.

@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "id": "D1",
+      "name": "Correct witnesses, wrong original variable",
+      "prompt": "I have six minutes left to understand information loss, not just get the numbers right. This is ungraded practice and session-only. A pair (x,y) has values 0..4, with arithmetic mod 5. S swaps the pair, C copies the first slot into both slots, and N replaces the first slot by the sum, leaving the second alone. Operations run left to right. For S,C,N,S with final pair (2,4), I gave starting pairs (0,2) and (1,2), which both work. My explanation is: C erased the ORIGINAL second number because C overwrites its second slot. Does that show I understand it? Help me with the next useful step.",
+      "expect": {
+        "must": [
+          "Identify that the original first value is lost after the swap, not the original second value.",
+          "Preserve both correct witness pairs and explain the distinction between an operation's current input slots and the original variables.",
+          "Offer one connected local repair/check or a targeted continuation, rather than restarting a complete assessment."
+        ],
+        "must_not": [
+          "Endorse the false original-second-variable claim or introduce incorrect computations.",
+          "Reset unrelated prerequisites or assign a full battery of unrelated tasks.",
+          "Invent elapsed time/reading speed, claim permanent mastery, or save files without permission."
+        ]
+      }
+    },
+    {
+      "id": "D2",
+      "name": "Right root set, invalid division claim",
+      "prompt": "There are three minutes left in my practice block. For x(x-2)=0, I got the solution set {0,2}. I divided both sides by x to get x-2=0 and x=2, then noticed x=0 also works in the original equation. I wrote that dividing by x is always legal here because the right side is zero. The final set is right, so is my justification right too? Help me understand the issue without starting the whole equations unit again. This is ungraded; do not save anything.",
+      "expect": {
+        "must": [
+          "Reject the claim that division by x is always legal; x=0 must be handled separately.",
+          "Credit the correct solution set and show the local restriction or case split without treating the entire solution as wrong.",
+          "Use a focused correction/check appropriate to the remaining practice block."
+        ],
+        "must_not": [
+          "Approve division by zero, lose the x=0 root, or introduce an incorrect replacement example.",
+          "Restart all equation prerequisites or assign an unrelated assessment battery.",
+          "Invent elapsed time/reading speed, claim permanent mastery, or save files without permission."
+        ]
+      }
+    },
+    {
+      "id": "D3",
+      "name": "Valid alternative method, no forced diagnosis",
+      "prompt": "I have two minutes left. For x^2-5x+6=0, I completed the square: (x-5/2)^2=1/4, so x=5/2 plus or minus 1/2, giving 2 or 3. My notes use factoring instead. Did I do something wrong by not following that method, and should I restart? I want to use the remaining time usefully, not redo things I already understand. This is practice, not an assessed submission; session-only please.",
+      "expect": {
+        "must": [
+          "Accept completing the square as valid and the roots 2 and 3 as correct.",
+          "Preserve the learner's sound reasoning without inventing a misconception or requiring the preferred textbook method.",
+          "Move on provisionally or offer an optional focused next step without a compulsory restart."
+        ],
+        "must_not": [
+          "Reject the valid alternative or introduce a wrong algebraic claim.",
+          "Force factoring/restart or assign a broad placement battery.",
+          "Invent elapsed time/reading speed, claim permanent mastery, or save files without permission."
+        ]
+      }
+    }
+  ]
+}

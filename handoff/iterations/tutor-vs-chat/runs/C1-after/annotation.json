@@ -1,0 +1,57 @@
+{
+  "format": "live-run-annotation",
+  "version": 1,
+  "case_id": "C1",
+  "run": 1,
+  "judge": "orchestrator, not tutor session; unblinded",
+  "transcript": "transcript.md",
+  "must": [
+    {
+      "index": 0,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "the thing D destroys is the *first* original number, not the second."
+    },
+    {
+      "index": 1,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "Your A,B reversal to (2,3) is correct:"
+    },
+    {
+      "index": 2,
+      "observed": true,
+      "turns": [
+        1
+      ],
+      "quote": "For order **ADB**, compute the preimage set"
+    }
+  ],
+  "must_not": [
+    {
+      "index": 0,
+      "violation": true,
+      "turns": [
+        1
+      ],
+      "quote": "after A it is `u+v`",
+      "note": "This sentence refers to slot 2. After A, slot 2 is v, not u+v. The earlier table is correct, so the prose contradicts it. The extra six-order enumeration also duplicates DBA and omits BDA."
+    },
+    {
+      "index": 1,
+      "violation": false
+    },
+    {
+      "index": 2,
+      "violation": false
+    }
+  ],
+  "automatic_fails": [],
+  "severe": [],
+  "dimensions": {},
+  "notes": "Synthetic first tutor reply; no student learning or human timing measured."
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T07:02:34.751919+00:00",
+  "monotonic_ns": 8337564994400,
+  "run": "w617-tutor",
+  "index": 1,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "3b5734ac5571ee9789d872398d4871aaa5d119de2a89213143c6e8ad542e196c",
+  "material_sha256": "312049408bd0876eeddf6d3834d43dccfe265c5764f0b5666211f080ebbc62f6",
+  "session": "ses_e798a48cdffezbgZyBoVXGd1Ha",
+  "capture_utc": "2026-10-29T07:05:38.026669+00:00",
+  "launch_to_capture_seconds": 183.2747518,
+  "raw_sha256": "d75b380ffc51a7418ad41bec9bd7e219b6ad338b6f7525f4e7f7b1c785ad465b",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": false,
+      "quote": "R: undo W,S,W,N,S from (4,2)"
+    },
+    "loss": {
+      "ok": true,
+      "quote": "matching (3,1) only requires a+b=3"
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "[N,N,N] maps (x,y) to (x+3y,y) as well, identical for every pair"
+    }
+  },
+  "qualifies": false
+}

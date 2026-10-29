@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "holdout_ids": [
+    "L-02",
+    "L-07",
+    "L-12",
+    "L-14"
+  ],
+  "holdout_sha256": "9afaefb8241bfd5db8a57b28b232fcaf259d58df10cfcb7abbfdfb6f735a658b",
+  "note": "Freeze at G1. Verify at G4. A mismatch means a holdout case changed after the freeze; stop and restore it."
+}

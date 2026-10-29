@@ -1,0 +1,22 @@
+{
+  "run": "w509-control",
+  "phase": "confirmation",
+  "stage": "practice2",
+  "session": "ses_e79aacc5affe88EuXZs2qTfrFX",
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "arm": "control",
+  "raw_sha256": "7f73cb512a9f338dbedb1cfed1feabbd1a27d0d57bfca6e9a2b951e29ef3e382",
+  "prompt_sha256": "830ac9679a6df2ac972f8ff99cdd5d172708a05cbb4ce3ca8dea11e1c877ba3b",
+  "prompt_characters": 731,
+  "reply_characters": 86,
+  "grade": {
+    "valid": true,
+    "correct": [
+      false
+    ],
+    "trace_correct": [
+      true
+    ]
+  },
+  "capture": "actual tool-returned reply, manually preserved by orchestrator; internal tool traces unavailable"
+}

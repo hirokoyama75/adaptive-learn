@@ -1,0 +1,6 @@
+Goal: explain which changes preserve information, undo a chain, and test a claim on new cases. A machine holds two numbers (x,y), each 0..4. Wrap arithmetic mod 5: take the remainder; for example 6 becomes 1 and -1 becomes 4. Operations use BOTH OLD values simultaneously: W makes (y, x+2*y); N makes (x+y, y); C makes (x,x); S makes (y,x). Wrap each result. Example: W on (1,2) gives [2, 0]. Run a list left to right. Recover means find a starting pair that would produce the observation. Two different starts with the same result show the result does not identify a unique start. Two programs are equivalent only if their results agree for EVERY possible starting pair. A construction must work for every pair, not just the examples. Ask a brief clarification if blocked.
+R: After ['S', 'N', 'N', 'N', 'N'], the pair is [2, 0]. Recover the unique starting pair.
+L: After ['S', 'C', 'N', 'S'], the pair is [0, 0]. Give TWO DISTINCT starting pairs that produce it.
+Q: Are ['W', 'S', 'N'] and ['S', 'N', 'N', 'S', 'N'] equivalent for every pair? If not, give one starting pair on which they differ. If equivalent, witness=null.
+B: Build a program of at most 3 operations. Its output must be (3*x+2*y, 2*x+0*y), mod 5, for every starting pair.
+Briefly explain how to undo a chain, why L has no unique start, and your general justification or counterexample for Q.

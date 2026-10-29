@@ -1,0 +1,6 @@
+Your W inverse and computed states now check. One local written-order mismatch remains: forward S,W,N,S,W must be undone W,S,N,W,S, not W,S,W,N,S. Your numerical steps already followed the correct order; keep them. When writing an undo list, reverse the original list before applying inverse formulas. Everything else on the last packet checked.
+R: After ['N', 'W', 'W', 'W', 'W'], the pair is [4, 0]. Recover the unique starting pair.
+L: After ['W', 'C', 'N', 'S'], the pair is [1, 2]. Give TWO DISTINCT starting pairs that produce it.
+Q: Are ['W', 'S', 'W'] and ['S', 'N', 'N', 'S', 'W'] equivalent for every pair? If not, give one starting pair on which they differ. If equivalent, witness=null.
+B: Build a program of at most 3 operations. Its output must be (1*x+1*y, 2*x+3*y), mod 5, for every starting pair.
+Briefly explain how to undo a chain, why L has no unique start, and your general justification or counterexample for Q.

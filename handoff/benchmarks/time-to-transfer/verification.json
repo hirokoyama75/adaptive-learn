@@ -1,0 +1,24 @@
+{
+  "learner_sessions": 4,
+  "actual_captures": 12,
+  "all_raw_and_recorded_copies_match": true,
+  "certificates_correct": 48,
+  "certificates_total": 48,
+  "final_certificates_correct": 16,
+  "confirmed_criterion": 3,
+  "invalid_replies": 0,
+  "human_learning_time_measured": false,
+  "launch_to_capture_seconds_range": [
+    86.6049336,
+    183.2885034
+  ],
+  "original_benchmark_reports_unchanged": true,
+  "no_old_learner_session_reused": true,
+  "skill_sha256": "4741578910c18e412a9f4d6c5c8c019cfb2964a38803971cce11ad678b991260",
+  "source_sha256": "28a37ceb4561bf0291c94d23b3d26d48d197c13c2da7a8e82e781f9990fd49ee",
+  "protocol_sha256": "69ed7488d031edddb4df428b8504142f3bbf7463869aa3a0c5480e9a36ee807c",
+  "data_sha256": "4f034dd08701dd9107a92550948dcaa90a59fc417dd53e3298346e016cfed964",
+  "teaching_complete_sha256": "563cdfcf404154f85bd80463c3ffe0f10766b737b1a70e6eeff696bc9be80ccf",
+  "python310_syntax_valid": true,
+  "lesson_keys_exhaustively_tested": true
+}

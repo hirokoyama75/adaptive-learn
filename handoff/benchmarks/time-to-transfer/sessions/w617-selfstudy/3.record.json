@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-29T07:08:33.906077+00:00",
+  "monotonic_ns": 8696719145700,
+  "run": "w617-selfstudy",
+  "index": 3,
+  "model": "opencode-go/deepseek-v4.1-flash#low",
+  "prompt_sha256": "19cf0bae4d1df42b59967ab4de9c21679c343e70890565331bc8629c04fb9d31",
+  "material_sha256": "df864021f291c40b0391a2bfd6f6a8a80fe5f87f80e6b117b46175b9060f2995",
+  "session": "ses_e798a48c9ffeWtOGiCXnmBJ6L1",
+  "capture_utc": "2026-10-29T07:11:14.691128+00:00",
+  "launch_to_capture_seconds": 160.7850539,
+  "raw_sha256": "d3481dc58cefe4aa5853f0d4d70f281ac2e1f4d1c36d718310c25bd3e87c5032",
+  "grade": {
+    "valid": true,
+    "correct": {
+      "R": true,
+      "L": true,
+      "Q": true,
+      "B": true
+    }
+  },
+  "explanation_review": {
+    "reverse": {
+      "ok": true,
+      "quote": "Undo a chain by applying inverses in reverse order: S^-1=S, N^-1(a,b)=(a-b,b), W^-1(a,b)=(b-2a,a)."
+    },
+    "loss": {
+      "ok": true,
+      "quote": "C collapses (y,x) to (y,y), discarding x"
+    },
+    "equivalence": {
+      "ok": true,
+      "quote": "both programs simplify to (y, x+4y)"
+    }
+  },
+  "qualifies": true
+}

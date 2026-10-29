@@ -1,0 +1,31 @@
+Your two original pairs are correct **for the order A → B → D**, but your information-loss explanation is backwards.
+
+Trace the slots:
+
+\[
+(u,v)\xrightarrow{A}(u+v,v)\xrightarrow{B}(v,u+v)\xrightarrow{D}(v,v)
+\]
+
+So \(D\) does overwrite the second slot—but at that moment the second slot contains \(u+v\), not the original \(v\). The value copied into both slots is the current first slot, which is \(v\), the **original second number**.
+
+Therefore:
+
+- final \((5,5)\) forces \(v=5\);
+- the original first number \(u\) is lost;
+- the original second number survives;
+- all originals are \((u,5)\) for \(u=0,\dots,6\).
+
+So \((0,5)\) and \((1,5)\) are valid, but they are not the complete set. If the question asked for all originals, there are seven.
+
+Your reversal of \(A,B\) is right:
+
+\[
+B^{-1}(3,5)=(5,3),\qquad A^{-1}(5,3)=(5-3,3)=(2,3).
+\]
+
+Next, check two things:
+
+1. **Write the intermediate pairs** after each operation, and label which original coordinate each value came from.
+2. **Check uniqueness:** try final \((5,4)\). Since \(D\) can only output \((x,x)\), explain why no original pair can reach it.
+
+Also note that order matters: \(A,D,B\) gives different preimages, so always record the order explicitly.

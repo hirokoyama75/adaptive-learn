@@ -1,0 +1,6 @@
+Synthetic rule-application study, fictional world 107. No rulebook has been provided yet. This is a pretest without feedback.
+B1: {"count":1,"flag":1,"glyph":"nib","seal":"dap"}
+B2: {"count":10,"flag":0,"glyph":"lun","seal":"dap"}
+B3: {"count":2,"flag":1,"glyph":"lun","seal":"fep"}
+B4: {"count":8,"flag":0,"glyph":"nib","seal":"fep"}
+Reply only JSON: {"answers":[{"id":"ID","value":null,"route":"UNKNOWN","trace":[]}],"question":null}. Include every requested ID exactly once. Use computed integers/routes when justified; UNKNOWN/null/[] means the required rules or fields are unavailable. Do not pretend to be human, deliberately fail, or invent rules. No tools, files, browser, other agents, or external sources. Show only the three task intermediate values, not hidden reasoning. question may be a brief clarification request.

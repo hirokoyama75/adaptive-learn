@@ -1,0 +1,43 @@
+## Learner turn 1
+I have four minutes left. I'm studying which information survives a process. Values are 0..6, arithmetic mod 7. A maps (u,v) to (u+v,v), B swaps the slots, and D copies the first slot into both. For A,B,D with final pair (5,5), I gave original pairs (0,5) and (1,5), both valid. I explained that D lost the original second number because it overwrites its second slot. Separately, I correctly reversed A,B from final (3,5) to original (2,3). Is my information-loss explanation sound, and what should I check next? Ungraded practice; no saving.
+
+## Assistant turn 1
+Your conclusion that **D causes the loss** is right, but for the order your examples fit—**A, then B, then D**—you’ve identified the lost original coordinate backwards.
+
+Trace it:
+
+\[
+(u,v)\xrightarrow{A}(u+v,v)\xrightarrow{B}(v,u+v)\xrightarrow{D}(v,v).
+\]
+
+Final \((5,5)\) means \(v=5\), while \(u\) is arbitrary. So the full preimage set is
+
+\[
+(a,5)\quad\text{for every }a\in\{0,\dots,6\}.
+\]
+
+Your \((0,5)\) and \((1,5)\) are valid, but they’re only two of seven. If the question only asked for two, that’s fine.
+
+D discards its **current** second slot, which at that point is \(u+v\), and copies its current first slot \(v\). So the **original second coordinate survives**; the **original first coordinate is lost**. Your own examples show this: they have the same second coordinate, \(5\), and differ in the first. Saying “D lost the original second number” would predict that varying the second coordinate gives the same final answer—which is false here.
+
+A good next check is to reverse D as a **set**, not a function. From final \((5,5)\), D’s input could be \((5,t)\) for any \(t\). Undo B:
+
+\[
+(5,t)\xrightarrow{B^{-1}}(t,5).
+\]
+
+Undo A:
+
+\[
+(t,5)\xrightarrow{A^{-1}}(t-5,5).
+\]
+
+As \(t\) ranges over all seven values, this gives exactly all \((a,5)\). That checks completeness and shows the free parameter is the original first coordinate.
+
+Your separate reversal through A and B is correct:
+
+\[
+(3,5)\xrightarrow{B^{-1}}(5,3)\xrightarrow{A^{-1}}(2,3),
+\]
+
+since \(B^{-1}=B\) and \(A^{-1}(x,y)=(x-y,y)\) modulo \(7\). Just remember that inverses apply in reverse order, and D cannot be inverted uniquely—carry a parameter through it.

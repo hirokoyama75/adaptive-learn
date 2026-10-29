@@ -1,0 +1,122 @@
+Recorder before-fix SHA-256: c7acab32bc607460d79e98da61cc3efce32fde7d05071193e0f125daf8560d46
+test_immutable_records_preserve_raw_and_session_identity (test_record.RecordTests.test_immutable_records_preserve_raw_and_session_identity) ... ok
+test_report_checks_integrity_and_reports_counts_not_mastery (test_record.RecordTests.test_report_checks_integrity_and_reports_counts_not_mastery) ... ok
+test_report_checks_saved_prompts_against_frozen_inputs (test_record.RecordTests.test_report_checks_saved_prompts_against_frozen_inputs) ... 
+  test_report_checks_saved_prompts_against_frozen_inputs (test_record.RecordTests.test_report_checks_saved_prompts_against_frozen_inputs) (update_hash=False) ... FAIL
+  test_report_checks_saved_prompts_against_frozen_inputs (test_record.RecordTests.test_report_checks_saved_prompts_against_frozen_inputs) (update_hash=True) ... FAIL
+test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) ... 
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='grade') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='session') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='model') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='run') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='stage') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='arm') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='phase') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='prompt_characters') ... FAIL
+  test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='reply_characters') ... FAIL
+
+======================================================================
+FAIL: test_report_checks_saved_prompts_against_frozen_inputs (test_record.RecordTests.test_report_checks_saved_prompts_against_frozen_inputs) (update_hash=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 69, in test_report_checks_saved_prompts_against_frozen_inputs
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_checks_saved_prompts_against_frozen_inputs (test_record.RecordTests.test_report_checks_saved_prompts_against_frozen_inputs) (update_hash=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 69, in test_report_checks_saved_prompts_against_frozen_inputs
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='grade')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='session')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='model')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='run')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='stage')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='arm')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='phase')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='prompt_characters')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: test_report_rechecks_grades_counts_and_session_metadata (test_record.RecordTests.test_report_rechecks_grades_counts_and_session_metadata) (field='reply_characters')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/handoff\benchmarks\novel-rules\test_record.py", line 88, in test_report_rechecks_grades_counts_and_session_metadata
+    with self.assertRaises(AssertionError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: AssertionError not raised
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.243s
+
+FAILED (failures=11)
+
+Exit code: 1

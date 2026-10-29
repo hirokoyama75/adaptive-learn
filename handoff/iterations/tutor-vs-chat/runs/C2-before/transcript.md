@@ -1,0 +1,21 @@
+## Learner turn 1
+Five minutes left in my study block. An urn contains three red and two blue balls. Two are drawn without replacement. I correctly calculated P(two red)=3/5 times 2/4=3/10. My explanation says the draws are independent, so drawing the first red doesn't change the chance that the second is red. Since my numerical answer is right, am I ready to move on? Help me resolve just what matters for this concept. Ungraded practice; do not save files.
+
+## Assistant turn 1
+**Not yet — your number is right but your stated reason is wrong, and the reason is the concept here.**
+
+Your own calculation gives it away. You wrote
+
+P(first red) = 3/5, then P(second red) = 2/4.
+
+That denominator dropped from 5 to 4 because a ball left the urn. If the draws were independent, the first draw couldn't change the second, and you'd have multiplied 3/5 × 3/5 = 9/25 instead of 3/10. So the very factor 2/4 you used is a *dependence* correction. The explanation and the arithmetic contradict each other.
+
+What's actually true:
+
+- Drawing without replacement means the draws are **dependent**. The second probability is **conditional** — it's P(second red | first red) = 2/4, not P(second red) = 3/5.
+- Multiplication still works, but only in the conditional form: P(both red) = P(first red) × P(second red | first red).
+- "Independent" would mean P(second | first) = P(second) = 3/5, which is what drawing *with* replacement would give.
+
+One quick check before you go, since that's the only gap left. Same urn (3 red, 2 blue), two draws without replacement: what is P(the second ball is red)? Give me the number and one sentence on how you got it.
+
+It's fine if this takes a minute — if your block ends before you answer, the thing to carry away is the single distinction: *without replacement → conditional, not independent.*

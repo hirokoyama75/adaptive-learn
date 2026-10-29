@@ -1,0 +1,4 @@
+Your result and intermediate values match this item. That is open-context execution, not checked retention. After seal, glyph, then flag the trace is [7, 6, 5]; final value=5, route=fep. Choose the route only from the final value's remainder on division by 3.
+Practice item 2:
+P2-1: {"count":10,"flag":1,"glyph":"kel","seal":"lun"}
+Reply only JSON: {"answers":[{"id":"ID","value":null,"route":"UNKNOWN","trace":[]}],"question":null}. Include every requested ID exactly once. Use computed integers/routes when justified; UNKNOWN/null/[] means the required rules or fields are unavailable. Do not pretend to be human, deliberately fail, or invent rules. No tools, files, browser, other agents, or external sources. Show only the three task intermediate values, not hidden reasoning. question may be a brief clarification request.

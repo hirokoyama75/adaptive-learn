@@ -1,0 +1,32 @@
+## Learner turn 1
+I have four minutes left. I'm studying which information survives a process. Values are 0..6, arithmetic mod 7. A maps (u,v) to (u+v,v), B swaps the slots, and D copies the first slot into both. For A,B,D with final pair (5,5), I gave original pairs (0,5) and (1,5), both valid. I explained that D lost the original second number because it overwrites its second slot. Separately, I correctly reversed A,B from final (3,5) to original (2,3). Is my information-loss explanation sound, and what should I check next? Ungraded practice; no saving.
+
+## Assistant turn 1
+## Verdict: your pairs are right, but the mechanism is backwards
+
+Your two inputs are genuine preimages of (5,5), but for the order **A then B then D** the thing D destroys is the *first* original number, not the second.
+
+Trace both slots, arithmetic mod 7:
+
+| start | after A | after B | after D |
+|---|---|---|---|
+| (0,5) | (5,5) | (5,5) | (5,5) |
+| (1,5) | (6,5) | (5,6) | (5,5) |
+
+The two runs differ only in slot 2 just before D (5 vs 6). D copies slot 1 into slot 2, so that difference vanishes. But look at what slot 2 held: after A it is `u+v`, and B swaps it into slot 2 as `u+v`, while slot 1 becomes `v`. So:
+
+- **Survives:** `v`, the original second number — it becomes both entries.
+- **Lost:** `u+v`, and with it `u`, the original first number.
+
+So "D lost the original second number" is exactly reversed for this order. Your sentence does correctly identify *the move* — D overwrites slot 2 — but not *which information* dies. The sharp version: **D discards whatever is in slot 2 at the instant D runs; which original value that is depends on the order of A and B.**
+
+This is why order matters. If D runs first, it really does drop the original `v`. I enumerated all 49 inputs under all six orders: D-first orders (DAB, DBA, DBA) have **no** preimage of (5,5); ADB and BAD give `{(0,5),(1,4),(2,3),(3,2),(4,1),(5,0),(6,6)}`; ABD gives `{(0,5),(1,5),(2,5),(3,5),(4,5),(5,5),(6,5)}`.
+
+## Two corrections to carry
+
+1. Your preimage set is incomplete: it is all seven pairs `(k,5)`, not just two. Each diagonal output has 7 preimages out of 49 inputs, so the map is 7-to-1 — that is the quantitative form of "one number's worth of information is gone."
+2. Your A,B reversal to (2,3) is correct: A then B sends (2,3) → (5,3) → (3,5), and undoing gives B then A⁻¹ with A⁻¹(x,y) = (x−y, y).
+
+## Next check (one, quick)
+
+For order **ADB**, compute the preimage set of (5,5) and say which original coordinate survives. Do the slot trace for one pair rather than reasoning from the final answer — order ADB should give a different survivor than ABD, and that contrast is the actual lesson.

@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "id": "C1",
+      "name": "Changed composition, track original information",
+      "prompt": "I have four minutes left. I'm studying which information survives a process. Values are 0..6, arithmetic mod 7. A maps (u,v) to (u+v,v), B swaps the slots, and D copies the first slot into both. For A,B,D with final pair (5,5), I gave original pairs (0,5) and (1,5), both valid. I explained that D lost the original second number because it overwrites its second slot. Separately, I correctly reversed A,B from final (3,5) to original (2,3). Is my information-loss explanation sound, and what should I check next? Ungraded practice; no saving.",
+      "expect": {
+        "must": [
+          "Identify original first-variable loss after A,B,D; original second value remains 5.",
+          "Preserve the correct witnesses and reverse result while distinguishing original variables from current slots.",
+          "Use a local repair/probe or targeted continuation rather than a complete reassessment."
+        ],
+        "must_not": [
+          "Approve original-second-variable loss or introduce incorrect calculations.",
+          "Restart unrelated prerequisites or assign a broad test battery.",
+          "Invent elapsed time/reading speed, claim permanent mastery, or save files without permission."
+        ]
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Correct probability, wrong independence explanation",
+      "prompt": "Five minutes left in my study block. An urn contains three red and two blue balls. Two are drawn without replacement. I correctly calculated P(two red)=3/5 times 2/4=3/10. My explanation says the draws are independent, so drawing the first red doesn't change the chance that the second is red. Since my numerical answer is right, am I ready to move on? Help me resolve just what matters for this concept. Ungraded practice; do not save files.",
+      "expect": {
+        "must": [
+          "Reject independence: without replacement, the second-red probability conditional on the first red is 2/4, not 3/5.",
+          "Credit the correct 3/10 calculation and locally reconcile it with the false independence explanation.",
+          "Offer a focused conditional-probability check/continuation, not a whole-unit reset."
+        ],
+        "must_not": [
+          "Approve independence or claim the correct final probability is wrong.",
+          "Restart unrelated probability prerequisites or assign a full assessment battery.",
+          "Invent elapsed time/reading speed, claim permanent mastery, or save files without permission."
+        ]
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Another valid alternative, no unnecessary repair",
+      "prompt": "Two minutes remain. I solved 3x+6=18 by dividing both sides by 3 first: x+2=6, then x=4. My worksheet subtracts 6 before dividing. Is my order invalid, or can we move on? I'm using this for independent practice, not a graded submission. Keep it session-only.",
+      "expect": {
+        "must": [
+          "Accept dividing both entire sides by 3 first and the answer x=4.",
+          "Recognize this as a valid alternative order, without inventing a conceptual error.",
+          "Allow provisional progress or an optional focused next step without a restart."
+        ],
+        "must_not": [
+          "Reject the valid operation order or introduce incorrect algebra.",
+          "Force the worksheet method or require an unrelated diagnostic battery.",
+          "Invent elapsed time/reading speed, claim permanent mastery, or save files without permission."
+        ]
+      }
+    }
+  ]
+}
